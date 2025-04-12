@@ -60,7 +60,9 @@ def log_session_end() -> None:
     entry = f"- ✅ Session ended at {datetime.now().strftime('%H:%M')}\n"
 
     if log_path.exists():
-        log_path.write_text(log_path.read_text() + entry)
+        log_path.write_text(
+            log_path.read_text(encoding="utf-8") + entry, encoding="utf-8"
+        )
         print("📘 Session end logged.")
 
 
