@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../Forgemaster/dmforge"
+		},
+		{
+			"path": "../../../../Users/jeise/Downloads/dmforge_starter/docs"
+		},
+		{
+			"path": "../../../../Users/jeise/Downloads/dmforge_starter/src"
+		},
+		{
+			"path": "../../../../Users/jeise/Downloads/dmforge_starter/tests"
+		},
+		{
+			"path": "../Forgedm/dmforge"
+		}
+	],
+	"settings": {}
+}

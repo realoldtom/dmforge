@@ -1,0 +1,21 @@
+{
+    // Use your project's virtual environment interpreter
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    // Enable format on save
+    "editor.formatOnSave": true
+    // Use Black as the code formatter
+    "python.formatting.provider": "black",
+    // Enable Ruff linting
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
+    // Run tests with pysets on save
+    "python.testing.pytestEnabled": true,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    //Save all editors when one is saved (ensures multi-file saves work cleanly)
+    "files.autoSave": "onWindowChange"
+    // On Windows, use the following path for the virtual environment interpreter
+    "python.defaultInterpreterPath": ".venv\\Scripts\\python.exe"
+}
