@@ -5,17 +5,20 @@ from datetime import datetime
 from pathlib import Path
 
 
-def run_tests():
+def run_tests() -> None:
+    """Run pytest suite."""
     print("\n🧪 Running tests...")
     subprocess.run(["pytest"], check=False)
 
 
-def format_code():
+def format_code() -> None:
+    """Format all Python files with Black."""
     print("\n🎨 Formatting with Black...")
     subprocess.run(["black", "."], check=False)
 
 
-def log_done_entry():
+def log_done_entry() -> None:
+    """Log completed work to daily done_log file."""
     print("\n📝 Logging session to done_log...")
     now = datetime.now()
     log_dir = Path("done_log")
@@ -26,27 +29,18 @@ def log_done_entry():
     log_file.write_text(log_file.read_text() + entry if log_file.exists() else entry)
 
 
-def git_commit():
+def git_commit() -> None:
+    """Stage and commit all changes."""
     print("\n📦 Git commit...")
     msg = input("Enter commit message: ")
     subprocess.run(["git", "add", "."], check=False)
     subprocess.run(["git", "commit", "-m", msg], check=False)
 
 
-def main():
-    print("\n🔚 Ending Dev Session")
-    print("-" * 40)
-    run_tests()
-    format_code()
-    log_done_entry()
-    git_commit()
-    print("\n✅ Dev session wrapped. Take a break!")
+def show_file_tree(root: str = ".", max_depth: int = 2) -> None:
+    """Display project file tree up to specified depth."""
 
-
-def show_file_tree(root=".", max_depth=2, prefix=""):
-    from pathlib import Path
-
-    def walk(path: Path, depth: int):
+    def walk(path: Path, depth: int) -> None:
         if depth > max_depth:
             return
         for item in sorted(path.iterdir()):
@@ -58,6 +52,29 @@ def show_file_tree(root=".", max_depth=2, prefix=""):
 
     print("\n📁 Project File Tree (depth ≤ 2):")
     walk(Path(root), 0)
+
+
+def log_session_end() -> None:
+    """Log session end time to session_log.md."""
+    log_path = Path("session_log.md")
+    entry = f"- ✅ Session ended at {datetime.now().strftime('%H:%M')}\n"
+
+    if log_path.exists():
+        log_path.write_text(log_path.read_text() + entry)
+        print("📘 Session end logged.")
+
+
+def main() -> None:
+    """Run end-of-session tasks and cleanup."""
+    print("\n🔚 Ending Dev Session")
+    print("-" * 40)
+    run_tests()
+    format_code()
+    show_file_tree()
+    log_done_entry()
+    git_commit()
+    log_session_end()
+    print("\n✅ Dev session wrapped. Take a break!")
 
 
 if __name__ == "__main__":
