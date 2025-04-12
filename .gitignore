@@ -1,0 +1,27 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+
+# VS Code settings
+.vscode/
+
+# Output / data files
+/data/
+/exports/
+
+# Env and logs
+.env
+*.log
+*.sqlite3
+
+# Snapshots
+.snapshots/
+.done_log/
+
+# OS
+.DS_Store
+Thumbs.db

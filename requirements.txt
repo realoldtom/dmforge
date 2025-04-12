@@ -1,4 +1,13 @@
+
+# Core tools
+typer[all]
+rich
+
+# Formatting, linting, testing
 black
 ruff
 pytest
 pytest-cov
+
+# Optional: For .env support
+python-dotenv

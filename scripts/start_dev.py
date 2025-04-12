@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 
 import subprocess
-from pathlib import pathlib
+from pathlib import Path
+
 
 def print_header():
     print("\n Starting Dev Session")
     print("-" * 40)
 
+
 def show_git_status():
     print("\n Git Branch & Status:")
     subprocess.run(["git", "status", "-sb"])
+
 
 def show_last_log():
     print("\n Last Dev Log Entry:")
@@ -20,6 +23,7 @@ def show_last_log():
     else:
         print("No dev-log.md found.")
 
+
 def show_session_plan():
     print("\n Session Plan:")
     plan_file = Path("session_plan.md")
@@ -27,6 +31,7 @@ def show_session_plan():
         print(plan_file.read_text().strip())
     else:
         print("No session_plan.md found.")
+
 
 if __name__ == "__main__":
     print_header()
