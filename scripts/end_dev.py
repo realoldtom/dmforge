@@ -43,5 +43,22 @@ def main():
     print("\n✅ Dev session wrapped. Take a break!")
 
 
+def show_file_tree(root=".", max_depth=2, prefix=""):
+    from pathlib import Path
+
+    def walk(path: Path, depth: int):
+        if depth > max_depth:
+            return
+        for item in sorted(path.iterdir()):
+            if item.name.startswith(".") and item.name not in {".vscode", ".snapshots"}:
+                continue
+            print(f"{'  ' * depth}├─ {item.name}")
+            if item.is_dir():
+                walk(item, depth + 1)
+
+    print("\n📁 Project File Tree (depth ≤ 2):")
+    walk(Path(root), 0)
+
+
 if __name__ == "__main__":
     main()
