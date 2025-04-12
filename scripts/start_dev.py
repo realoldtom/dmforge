@@ -2,11 +2,13 @@
 
 import subprocess
 from pathlib import Path
+from src.utils.env import get_env
 
 
 def print_header():
-    print("\n Starting Dev Session")
+    print("\n🧠  Starting Dev Session")
     print("-" * 40)
+    print(f"🌎  Environment: {get_env().upper()}")
 
 
 def show_git_status():

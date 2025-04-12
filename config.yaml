@@ -1,0 +1,8 @@
+# config.yaml
+
+# Global environment mode (can be overridden by .env or CLI flags)
+environment: dev
+
+# Optional defaults for outputs
+data_dir: data
+exports_dir: exports

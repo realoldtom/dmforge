@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 
-from datetime import datetime
+from src.utils.env import get_env
 from pathlib import Path
+from datetime import datetime
 
 
 def take_snapshot():
     print("\n📸 Taking project snapshot...")
 
-    snapshot_dir = Path(".snapshots")
-    snapshot_dir.mkdir(exist_ok=True)
+    env = get_env()
+    snapshot_dir = Path(f".snapshots/{env}")
+    snapshot_dir.mkdir(parents=True, exist_ok=True)
 
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     filename = snapshot_dir / f"snapshot_{timestamp}.txt"

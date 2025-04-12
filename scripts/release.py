@@ -2,6 +2,18 @@
 
 import subprocess
 from datetime import datetime
+from src.utils.env import get_env
+
+
+def main():
+    env = get_env()
+    if env != "prod":
+        print(f"❌ Aborting: Releases are only allowed in prod mode (current: {env})")
+        return
+
+    version = generate_version()
+    commit_and_tag(version)
+    print(f"\n✅ Release {version} created and pushed.")
 
 
 def generate_version():
@@ -14,12 +26,6 @@ def commit_and_tag(version):
     subprocess.run(["git", "commit", "-m", f"release: {version}"], check=False)
     subprocess.run(["git", "tag", version], check=False)
     subprocess.run(["git", "push", "origin", "main", "--tags"], check=False)
-
-
-def main():
-    version = generate_version()
-    commit_and_tag(version)
-    print(f"\n✅ Release {version} created and pushed.")
 
 
 if __name__ == "__main__":
