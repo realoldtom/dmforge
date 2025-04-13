@@ -96,3 +96,34 @@ def fetch_srd_traits(force: bool = False) -> None:
 
     except requests.RequestException as e:
         error(f"❌ Failed to fetch SRD traits: {e}")
+
+
+def fetch_srd_features(force: bool = False):
+    """Fetch and cache class features from the 5e API."""
+    banner("📥 Fetching SRD Features")
+
+    output_file = get_data_path("features.json")
+
+    if output_file.exists() and not force:
+        warn("features.json already exists — use --force to re-fetch.")
+        return
+
+    try:
+        # Step 1: Get feature list
+        index_response = requests.get(f"{BASE_URL}/api/features")
+        index_response.raise_for_status()
+        feature_list = index_response.json()["results"]
+
+        # Step 2: Fetch individual feature details
+        features = []
+        for feature in feature_list:
+            feature_url = f"{BASE_URL}{feature['url']}"
+            response = requests.get(feature_url)
+            if response.status_code == 200:
+                features.append(response.json())
+
+        output_file.write_text(json.dumps(features, indent=2), encoding="utf-8")
+        success(f"✅ Saved {len(features)} features to {output_file}")
+
+    except requests.RequestException as e:
+        error(f"❌ Failed to fetch SRD features: {e}")
