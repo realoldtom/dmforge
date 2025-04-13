@@ -1,9 +1,23 @@
 #!/usr/bin/env python3
 
+import sys
 import subprocess
 from pathlib import Path
 from datetime import datetime
 from src.utils.env import get_env
+
+
+def verify_python_environment() -> None:
+    """Verify script is running with correct Python interpreter."""
+    executable = Path(sys.executable).name.lower()
+    if "devenv" in executable or "visualstudio" in executable:
+        print("\n⚠️  Error: Script launched by Visual Studio instead of Python")
+        print(f"Current executable: {sys.executable}")
+        print("\nTo fix this:")
+        print("1. Open Windows Settings")
+        print("2. Go to Apps > Default Apps")
+        print("3. Set .py files to open with Python")
+        sys.exit(1)
 
 
 def log_session_start() -> None:
@@ -60,6 +74,7 @@ def show_session_plan() -> None:
 
 
 if __name__ == "__main__":
+    verify_python_environment()
     print_header()
     show_git_status()
     show_last_log()

@@ -1,4 +1,3 @@
-
 # Core tools
 typer[all]
 rich
@@ -11,3 +10,6 @@ pytest-cov
 
 # Optional: For .env support
 python-dotenv
+
+# Configuration
+pyyaml
