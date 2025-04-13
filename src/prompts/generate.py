@@ -34,7 +34,7 @@ def generate_spell_prompts(suffix: str = "") -> None:
         # Write prompts to file
         output_file.write_text("\n\n".join(prompts), encoding="utf-8")
 
-        success(f"✅ Generated {len(prompts)} spell prompts")
+        success(f"✅ Wrote {len(prompts)} prompts to {output_file.resolve()}")
 
     except Exception as e:
         error(f"❌ Failed to generate prompts: {e}")
