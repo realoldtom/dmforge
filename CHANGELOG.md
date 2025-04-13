@@ -122,3 +122,33 @@ DMForge now has a modular CLI, full dev/prod environment support, internal helpe
 ### 🏁 Status
 ✅ Phase 2 complete  
 🚧 Ready to begin Phase 3: SRD Fetching + Caching
+
+## v0.4.0 – Phase 3 Complete: SRD Data Ingestion  
+📅 Released: 2025-04-13
+
+### ✅ Summary  
+DMForge can now fetch and cache structured SRD content for downstream use in prompts, scenes, and card decks.
+
+---
+
+### 📥 SRD Fetching Features
+- CLI: `dmforge fetch srd` now supports:
+  - `--spells`, `--traits`, `--features`, `--all`
+- Fetches from: https://www.dnd5eapi.co
+- Output format: `data/{env}/{type}.json`
+- Includes normalized structure (for spells)
+
+---
+
+### 🧪 Testing
+- Added mock-based tests for:
+  - `fetch_srd_spells`
+  - `fetch_srd_traits`
+  - `fetch_srd_features`
+- Verifies output, re-fetching logic, error handling
+
+---
+
+### 🏁 Status
+✅ Phase 3 complete  
+🚧 Ready for Phase 4: Prompt Generator
