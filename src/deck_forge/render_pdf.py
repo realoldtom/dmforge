@@ -4,7 +4,7 @@
 
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
-from weasyprint import HTML
+from weasyprint import HTML, CSS
 import json
 from src.utils.console import banner, success, error
 
@@ -21,11 +21,15 @@ def render_card_pdf(deck_path: Path, output_path: Path):
         return
 
     try:
+        css_path = Path("assets/css/default.css").absolute().as_uri()
+
         cards = json.loads(deck_path.read_text(encoding="utf-8"))
         template = env.get_template("spell_card.jinja")
-        html_string = template.render(cards=cards)
+        html_string = template.render(cards=cards, css_path=css_path)
 
-        HTML(string=html_string).write_pdf(str(output_path))
+        HTML(string=html_string).write_pdf(
+            str(output_path), stylesheets=[CSS(css_path)]
+        )
 
         success(f"✅ PDF saved to {output_path.resolve()}")
 
@@ -35,7 +39,6 @@ def render_card_pdf(deck_path: Path, output_path: Path):
 
 
 def render_card_sheet_pdf(deck_path: Path, output_path: Path):
-    """Render a 6-card-per-page sheet for physical print."""
     banner("🖨 Rendering Grid Sheet (6 cards/page)")
 
     if not deck_path.exists():
@@ -45,9 +48,14 @@ def render_card_sheet_pdf(deck_path: Path, output_path: Path):
     try:
         cards = json.loads(deck_path.read_text(encoding="utf-8"))
         template = env.get_template("spell_sheet.jinja")
-        html_string = template.render(cards=cards)
 
-        HTML(string=html_string).write_pdf(str(output_path))
+        css_path = Path("assets/css/default.css").absolute().as_uri()
+
+        html_string = template.render(cards=cards, css_path=css_path)
+
+        HTML(string=html_string).write_pdf(
+            str(output_path), stylesheets=[CSS(css_path)]
+        )
         success(f"✅ Sheet PDF saved to {output_path.resolve()}")
 
     except Exception as e:

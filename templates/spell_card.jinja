@@ -1,71 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>DMForge Spell Cards</title>
-  <style>
-    body {
-      background: #f0f0f0;
-      font-family: Georgia, serif;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 2rem;
-    }
-
-    .card {
-    width: 63mm;
-    height: 88mm;
-    box-sizing: border-box;
-
-    background: white;
-    border-radius: 4mm;
-    box-shadow: 0 0 1mm rgba(0, 0, 0, 0.25);
-    border: 0.3mm solid #333;
-
-    margin: 1rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    page-break-inside: avoid;
-    }
-
-
-    .header {
-      background: #f8f8f8;
-      padding: 0.75rem 1rem;
-      font-weight: bold;
-      font-size: 1.2rem;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .image {
-      height: 180px;
-      background: #ccc;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .stats {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.9rem;
-      padding: 0.5rem 1rem;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .desc {
-      padding: 1rem;
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
-
-    .title { font-weight: bold; }
-  </style>
+  <link rel="stylesheet" href="{{ css_path }}">
 </head>
 <body>
   {% for card in cards %}
@@ -89,20 +27,5 @@
     <div class="desc">{{ card.description }}</div>
   </div>
   {% endfor %}
-</body>
-</html>
-    {% for card in cards %}
-    <div class="card">
-        <h2>{{ card.title }}</h2>
-        <div class="meta">
-            Level {{ card.level }} {{ card.school }}<br>
-            Classes: {{ card.classes | join(', ') }}<br>
-            Components: {{ card.components | join(', ') }}<br>
-            Range: {{ card.range }} | Duration: {{ card.duration }}<br>
-            Cast Time: {{ card.casting_time }}
-        </div>
-        <div class="desc">{{ card.description }}</div>
-    </div>
-    {% endfor %}
 </body>
 </html>

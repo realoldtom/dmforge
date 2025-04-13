@@ -25,10 +25,11 @@ def render_card_html(deck_path: Path, output_path: Path):
 
     try:
         cards = json.loads(deck_path.read_text(encoding="utf-8"))
+        css_path = Path("assets/css/default.css").absolute().as_uri()
         template = env.get_template("spell_card.jinja")
 
-        rendered = template.render(cards=cards)
-        output_path.write_text(rendered, encoding="utf-8")
+        html_string = template.render(cards=cards, css_path=css_path)
+        output_path.write_text(html_string, encoding="utf-8")
 
         success(f"✅ HTML output saved to {output_path.resolve()}")
 

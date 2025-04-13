@@ -3,8 +3,9 @@
 from pathlib import Path
 import typer
 from src.utils.console import banner, error, success
-from src.deck.render import render_deck
-from src.deck.build import build_deck
+from src.deck_forge.render_pdf import render_card_pdf, render_card_sheet_pdf
+from src.deck_forge.render_html import render_card_html
+from src.deck_forge.generate import build_deck
 
 deck_app = typer.Typer(help="Generate and render spell card decks")
 
@@ -40,17 +41,34 @@ def render(
     deck_file: Path = typer.Argument(..., help="Deck JSON file to render"),
     format: str = typer.Option("pdf", "--format", help="Output format (pdf or html)"),
     layout: str = typer.Option(
-        "sheet", "--layout", help="Layout type (sheet or cards)"
+        "sheet", "--layout", help="Layout type: 'sheet' or 'cards'"
     ),
     output: str = typer.Option(None, "--output", help="Output file path"),
-) -> None:
+):
     """Render a deck to PDF or HTML."""
     banner("🎨 Rendering Deck")
 
     try:
-        render_deck(
-            deck_file=deck_file, format=format, layout=layout, output_path=output
-        )
+        # Set default output filename
+        if output is None:
+            output = "deck.pdf" if format == "pdf" else "deck.html"
+
+        deck_path = Path(deck_file)
+        output_path = Path(output)
+
+        if format == "pdf":
+            if layout == "sheet":
+                render_card_sheet_pdf(deck_path, output_path)
+            else:
+                render_card_pdf(deck_path, output_path)
+
+        elif format == "html":
+            render_card_html(deck_path, output_path)
+
+        else:
+            raise ValueError("Unsupported format. Use 'pdf' or 'html'.")
+
         success("✅ Deck rendered successfully")
+
     except Exception as e:
-        error(f"Failed to render deck: {e}")
+        error(f"❌ Failed to render deck: {e}")
