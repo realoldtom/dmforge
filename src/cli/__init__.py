@@ -1,13 +1,18 @@
 # src/cli/__init__.py
 
 """DMForge CLI."""
-from src.utils.env import get_env
-from .fetch import fetch_app
-from .deck import deck_app
+
 import typer
+from src.utils.env import get_env
+from src.utils.console import banner, info
 
+# Register subcommands
+from .deck import deck_app
+from .fetch import fetch_app
 
+# Main CLI app
 app = typer.Typer(help="DMForge CLI – Generate spell decks, scenes, and more.")
+
 app.add_typer(fetch_app, name="fetch")
 app.add_typer(deck_app, name="deck")
 
@@ -25,22 +30,26 @@ def main(
 def version(ctx: typer.Context):
     """Show DMForge version and active environment."""
     env = ctx.obj["env"]
-    typer.echo(f"DMForge v0.2.0 – Environment: {env}")
+    banner("DMForge CLI", f"Version 0.2.0 – Environment: {env}")
 
 
 @app.command()
 def help(ctx: typer.Context):
     """Show system overview, CLI usage, and dev docs."""
     env = ctx.obj["env"]
-    typer.echo("\n🧰 DMForge Help\n" + "-" * 40)
-    typer.echo(f"🌍 Environment: {env}\n")
-    typer.echo("📘 Overview:")
-    typer.echo("  - Solo dev content generator for D&D 5e")
-    typer.echo("  - Modular CLI, logs, and automation")
-    typer.echo("\n📂 CLI Commands:")
-    typer.echo("  dmforge version")
-    typer.echo("  dmforge help")
-    typer.echo("\n📄 Developer Docs:")
-    typer.echo("  - dev-log.md")
-    typer.echo("  - docs/cli_reference.md")
-    typer.echo("  - docs/how_it_works.md")
+    banner("DMForge Help", f"Environment: {env}")
+
+    info("📘 Overview:")
+    info("  - Solo dev content generator for D&D 5e")
+    info("  - Modular CLI, logs, and automation")
+
+    info("\n📂 CLI Commands:")
+    info("  dmforge version")
+    info("  dmforge help")
+    info("  dmforge fetch srd")
+    info("  dmforge deck create")
+
+    info("\n📄 Developer Docs:")
+    info("  - dev-log.md")
+    info("  - docs/cli_reference.md")
+    info("  - docs/how_it_works.md")

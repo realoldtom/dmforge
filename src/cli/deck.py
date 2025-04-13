@@ -1,6 +1,7 @@
 """Deck generation commands."""
 
 import typer
+from src.utils.console import banner
 
 deck_app = typer.Typer(help="Generate spell cards and decks.")
 
@@ -9,4 +10,4 @@ deck_app = typer.Typer(help="Generate spell cards and decks.")
 def create(ctx: typer.Context):
     """Create a new card deck."""
     env = ctx.obj["env"]
-    typer.echo(f"Creating deck in {env} mode...")
+    banner("Creating Deck", f"Environment: {env}")
