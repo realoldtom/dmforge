@@ -1,18 +1,23 @@
 # src/cli/prompt.py
 
-"""CLI commands for generating spell prompts."""
+"""CLI commands for prompt generation and management."""
 
-import typer
+from typer import Typer, Option
 from src.prompts.generate import generate_spell_prompts
+from src.utils.console import error
 
-prompt_app = typer.Typer(help="Generate spell prompts for AI use.")
+prompt_app = Typer(help="Generate and manage image prompts")
 
 
-@prompt_app.command("generate")
-def generate(
-    suffix: str = typer.Option(
-        "", "--suffix", help="Optional style/theme suffix (e.g., 'in anime style')"
-    )
-):
-    """Generate spell prompts from spells.json."""
-    generate_spell_prompts(suffix=suffix)
+@prompt_app.command()
+def create(
+    spells: bool = Option(False, "--spells", help="Generate spell card prompts"),
+    style: str = Option("", "--style", help="Optional style suffix for prompts"),
+    json_format: bool = Option(False, "--json", help="Output in JSON format"),
+) -> None:
+    """Create image generation prompts from SRD data."""
+    if not spells:
+        error("No content type selected. Use --spells")
+        return
+
+    generate_spell_prompts(suffix=style, format="json" if json_format else "txt")
