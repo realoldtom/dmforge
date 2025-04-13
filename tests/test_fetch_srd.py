@@ -15,7 +15,18 @@ def mock_index_response():
 
 
 def mock_spell_detail(index):
-    return {"index": index, "name": index.replace("-", " ").title()}
+    return {
+        "index": index,
+        "name": index.title(),
+        "level": 3,
+        "school": {"name": "Evocation"},
+        "classes": [{"name": "Wizard"}],
+        "desc": ["A blazing sphere..."],
+        "range": "150 feet",
+        "duration": "Instantaneous",
+        "components": ["V", "S", "M"],
+        "casting_time": "1 action",
+    }
 
 
 @patch("src.fetch.srd.requests.get")
@@ -41,6 +52,11 @@ def test_fetch_srd_creates_cache(mock_get, tmp_path, monkeypatch):
     data = json.loads(output_file.read_text())
     assert isinstance(data, list)
     assert any(spell["index"] == "fireball" for spell in data)
+
+    spell = data[0]
+    assert "level" in spell and isinstance(spell["level"], int)
+    assert "classes" in spell and isinstance(spell["classes"], list)
+    assert "desc" in spell and isinstance(spell["desc"], list)
 
 
 @patch("src.fetch.srd.requests.get")

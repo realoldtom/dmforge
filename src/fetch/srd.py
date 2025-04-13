@@ -10,6 +10,22 @@ from src.utils.console import banner, success, warn, error
 BASE_URL = "https://www.dnd5eapi.co"
 
 
+def normalize_spell(raw: dict) -> dict:
+    """Extract relevant fields from raw API spell data."""
+    return {
+        "index": raw.get("index"),
+        "name": raw.get("name"),
+        "level": raw.get("level"),
+        "school": raw.get("school", {}).get("name"),
+        "classes": [cls["name"] for cls in raw.get("classes", [])],
+        "desc": raw.get("desc", []),
+        "range": raw.get("range"),
+        "duration": raw.get("duration"),
+        "components": raw.get("components", []),
+        "casting_time": raw.get("casting_time"),
+    }
+
+
 def fetch_srd_spells(force: bool = False) -> None:
     """Fetch and cache SRD spell data from the 5e API.
 
@@ -36,7 +52,7 @@ def fetch_srd_spells(force: bool = False) -> None:
             spell_url = f"{BASE_URL}{spell['url']}"
             spell_response = requests.get(spell_url)
             spell_response.raise_for_status()
-            spells.append(spell_response.json())
+            spells.append(normalize_spell(spell_response.json()))
 
         # Step 3: Save to local cache
         output_file.write_text(json.dumps(spells, indent=2), encoding="utf-8")
