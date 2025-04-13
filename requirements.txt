@@ -16,6 +16,3 @@ pyyaml
 
 # Logging
 rich
-
-# Testing
-pytest
