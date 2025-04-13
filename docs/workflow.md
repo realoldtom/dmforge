@@ -1,129 +1,118 @@
-# 🔄 DMForge Developer Workflow
+🧠 docs/workflow.md
+📦 DMForge Dev + Deck Creation Workflow
+Last updated: 2025-04-13 (Post Phase 6.1)
 
-This document describes the standard solo dev routine used to maintain code quality, track progress, and reduce mental fatigue.  
-All tools here were built specifically for this solo developer environment.
-
----
-
-## 🧠 Philosophy
-
-> “Slow is smooth, smooth is fast.”
-
-- Work in small, focused microtasks
-- Log what you do so you don’t have to remember
-- Automate repetitive or error-prone steps
-- Use the environment safely (dev vs prod)
-
----
-
-## 🏁 Daily Workflow
-
-### ✅ Start of Session
-
-Run:
-
-```bash
+🛠 Dev Session Lifecycle
+🟢 Start Dev Session
+bash
+Copy
+Edit
 python scripts/start_dev.py
-```
+Logs session start
 
-This will:
-- Show your current Git status
-- Show your last `dev-log.md` and current `session_plan.md`
-- Log the start of a new session in `session_log.md`
-- Print the active environment (DEV or PROD)
+Displays file tree
 
----
+Prepares session_log.md
 
-### 🧱 During Development
-
-Use:
-
-```bash
-python scripts/task_tracker.py
-```
-
-To:
-- Log each microtask
-- Include a short description and optional tag (e.g., `phase1`, `scene_forge`)
-
-Also refer to:
-- `session_plan.md` for your short-term plan
-- `dev_log.md` for daily notes or decisions
-
----
-
-### 📸 Snapshots (Optional Mid-Session or Pre-Release)
-
-Run:
-
-```bash
-python scripts/snapshot.py
-```
-
-This will:
-- Save a list of files to `.snapshots/{env}/`
-- Auto-generate `docs/how_it_works.md` with module summaries
-
----
-
-### 🚧 End of Session
-
-Run:
-
-```bash
+🔚 End Dev Session
+bash
+Copy
+Edit
 python scripts/end_dev.py
-```
+Runs tests, formats code, prompts for summary
 
-This will:
-- Run tests
-- Auto-format code
-- Log a description to `done_log/`
-- Commit your changes
-- Update `session_log.md` with the end time
-- Print a 2-level folder tree to confirm file structure
+Logs to done_log/YYYY-MM-DD.md and session_log.md
 
----
+Commits changes with message
 
-### 📦 Releasing
+📥 Data Ingestion
+Fetch Spells, Traits, and Features
+bash
+Copy
+Edit
+python main.py fetch srd --spells --traits --features
+Stores JSON in data/dev/
 
-When you're ready to release:
+Requires internet connection
 
-```bash
-python scripts/release.py
-```
+🧱 Deck Building
+Build JSON Deck from Spell Data
+bash
+Copy
+Edit
+python main.py deck build --limit 20 --output test_deck.json
+Outputs to decks/dev/
 
-> Releases are blocked if you’re in `dev` mode.
+Schema: spell_to_card() format
 
-Tag your release, then run:
+🎨 Prompt Generation (Optional)
+Generate Prompts for AI Art
+bash
+Copy
+Edit
+python main.py prompt generate --format txt --suffix "epic fantasy style"
+Outputs to prompts/dev/spells.txt or .json
 
-```bash
-python scripts/generate_changelog.py
-```
+🖨 Rendering Decks
+HTML Preview
+bash
+Copy
+Edit
+python main.py deck render decks/dev/test_deck.json --format html --output exports/dev/test_deck.html
+Uses spell_card.jinja
 
-This will:
-- Append recent commits to `CHANGELOG.md` using Git log
-- Allow you to override the version (e.g., `--version v0.2.0`)
+Injects external CSS from assets/css/default.css
 
----
+PDF Export: 1 Card per Page
+bash
+Copy
+Edit
+python main.py deck render decks/dev/test_deck.json --format pdf --layout cards --output exports/dev/cards.pdf
+Great for individual cutting or digital view
 
-## 🧾 Files That Help You Stay on Track
+PDF Export: 6 Cards per A4 Sheet
+bash
+Copy
+Edit
+python main.py deck render decks/dev/test_deck.json --format pdf --layout sheet --output exports/dev/sheet.pdf
+Print-optimized layout
 
-| File | Purpose |
-|------|---------|
-| `dev-log.md` | Notes, decisions, observations |
-| `task_log.md` | Microtask tracker (timestamp + tag) |
-| `session_log.md` | Chronological dev sessions |
-| `session_plan.md` | Sticky note: what you’re doing right now |
-| `reset_routine.md` | Checklist for returning after a break |
+Uses spell_sheet.jinja
 
----
+🧪 Testing Workflow
+bash
+Copy
+Edit
+pytest
+pre-commit run --all-files
+Coverage includes CLI, HTML renderers, schema conversion
 
-## 🔁 Reset Routine (Post-Break)
+HTML tests validate CSS injection and spell content
 
-1. Open VS Code
-2. Run `scripts/start_dev.py`
-3. Review `session_log.md`, `session_plan.md`, and `dev-log.md`
-4. Pick your next microtask or run `task_tracker.py`
+🧾 Snapshots & Documentation
+Save Project Snapshot
+bash
+Copy
+Edit
+python scripts/snapshot.py
+Updates docs/how_it_works.md
 
----
+Creates .snapshots/dev/YYYY-MM-DD--HHMM.md
 
+🔖 Releasing
+Commit + Tag + Push
+bash
+Copy
+Edit
+git commit -am "release: Phase 5 complete – v0.6.0"
+git tag v0.6.0
+git push origin main --tags
+✅ Output Paths Summary
+Type	Location
+Deck JSON	decks/dev/test_deck.json
+Prompts	prompts/dev/spells.txt/.json
+HTML View	exports/dev/test_deck.html
+PDF Cards	exports/dev/cards.pdf
+PDF Sheet	exports/dev/sheet.pdf
+Snapshots	.snapshots/dev/*.md
+Logs	done_log/, session_log.md
