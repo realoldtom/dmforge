@@ -10,7 +10,9 @@ TEMPLATE_DIR = Path("templates")
 env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
 
 
-def render_card_pdf(deck_path: Path, output_path: Path, theme: str = "default"):
+def render_card_pdf(
+    deck_path: Path, output_path: Path, theme: str = "default", debug: bool = False
+):
     """Render a JSON deck to PDF using HTML + WeasyPrint."""
     banner("🖨 Rendering Card Deck (1 card/page)")
 
@@ -31,6 +33,12 @@ def render_card_pdf(deck_path: Path, output_path: Path, theme: str = "default"):
         html_string = template.render(cards=cards, css_path=css_path)
 
         output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        if debug:
+            debug_path = output_path.with_name(f"DEBUG_{output_path.stem}.html")
+            debug_path.write_text(html_string, encoding="utf-8")
+            success(f"📝 Debug HTML saved to {debug_path.resolve()}")
+
         HTML(string=html_string).write_pdf(
             str(output_path), stylesheets=[CSS(css_path)]
         )
@@ -41,7 +49,9 @@ def render_card_pdf(deck_path: Path, output_path: Path, theme: str = "default"):
         raise
 
 
-def render_card_sheet_pdf(deck_path: Path, output_path: Path, theme: str = "default"):
+def render_card_sheet_pdf(
+    deck_path: Path, output_path: Path, theme: str = "default", debug: bool = False
+):
     """Render a 6-card-per-page sheet for physical print."""
     banner("🖨 Rendering Card Grid Sheet")
 
@@ -62,6 +72,12 @@ def render_card_sheet_pdf(deck_path: Path, output_path: Path, theme: str = "defa
         html_string = template.render(cards=cards, css_path=css_path)
 
         output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        if debug:
+            debug_path = output_path.with_name(f"DEBUG_{output_path.stem}.html")
+            debug_path.write_text(html_string, encoding="utf-8")
+            success(f"📝 Debug HTML saved to {debug_path.resolve()}")
+
         HTML(string=html_string).write_pdf(
             str(output_path), stylesheets=[CSS(css_path)]
         )

@@ -40,36 +40,30 @@ def build(
 def render(
     deck_file: Path = typer.Argument(..., help="Deck JSON file to render"),
     format: str = typer.Option("pdf", "--format", help="Output format (pdf or html)"),
-    layout: str = typer.Option(
-        "sheet", "--layout", help="Layout type (sheet or cards)"
-    ),
+    layout: str = typer.Option("sheet", "--layout", help="Layout type: sheet or cards"),
     output: str = typer.Option(None, "--output", help="Output file path"),
     theme: str = typer.Option("default", "--theme", help="Theme to use for layout"),
-):
+    debug: bool = typer.Option(
+        False, "--debug", help="Also write raw HTML for inspection"
+    ),
+) -> None:
     """Render a deck to PDF or HTML."""
     banner("🎨 Rendering Deck")
 
     try:
-        # Set default output filename
-        if output is None:
-            output = "deck.pdf" if format == "pdf" else "deck.html"
-
         deck_path = Path(deck_file)
-        output_path = (
-            Path(output)
-            if output
-            else Path("deck.pdf" if format == "pdf" else "deck.html")
-        )
+        output_path = Path(output) if output else Path(f"deck.{format}")
 
         if format == "pdf":
             if layout == "sheet":
-                render_card_sheet_pdf(deck_path, output_path, theme)
+                render_card_sheet_pdf(deck_path, output_path, theme, debug)
             else:
-                render_card_pdf(deck_path, output_path, theme)
+                render_card_pdf(deck_path, output_path, theme, debug)
         elif format == "html":
             render_card_html(deck_path, output_path, theme)
         else:
             error("❌ Unsupported format.")
+            return
 
         success("✅ Deck rendered successfully")
 
