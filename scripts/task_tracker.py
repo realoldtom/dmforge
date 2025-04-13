@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 
+"""Task tracking utilities."""
+
 from datetime import datetime
 from pathlib import Path
 
 
 def log_task() -> None:
     """Log a microtask with timestamp and optional tag."""
-    print("\n📝 Log a Microtask")
+    print("\n Log a Microtask")
 
     task = input("Describe what you completed: ").strip()
     if not task:
@@ -21,14 +23,13 @@ def log_task() -> None:
 
     log_path = Path("task_log.md")
     if log_path.exists():
-        log_path.write_text(
-            log_path.read_text(encoding="utf-8") + entry, encoding="utf-8"
-        )
+        content = log_path.read_text(encoding="utf-8")
+        log_path.write_text(content + entry, encoding="utf-8")
     else:
         header = "# 🗂 Task Log – DMForge Microtasks\n\n"
         log_path.write_text(header + entry, encoding="utf-8")
 
-    print("✅ Task logged.")
+    print(" Task logged.")
 
 
 if __name__ == "__main__":
