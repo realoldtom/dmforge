@@ -2,6 +2,7 @@
 
 import json
 from src.fetch.srd import fetch_srd_spells
+from src.fetch.srd import fetch_srd_traits
 from unittest.mock import patch, Mock
 
 
@@ -70,4 +71,56 @@ def test_fetch_skips_if_not_forced(mock_get, tmp_path, monkeypatch):
     fetch_srd_spells(force=False)
 
     # No API call should have been made if file exists and not forced
+    mock_get.assert_not_called()
+
+
+def mock_trait_index():
+    return {
+        "results": [
+            {"index": "darkvision", "url": "/api/traits/darkvision"},
+            {"index": "dwarven-toughness", "url": "/api/traits/dwarven-toughness"},
+        ]
+    }
+
+
+def mock_trait_detail(index):
+    return {
+        "index": index,
+        "name": index.replace("-", " ").title(),
+        "desc": [f"This is the {index} trait."],
+    }
+
+
+@patch("src.fetch.srd.requests.get")
+def test_fetch_traits_creates_file(mock_get, tmp_path, monkeypatch):
+    mock_get.side_effect = [
+        Mock(status_code=200, json=lambda: mock_trait_index()),
+        Mock(status_code=200, json=lambda: mock_trait_detail("darkvision")),
+        Mock(status_code=200, json=lambda: mock_trait_detail("dwarven-toughness")),
+    ]
+
+    monkeypatch.setenv("DMFORGE_ENV", "test")
+    monkeypatch.setattr(
+        "src.fetch.srd.get_data_path", lambda filename: tmp_path / filename
+    )
+
+    fetch_srd_traits(force=True)
+
+    traits_file = tmp_path / "traits.json"
+    assert traits_file.exists()
+    data = json.loads(traits_file.read_text())
+    assert isinstance(data, list)
+    assert data[0]["index"] == "darkvision"
+
+
+@patch("src.fetch.srd.requests.get")
+def test_traits_skipped_if_not_forced(mock_get, tmp_path, monkeypatch):
+    monkeypatch.setenv("DMFORGE_ENV", "test")
+    test_file = tmp_path / "traits.json"
+    test_file.write_text("[]")  # simulate existing file
+
+    monkeypatch.setattr("src.fetch.srd.get_data_path", lambda filename: test_file)
+
+    fetch_srd_traits(force=False)
+
     mock_get.assert_not_called()

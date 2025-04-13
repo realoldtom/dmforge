@@ -60,3 +60,39 @@ def fetch_srd_spells(force: bool = False) -> None:
 
     except requests.RequestException as e:
         error(f"❌ Failed to fetch SRD spells: {e}")
+
+
+def fetch_srd_traits(force: bool = False) -> None:
+    """Fetch and cache racial traits from the 5e API.
+
+    Args:
+        force: If True, re-fetch even if local cache exists
+    """
+    banner("📥 Fetching SRD Traits")
+
+    output_file = get_data_path("traits.json")
+
+    if output_file.exists() and not force:
+        warn("traits.json already exists — use --force to re-fetch.")
+        return
+
+    try:
+        # Step 1: Get list of traits
+        index_response = requests.get(f"{BASE_URL}/api/traits")
+        index_response.raise_for_status()
+        trait_list = index_response.json()["results"]
+
+        # Step 2: Fetch individual trait details
+        traits = []
+        for trait in trait_list:
+            trait_url = f"{BASE_URL}{trait['url']}"
+            trait_response = requests.get(trait_url)
+            trait_response.raise_for_status()
+            traits.append(trait_response.json())
+
+        # Step 3: Save to local cache
+        output_file.write_text(json.dumps(traits, indent=2), encoding="utf-8")
+        success(f"✅ Saved {len(traits)} traits to {output_file}")
+
+    except requests.RequestException as e:
+        error(f"❌ Failed to fetch SRD traits: {e}")
