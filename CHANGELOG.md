@@ -85,3 +85,40 @@ Initial system foundation completed. DMForge now has a full project structure, C
 🚧 Began Phase 1: Logging, developer support tools, automation
 
 ---
+## v0.3.0 – Phase 2 Complete: CLI & Test Infrastructure  
+📅 Released: 2025-04-13
+
+### ✅ Summary  
+DMForge now has a modular CLI, full dev/prod environment support, internal helper utilities, and automated test coverage for all Phase 2 components.
+
+---
+
+### ⚙️ CLI Architecture
+- Refactored CLI into `src/cli/` using Typer
+- Added subcommands: `dmforge fetch`, `dmforge deck`
+- CLI context supports `--env` override
+- Rich-based CLI output with banners and styling
+
+---
+
+### 🧪 Test Infrastructure
+- Integrated `pytest` with `tests/` structure
+- Added coverage for:
+  - `env.py`, `paths.py`, `console.py`
+  - `snapshot.py`, `task_tracker.py`
+  - CLI root (`version`, `help`)
+- `pre-commit` with `black` + `ruff`
+
+---
+
+### 🧠 Utilities
+- `src/utils/` now includes:
+  - `env.py`: config.yaml + .env logic
+  - `paths.py`: environment-based file routing
+  - `console.py`: rich formatting helpers
+
+---
+
+### 🏁 Status
+✅ Phase 2 complete  
+🚧 Ready to begin Phase 3: SRD Fetching + Caching
