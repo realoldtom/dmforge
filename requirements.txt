@@ -1,18 +1,14 @@
-# Core tools
+# Core dependencies
 typer[all]
 rich
+requests>=2.31.0  # Ensures latest stable version
 
-# Formatting, linting, testing
+# Dev tools
 black
 ruff
 pytest
 pytest-cov
 
-# Optional: For .env support
-python-dotenv
-
 # Configuration
+python-dotenv
 pyyaml
-
-# Logging
-rich
