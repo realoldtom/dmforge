@@ -152,3 +152,39 @@ DMForge can now fetch and cache structured SRD content for downstream use in pro
 ### 🏁 Status
 ✅ Phase 3 complete  
 🚧 Ready for Phase 4: Prompt Generator
+
+
+---
+
+### 📄 `CHANGELOG.md`
+
+```markdown
+## v0.5.0 – Phase 4 Complete: AI Prompt Generator  
+📅 Released: 2025-04-13
+
+### ✅ Summary  
+DMForge can now generate AI-style text prompts for spell cards and previews.
+
+---
+
+### 🎨 Prompt Generator
+
+- `generate_spell_prompt()` formats clean natural language prompt from spell data
+- New CLI:
+  - `dmforge prompt generate` (outputs `.txt` or `.json`)
+  - `dmforge prompt show [name]` (preview a specific spell's prompt)
+
+---
+
+### 🧪 Testing
+
+- Tests for:
+  - Prompt formatting and suffixes
+  - JSON output structure
+  - CLI command `prompt show`
+
+---
+
+### 🏁 Status
+✅ Phase 4 complete  
+🚧 Next: Phase 5 – Card Layout System
