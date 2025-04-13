@@ -9,12 +9,14 @@ from src.utils.console import banner, info
 # Register subcommands
 from .deck import deck_app
 from .fetch import fetch_app
+from .prompt import prompt_app
 
 # Main CLI app
 app = typer.Typer(help="DMForge CLI – Generate spell decks, scenes, and more.")
 
 app.add_typer(fetch_app, name="fetch")
 app.add_typer(deck_app, name="deck")
+app.add_typer(prompt_app, name="prompt")
 
 
 @app.callback()

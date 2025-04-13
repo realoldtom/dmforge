@@ -1,0 +1,637 @@
+A spell called 'Acid Arrow', a level 2 Evocation spell. Used by: Wizard. A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2 in the style of a medieval woodcut
+
+A spell called 'Acid Splash', a level 0 Conjuration spell. Used by: Sorcerer, Wizard. You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a dexterity saving throw or take 1d6 ac in the style of a medieval woodcut
+
+A spell called 'Aid', a level 2 Abjuration spell. Used by: Cleric, Paladin. Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration. in the style of a medieval woodcut
+
+A spell called 'Alarm', a level 1 Abjuration spell. Used by: Ranger, Wizard. You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger in the style of a medieval woodcut
+
+A spell called 'Alter Self', a level 2 Transmutation spell. Used by: Sorcerer, Wizard. You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an in the style of a medieval woodcut
+
+A spell called 'Animal Friendship', a level 1 Enchantment spell. Used by: Bard, Druid, Ranger. This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Othe in the style of a medieval woodcut
+
+A spell called 'Animal Messenger', a level 2 Enchantment spell. Used by: Bard, Druid, Ranger. By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visi in the style of a medieval woodcut
+
+A spell called 'Animal Shapes', a level 8 Transmutation spell. Used by: Druid. Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a Large or smaller beast with a challenge rating o in the style of a medieval woodcut
+
+A spell called 'Animate Dead', a level 3 Necromancy spell. Used by: Cleric, Wizard. This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead c in the style of a medieval woodcut
+
+A spell called 'Animate Objects', a level 5 Transmutation spell. Used by: Bard, Sorcerer, Wizard. Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Hug in the style of a medieval woodcut
+
+A spell called 'Antilife Shell', a level 5 Abjuration spell. Used by: Druid. A shimmering barrier extends out from you in a 10-foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the durati in the style of a medieval woodcut
+
+A spell called 'Antimagic Field', a level 8 Abjuration spell. Used by: Cleric, Wizard. A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures di in the style of a medieval woodcut
+
+A spell called 'Antipathy/Sympathy', a level 8 Enchantment spell. Used by: Druid, Wizard. This spell attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a in the style of a medieval woodcut
+
+A spell called 'Arcane Eye', a level 4 Divination spell. Used by: Cleric, Wizard. You create an invisible, magical eye within range that hovers in the air for the duration. You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. in the style of a medieval woodcut
+
+A spell called 'Arcane Hand', a level 5 Evocation spell. Used by: Wizard. You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the move in the style of a medieval woodcut
+
+A spell called 'Arcane Lock', a level 2 Abjuration spell. Used by: Wizard. You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You in the style of a medieval woodcut
+
+A spell called 'Arcane Sword', a level 7 Evocation spell. Used by: Bard, Wizard. You create a sword-shaped plane of force that hovers within range. It lasts for the duration. When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the in the style of a medieval woodcut
+
+A spell called 'Arcanist's Magic Aura', a level 2 Illusion spell. Used by: Wizard. You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isn't being carried or wo in the style of a medieval woodcut
+
+A spell called 'Astral Projection', a level 9 Necromancy spell. Used by: Cleric, Warlock, Wizard. You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell fails and the casting is wasted if you are already on that plane). The material body you in the style of a medieval woodcut
+
+A spell called 'Augury', a level 2 Divination spell. Used by: Cleric. By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific cour in the style of a medieval woodcut
+
+A spell called 'Awaken', a level 5 Transmutation spell. Used by: Bard, Druid. After spending the casting time tracing magical pathways within a precious gemstone, you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of in the style of a medieval woodcut
+
+A spell called 'Bane', a level 1 Enchantment spell. Used by: Bard, Cleric. Up to three creatures of your choice that you can see within range must make charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the sp in the style of a medieval woodcut
+
+A spell called 'Banishment', a level 4 Abjuration spell. Used by: Cleric, Paladin, Sorcerer, Warlock, Wizard. You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a charisma saving throw or be banished. If the target is native to the plane of in the style of a medieval woodcut
+
+A spell called 'Barkskin', a level 2 Transmutation spell. Used by: Druid, Ranger. You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing. in the style of a medieval woodcut
+
+A spell called 'Beacon of Hope', a level 3 Abjuration spell. Used by: Cleric. This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on wisdom saving throws and death saving throws, and regains the maximum in the style of a medieval woodcut
+
+A spell called 'Bestow Curse', a level 3 Necromancy spell. Used by: Bard, Cleric, Wizard. You touch a creature, and that creature must succeed on a wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the followin in the style of a medieval woodcut
+
+A spell called 'Black Tentacles', a level 4 Conjuration spell. Used by: Wizard. Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain. When a creature enters t in the style of a medieval woodcut
+
+A spell called 'Blade Barrier', a level 6 Evocation spell. Used by: Cleric. You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet h in the style of a medieval woodcut
+
+A spell called 'Bless', a level 1 Enchantment spell. Used by: Cleric, Paladin. You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the a in the style of a medieval woodcut
+
+A spell called 'Blight', a level 4 Necromancy spell. Used by: Druid, Sorcerer, Warlock, Wizard. Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a constitution saving throw. The target takes 8d8 n in the style of a medieval woodcut
+
+A spell called 'Blindness/Deafness', a level 2 Necromancy spell. Used by: Bard, Cleric, Sorcerer, Wizard. You can blind or deafen a foe. Choose one creature that you can see within range to make a constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the durati in the style of a medieval woodcut
+
+A spell called 'Blink', a level 3 Transmutation spell. Used by: Sorcerer, Wizard. Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails in the style of a medieval woodcut
+
+A spell called 'Blur', a level 2 Illusion spell. Used by: Sorcerer, Wizard. Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't in the style of a medieval woodcut
+
+A spell called 'Branding Smite', a level 2 Evocation spell. Used by: Paladin. The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which be in the style of a medieval woodcut
+
+A spell called 'Burning Hands', a level 1 Evocation spell. Used by: Sorcerer, Wizard. As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a dexterity saving thro in the style of a medieval woodcut
+
+A spell called 'Call Lightning', a level 3 Conjuration spell. Used by: Druid. A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in th in the style of a medieval woodcut
+
+A spell called 'Calm Emotions', a level 2 Enchantment spell. Used by: Bard, Cleric. You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a charisma saving throw; a creature can cho in the style of a medieval woodcut
+
+A spell called 'Chain Lightning', a level 6 Evocation spell. Used by: Sorcerer, Wizard. You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be w in the style of a medieval woodcut
+
+A spell called 'Charm Person', a level 1 Enchantment spell. Used by: Bard, Druid, Sorcerer, Warlock, Wizard. You attempt to charm a humanoid you can see within range. It must make a wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is in the style of a medieval woodcut
+
+A spell called 'Chill Touch', a level 0 Necromancy spell. Used by: Sorcerer, Warlock, Wizard. You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 ne in the style of a medieval woodcut
+
+A spell called 'Circle of Death', a level 6 Necromancy spell. Used by: Sorcerer, Warlock, Wizard. A sphere of negative energy ripples out in a 60-foot radius sphere from a point within range. Each creature in that area must make a constitution saving throw. A target takes 8d6 necrotic damage on a in the style of a medieval woodcut
+
+A spell called 'Clairvoyance', a level 3 Divination spell. Used by: Bard, Cleric, Sorcerer, Wizard. You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a in the style of a medieval woodcut
+
+A spell called 'Clone', a level 8 Necromancy spell. Used by: Wizard. This spell grows an inert duplicate of a living creature as a safeguard against death. This clone forms inside a sealed vessel and grows to full size and maturity after 120 days; you can also choose t in the style of a medieval woodcut
+
+A spell called 'Cloudkill', a level 5 Conjuration spell. Used by: Sorcerer, Wizard. You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses in the style of a medieval woodcut
+
+A spell called 'Color Spray', a level 1 Illusion spell. Used by: Sorcerer, Wizard. A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are in the style of a medieval woodcut
+
+A spell called 'Command', a level 1 Enchantment spell. Used by: Cleric, Paladin. You speak a one-word command to a creature you can see within range. The target must succeed on a wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is u in the style of a medieval woodcut
+
+A spell called 'Commune', a level 5 Divination spell. Used by: Cleric. You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each q in the style of a medieval woodcut
+
+A spell called 'Commune With Nature', a level 5 Divination spell. Used by: Druid, Ranger. You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural undergr in the style of a medieval woodcut
+
+A spell called 'Comprehend Languages', a level 1 Divination spell. Used by: Bard, Sorcerer, Warlock, Wizard. For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the word in the style of a medieval woodcut
+
+A spell called 'Compulsion', a level 4 Enchantment spell. Used by: Bard. Creatures of your choice that you can see within range and that can hear you must make a wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On a failed s in the style of a medieval woodcut
+
+A spell called 'Cone of Cold', a level 5 Evocation spell. Used by: Sorcerer, Wizard. A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a succes in the style of a medieval woodcut
+
+A spell called 'Confusion', a level 4 Enchantment spell. Used by: Bard, Druid, Sorcerer, Wizard. This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed in the style of a medieval woodcut
+
+A spell called 'Conjure Animals', a level 3 Conjuration spell. Used by: Druid, Ranger. You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears: - One beast of challenge rating in the style of a medieval woodcut
+
+A spell called 'Conjure Celestial', a level 7 Conjuration spell. Used by: Cleric. You summon a celestial of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends in the style of a medieval woodcut
+
+A spell called 'Conjure Elemental', a level 5 Conjuration spell. Used by: Druid, Wizard. You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose in the style of a medieval woodcut
+
+A spell called 'Conjure Fey', a level 6 Conjuration spell. Used by: Druid, Warlock. You summon a fey creature of challenge rating 6 or lower, or a fey spirit that takes the form of a beast of challenge rating 6 or lower. It appears in an unoccupied space that you can see within range in the style of a medieval woodcut
+
+A spell called 'Conjure Minor Elementals', a level 4 Conjuration spell. Used by: Druid, Wizard. You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears: - One elemental of challenge rating 2 or lower - Two elemen in the style of a medieval woodcut
+
+A spell called 'Conjure Woodland Beings', a level 4 Conjuration spell. Used by: Druid, Ranger. You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears: - One fey creature of challenge rating 2 or lower - Two f in the style of a medieval woodcut
+
+A spell called 'Contact Other Plane', a level 5 Divination spell. Used by: Warlock, Wizard. You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When yo in the style of a medieval woodcut
+
+A spell called 'Contagion', a level 5 Necromancy spell. Used by: Cleric, Druid. Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with a disease of your choice from any of the ones described below. At t in the style of a medieval woodcut
+
+A spell called 'Contingency', a level 6 Evocation spell. Used by: Wizard. Choose a spell of 5th level or lower that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell--called the contingent spell--as part of casting contingency, in the style of a medieval woodcut
+
+A spell called 'Continual Flame', a level 2 Evocation spell. Used by: Cleric, Wizard. A flame, equivalent in brightness to a torch, springs forth from an object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can b in the style of a medieval woodcut
+
+A spell called 'Control Water', a level 4 Transmutation spell. Used by: Cleric, Druid, Wizard. Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. A in the style of a medieval woodcut
+
+A spell called 'Control Weather', a level 8 Transmutation spell. Used by: Cleric, Druid, Wizard. You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early. Wh in the style of a medieval woodcut
+
+A spell called 'Counterspell', a level 3 Abjuration spell. Used by: Sorcerer, Warlock, Wizard. You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th leve in the style of a medieval woodcut
+
+A spell called 'Create Food and Water', a level 3 Conjuration spell. Used by: Cleric, Druid, Paladin. You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishin in the style of a medieval woodcut
+
+A spell called 'Create or Destroy Water', a level 1 Transmutation spell. Used by: Cleric, Druid. You either create or destroy water. ***Create Water.*** You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within ra in the style of a medieval woodcut
+
+A spell called 'Create Undead', a level 6 Necromancy spell. Used by: Cleric, Warlock, Wizard. You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids within range. Each corpse becomes a ghoul under your control. (The GM has game statistics for these creat in the style of a medieval woodcut
+
+A spell called 'Creation', a level 5 Illusion spell. Used by: Sorcerer, Wizard. You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create in the style of a medieval woodcut
+
+A spell called 'Cure Wounds', a level 1 Evocation spell. Used by: Bard, Cleric, Druid, Paladin, Ranger. A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs. in the style of a medieval woodcut
+
+A spell called 'Dancing Lights', a level 0 Evocation spell. Used by: Bard, Sorcerer, Wizard. You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one gl in the style of a medieval woodcut
+
+A spell called 'Darkness', a level 2 Evocation spell. Used by: Sorcerer, Warlock, Wizard. Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this d in the style of a medieval woodcut
+
+A spell called 'Darkvision', a level 2 Transmutation spell. Used by: Druid, Ranger, Sorcerer, Wizard. You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet. in the style of a medieval woodcut
+
+A spell called 'Daylight', a level 3 Evocation spell. Used by: Cleric, Druid, Paladin, Ranger, Sorcerer. A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet. If you chose a point on an object you are h in the style of a medieval woodcut
+
+A spell called 'Death Ward', a level 4 Abjuration spell. Used by: Cleric, Paladin. You touch a creature and grant it a measure of protection from death. The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and th in the style of a medieval woodcut
+
+A spell called 'Delayed Blast Fireball', a level 7 Evocation spell. Used by: Sorcerer, Wizard. A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your concentra in the style of a medieval woodcut
+
+A spell called 'Demiplane', a level 8 Conjuration spell. Used by: Warlock, Wizard. You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demipla in the style of a medieval woodcut
+
+A spell called 'Detect Evil and Good', a level 1 Divination spell. Used by: Cleric, Paladin. For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a pla in the style of a medieval woodcut
+
+A spell called 'Detect Magic', a level 1 Divination spell. Used by: Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Wizard. For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area t in the style of a medieval woodcut
+
+A spell called 'Detect Poison and Disease', a level 1 Divination spell. Used by: Cleric, Druid, Paladin, Ranger. For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in e in the style of a medieval woodcut
+
+A spell called 'Detect Thoughts', a level 2 Divination spell. Used by: Bard, Sorcerer, Wizard. For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can in the style of a medieval woodcut
+
+A spell called 'Dimension Door', a level 4 Conjuration spell. Used by: Bard, Sorcerer, Warlock, Wizard. You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe b in the style of a medieval woodcut
+
+A spell called 'Disguise Self', a level 1 Illusion spell. Used by: Bard, Sorcerer, Wizard. You make yourself--including your clothing, armor, weapons, and other belongings on your person--look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot sho in the style of a medieval woodcut
+
+A spell called 'Disintegrate', a level 6 Transmutation spell. Used by: Sorcerer, Wizard. A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by wall in the style of a medieval woodcut
+
+A spell called 'Dispel Evil and Good', a level 5 Abjuration spell. Used by: Cleric, Paladin. Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvan in the style of a medieval woodcut
+
+A spell called 'Dispel Magic', a level 3 Abjuration spell. Used by: Bard, Cleric, Druid, Paladin, Sorcerer, Warlock, Wizard. Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your s in the style of a medieval woodcut
+
+A spell called 'Divination', a level 4 Divination spell. Used by: Druid. Your magic and an offering put you in contact with a god or a god's servants. You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The GM offers a truthful in the style of a medieval woodcut
+
+A spell called 'Divine Favor', a level 1 Evocation spell. Used by: Paladin. Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit. in the style of a medieval woodcut
+
+A spell called 'Divine Word', a level 7 Evocation spell. Used by: Cleric. You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Chari in the style of a medieval woodcut
+
+A spell called 'Dominate Beast', a level 4 Enchantment spell. Used by: Druid, Sorcerer. You attempt to beguile a creature that you can see within range. It must succeed on a wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighti in the style of a medieval woodcut
+
+A spell called 'Dominate Monster', a level 8 Enchantment spell. Used by: Bard, Sorcerer, Warlock, Wizard. You attempt to beguile a creature that you can see within range. It must succeed on a wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighti in the style of a medieval woodcut
+
+A spell called 'Dominate Person', a level 5 Enchantment spell. Used by: Bard, Sorcerer, Wizard. You attempt to beguile a humanoid that you can see within range. It must succeed on a wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighti in the style of a medieval woodcut
+
+A spell called 'Dream', a level 5 Illusion spell. Used by: Bard, Warlock, Wizard. This spell shapes a creature's dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, in the style of a medieval woodcut
+
+A spell called 'Druidcraft', a level 0 Transmutation spell. Used by: Druid. Whispering to the spirits of nature, you create one of the following effects within 'range': - You create a tiny, harmless sensory effect that predicts what the weather will be at your location for th in the style of a medieval woodcut
+
+A spell called 'Earthquake', a level 8 Evocation spell. Used by: Cleric, Druid, Sorcerer. You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point in the style of a medieval woodcut
+
+A spell called 'Eldritch Blast', a level 0 Evocation spell. Used by: Warlock. A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage. The spell creates more than one beam whe in the style of a medieval woodcut
+
+A spell called 'Enhance Ability', a level 2 Transmutation spell. Used by: Bard, Cleric, Druid, Sorcerer. You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends. ***Bear's Endurance.*** The target has advantage in the style of a medieval woodcut
+
+A spell called 'Enlarge/Reduce', a level 2 Transmutation spell. Used by: Sorcerer, Wizard. You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwillin in the style of a medieval woodcut
+
+A spell called 'Entangle', a level 1 Conjuration spell. Used by: Druid. Grasping weeds and vines sprout from the ground in a 20-foot square starting form a point within range. For the duration, these plants turn the ground in the area into difficult terrain. A creature in in the style of a medieval woodcut
+
+A spell called 'Enthrall', a level 2 Enchantment spell. Used by: Bard, Warlock. You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a wisdom saving throw. Any creature that can't be charmed succeeds in the style of a medieval woodcut
+
+A spell called 'Etherealness', a level 7 Transmutation spell. Used by: Bard, Cleric, Sorcerer, Warlock, Wizard. You step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use your action to dismis in the style of a medieval woodcut
+
+A spell called 'Expeditious Retreat', a level 1 Transmutation spell. Used by: Sorcerer, Warlock, Wizard. This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action. in the style of a medieval woodcut
+
+A spell called 'Eyebite', a level 6 Necromancy spell. Used by: Bard, Sorcerer, Warlock, Wizard. For the spell's duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a wisdom saving throw or be affected in the style of a medieval woodcut
+
+A spell called 'Fabricate', a level 4 Transmutation spell. Used by: Wizard. You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, and clothes from flax or wool. Choose r in the style of a medieval woodcut
+
+A spell called 'Faerie Fire', a level 1 Evocation spell. Used by: Druid. Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a dexterity in the style of a medieval woodcut
+
+A spell called 'Faithful Hound', a level 4 Conjuration spell. Used by: Wizard. You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away fro in the style of a medieval woodcut
+
+A spell called 'False Life', a level 1 Necromancy spell. Used by: Sorcerer, Wizard. Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration. in the style of a medieval woodcut
+
+A spell called 'Fear', a level 3 Illusion spell. Used by: Bard, Sorcerer, Warlock, Wizard. You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a wisdom saving throw or drop whatever it is holding and become frightened for the duration. in the style of a medieval woodcut
+
+A spell called 'Feather Fall', a level 1 Transmutation spell. Used by: Bard, Sorcerer, Wizard. Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling in the style of a medieval woodcut
+
+A spell called 'Feeblemind', a level 8 Enchantment spell. Used by: Bard, Druid, Warlock, Wizard. You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an intelligence saving throw. On in the style of a medieval woodcut
+
+A spell called 'Find Familiar', a level 1 Conjuration spell. Used by: Wizard. You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spid in the style of a medieval woodcut
+
+A spell called 'Find Steed', a level 2 Conjuration spell. Used by: Paladin. You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on in the style of a medieval woodcut
+
+A spell called 'Find the Path', a level 6 Divination spell. Used by: Bard, Cleric, Druid. This spell allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plan in the style of a medieval woodcut
+
+A spell called 'Find Traps', a level 2 Divination spell. Used by: Cleric, Druid, Ranger. You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider har in the style of a medieval woodcut
+
+A spell called 'Finger of Death', a level 7 Necromancy spell. Used by: Sorcerer, Warlock, Wizard. You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a constitution saving throw. It takes 7d8 + 30 necrotic damage on a fa in the style of a medieval woodcut
+
+A spell called 'Fire Bolt', a level 0 Evocation spell. Used by: Sorcerer, Wizard. You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites i in the style of a medieval woodcut
+
+A spell called 'Fire Shield', a level 4 Evocation spell. Used by: Wizard. Thin and vaporous flame surround your body for the duration of the spell, radiating a bright light bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell using in the style of a medieval woodcut
+
+A spell called 'Fire Storm', a level 7 Evocation spell. Used by: Cleric, Druid, Sorcerer. A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must h in the style of a medieval woodcut
+
+A spell called 'Fireball', a level 3 Evocation spell. Used by: Sorcerer, Wizard. A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on in the style of a medieval woodcut
+
+A spell called 'Flame Blade', a level 2 Evocation spell. Used by: Druid. You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade a in the style of a medieval woodcut
+
+A spell called 'Flame Strike', a level 5 Evocation spell. Used by: Cleric. A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a dexterity in the style of a medieval woodcut
+
+A spell called 'Flaming Sphere', a level 2 Conjuration spell. Used by: Druid, Wizard. A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a dexterit in the style of a medieval woodcut
+
+A spell called 'Flesh to Stone', a level 6 Transmutation spell. Used by: Warlock, Wizard. You attempt to turn one creature that you can see within range into stone. If the target's body is made of flesh, the creature must make a constitution saving throw. On a failed save, it is restrained in the style of a medieval woodcut
+
+A spell called 'Floating Disk', a level 1 Conjuration spell. Used by: Wizard. This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. in the style of a medieval woodcut
+
+A spell called 'Fly', a level 3 Transmutation spell. Used by: Sorcerer, Warlock, Wizard. You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall. in the style of a medieval woodcut
+
+A spell called 'Fog Cloud', a level 1 Conjuration spell. Used by: Druid, Ranger, Sorcerer, Wizard. You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate o in the style of a medieval woodcut
+
+A spell called 'Forbiddance', a level 6 Abjuration spell. Used by: Cleric. You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use p in the style of a medieval woodcut
+
+A spell called 'Forcecage', a level 7 Evocation spell. Used by: Bard, Warlock, Wizard. An immobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box, as you choose. A prison in in the style of a medieval woodcut
+
+A spell called 'Foresight', a level 9 Divination spell. Used by: Bard, Druid, Warlock, Wizard. You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target can't be surprised and has advantage on attack rolls, ability checks, and savin in the style of a medieval woodcut
+
+A spell called 'Freedom of Movement', a level 4 Abjuration spell. Used by: Bard, Cleric, Druid, Ranger. You touch a willing creature. For the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the targe in the style of a medieval woodcut
+
+A spell called 'Freezing Sphere', a level 6 Evocation spell. Used by: Wizard. A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a constitution in the style of a medieval woodcut
+
+A spell called 'Gaseous Form', a level 3 Transmutation spell. Used by: Sorcerer, Warlock, Wizard. You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal c in the style of a medieval woodcut
+
+A spell called 'Gate', a level 9 Conjuration spell. Used by: Cleric, Sorcerer, Wizard. You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in in the style of a medieval woodcut
+
+A spell called 'Geas', a level 5 Enchantment spell. Used by: Bard, Cleric, Druid, Paladin, Wizard. You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can under in the style of a medieval woodcut
+
+A spell called 'Gentle Repose', a level 2 Necromancy spell. Used by: Cleric, Wizard. You touch a corpse or other remains. For the duration, the target is protected from decay and can't become undead. The spell also effectively extends the time limit on raising the target from the dead in the style of a medieval woodcut
+
+A spell called 'Giant Insect', a level 4 Transmutation spell. Used by: Druid. You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration. A centipede becomes a giant centipede, a spider in the style of a medieval woodcut
+
+A spell called 'Glibness', a level 8 Transmutation spell. Used by: Bard, Warlock. Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indic in the style of a medieval woodcut
+
+A spell called 'Globe of Invulnerability', a level 6 Abjuration spell. Used by: Sorcerer, Wizard. An immobile, faintly shimmering barrier springs into existence in a 10-foot radius around you and remains for the duration. Any spell of 5th level or lower cast from outside the barrier can't affect c in the style of a medieval woodcut
+
+A spell called 'Glyph of Warding', a level 3 Abjuration spell. Used by: Bard, Cleric, Wizard. When you cast this spell, you inscribe a glyph that harms other creatures, either upon a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, in the style of a medieval woodcut
+
+A spell called 'Goodberry', a level 1 Transmutation spell. Used by: Druid, Ranger. Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough no in the style of a medieval woodcut
+
+A spell called 'Grease', a level 1 Conjuration spell. Used by: Wizard. Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration. When the grease appears, each creature standing in its area mu in the style of a medieval woodcut
+
+A spell called 'Greater Invisibility', a level 4 Illusion spell. Used by: Bard, Sorcerer, Wizard. You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. in the style of a medieval woodcut
+
+A spell called 'Greater Restoration', a level 5 Abjuration spell. Used by: Bard, Cleric, Druid. You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's exhaustion level by one, or end one of the following effects on the target: - One effect in the style of a medieval woodcut
+
+A spell called 'Guardian of Faith', a level 4 Conjuration spell. Used by: Cleric. A Large spectral guardian appears and hovers for the duration in an unoccupied space of your choice that you can see within range. The guardian occupies that space and is indistinct except for a gleam in the style of a medieval woodcut
+
+A spell called 'Guards and Wards', a level 6 Abjuration spell. Used by: Bard, Wizard. You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet square, or one hundred 5-foot squares or twenty-five 10-foot squares). The warded area can be up to 20 feet tall in the style of a medieval woodcut
+
+A spell called 'Guidance', a level 0 Divination spell. Used by: Cleric, Druid. You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the abilit in the style of a medieval woodcut
+
+A spell called 'Guiding Bolt', a level 1 Evocation spell. Used by: Cleric. A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made agai in the style of a medieval woodcut
+
+A spell called 'Gust of Wind', a level 2 Evocation spell. Used by: Druid, Sorcerer, Wizard. A line of strong wind 60 feet long and 10 feet wide blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a strength saving in the style of a medieval woodcut
+
+A spell called 'Hallow', a level 5 Evocation spell. Used by: Cleric. You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect a hall in the style of a medieval woodcut
+
+A spell called 'Hallucinatory Terrain', a level 4 Illusion spell. Used by: Bard, Druid, Warlock, Wizard. You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or som in the style of a medieval woodcut
+
+A spell called 'Harm', a level 6 Necromancy spell. Used by: Cleric. You unleash a virulent disease on a creature that you can see within range. The target must make a constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on in the style of a medieval woodcut
+
+A spell called 'Haste', a level 3 Transmutation spell. Used by: Sorcerer, Wizard. Choose a willing creature that you can see within range. Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on dexterity saving throws, and it gains an ad in the style of a medieval woodcut
+
+A spell called 'Heal', a level 6 Evocation spell. Used by: Cleric, Druid. Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases in the style of a medieval woodcut
+
+A spell called 'Healing Word', a level 1 Evocation spell. Used by: Bard, Cleric, Druid. A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. in the style of a medieval woodcut
+
+A spell called 'Heat Metal', a level 2 Transmutation spell. Used by: Bard, Druid. Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical conta in the style of a medieval woodcut
+
+A spell called 'Hellish Rebuke', a level 1 Evocation spell. Used by: Warlock. You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a dexterity saving throw. It takes 2d10 fire damage on a failed save, or ha in the style of a medieval woodcut
+
+A spell called 'Heroes' Feast', a level 6 Conjuration spell. Used by: Cleric, Druid. You bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to consume and disappears at the end of that time, and the beneficial effects don't set in until this hour i in the style of a medieval woodcut
+
+A spell called 'Heroism', a level 1 Enchantment spell. Used by: Bard, Paladin. A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the in the style of a medieval woodcut
+
+A spell called 'Hideous Laughter', a level 1 Enchantment spell. Used by: Bard, Wizard. A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a wisdom saving t in the style of a medieval woodcut
+
+A spell called 'Hold Monster', a level 5 Enchantment spell. Used by: Bard, Sorcerer, Warlock, Wizard. Choose a creature you can see and reach. The target must make a saving throw of Wisdom or be paralyzed for the duration of the spell. This spell has no effect against the undead. At the end of each ro in the style of a medieval woodcut
+
+A spell called 'Hold Person', a level 2 Enchantment spell. Used by: Bard, Cleric, Druid, Sorcerer, Warlock, Wizard. Choose a humanoid that you can see within range. The target must succeed on a wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another wisdom in the style of a medieval woodcut
+
+A spell called 'Holy Aura', a level 8 Abjuration spell. Used by: Cleric. Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and in the style of a medieval woodcut
+
+A spell called 'Hunter's Mark', a level 1 Divination spell. Used by: Ranger. You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you in the style of a medieval woodcut
+
+A spell called 'Hypnotic Pattern', a level 3 Illusion spell. Used by: Bard, Sorcerer, Warlock, Wizard. You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern mu in the style of a medieval woodcut
+
+A spell called 'Ice Storm', a level 4 Evocation spell. Used by: Druid, Sorcerer, Wizard. A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a dexterity saving throw. A creature t in the style of a medieval woodcut
+
+A spell called 'Identify', a level 1 Divination spell. Used by: Bard, Wizard. You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it require in the style of a medieval woodcut
+
+A spell called 'Illusory Script', a level 1 Illusion spell. Used by: Bard, Warlock, Wizard. You write on parchment, paper, or some other suitable writing material and imbue it with a potent illusion that lasts for the duration. To you and any creatures you designate when you cast the spell, in the style of a medieval woodcut
+
+A spell called 'Imprisonment', a level 9 Abjuration spell. Used by: Warlock, Wizard. You create a magical restraint to hold a creature that you can see within range. The target must succeed on a wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this spell i in the style of a medieval woodcut
+
+A spell called 'Incendiary Cloud', a level 8 Conjuration spell. Used by: Sorcerer, Wizard. A swirling cloud of smoke shot through with white-hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is heavily obscured. It lasts for in the style of a medieval woodcut
+
+A spell called 'Inflict Wounds', a level 1 Necromancy spell. Used by: Cleric. Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage. in the style of a medieval woodcut
+
+A spell called 'Insect Plague', a level 5 Conjuration spell. Used by: Cleric, Druid, Sorcerer. Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscu in the style of a medieval woodcut
+
+A spell called 'Instant Summons', a level 6 Conjuration spell. Used by: Wizard. You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an invisible mark on its surface and invisibly inscribes the name of the item on the sapphire in the style of a medieval woodcut
+
+A spell called 'Invisibility', a level 2 Illusion spell. Used by: Bard, Sorcerer, Warlock, Wizard. A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks o in the style of a medieval woodcut
+
+A spell called 'Irresistible Dance', a level 6 Enchantment spell. Used by: Bard, Wizard. Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be charmed are immune to t in the style of a medieval woodcut
+
+A spell called 'Jump', a level 1 Transmutation spell. Used by: Druid, Ranger, Sorcerer, Wizard. You touch a creature. The creature's jump distance is tripled until the spell ends. in the style of a medieval woodcut
+
+A spell called 'Knock', a level 2 Transmutation spell. Used by: Bard, Sorcerer, Wizard. Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that contains a mundane or magical means that prevents access. in the style of a medieval woodcut
+
+A spell called 'Legend Lore', a level 5 Divination spell. Used by: Bard, Cleric, Wizard. Name or describe a person, place, or object. The spell brings to your mind a brief summary of the significant lore about the thing you named. The lore might consist of current tales, forgotten stories in the style of a medieval woodcut
+
+A spell called 'Lesser Restoration', a level 2 Abjuration spell. Used by: Bard, Cleric, Druid, Paladin, Ranger. You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned. in the style of a medieval woodcut
+
+A spell called 'Levitate', a level 2 Transmutation spell. Used by: Sorcerer, Wizard. One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 in the style of a medieval woodcut
+
+A spell called 'Light', a level 0 Evocation spell. Used by: Bard, Cleric, Sorcerer, Wizard. You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be in the style of a medieval woodcut
+
+A spell called 'Lightning Bolt', a level 3 Evocation spell. Used by: Sorcerer, Wizard. A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a dexterity saving throw. A creature takes 8d6 lig in the style of a medieval woodcut
+
+A spell called 'Locate Animals or Plants', a level 2 Divination spell. Used by: Bard, Druid, Ranger. Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within in the style of a medieval woodcut
+
+A spell called 'Locate Creature', a level 4 Divination spell. Used by: Bard, Cleric, Druid, Paladin, Ranger, Wizard. Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the d in the style of a medieval woodcut
+
+A spell called 'Locate Object', a level 2 Divination spell. Used by: Bard, Cleric, Druid, Paladin, Ranger, Wizard. Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direc in the style of a medieval woodcut
+
+A spell called 'Longstrider', a level 1 Transmutation spell. Used by: Bard, Druid, Ranger, Wizard. You touch a creature. The target's speed increases by 10 feet until the spell ends. in the style of a medieval woodcut
+
+A spell called 'Mage Armor', a level 1 Abjuration spell. Used by: Sorcerer, Wizard. You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the in the style of a medieval woodcut
+
+A spell called 'Mage Hand', a level 0 Conjuration spell. Used by: Bard, Sorcerer, Warlock, Wizard. A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from in the style of a medieval woodcut
+
+A spell called 'Magic Circle', a level 3 Abjuration spell. Used by: Cleric, Paladin, Warlock, Wizard. You create a 10-foot radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear whenever the cylinder intersects with the flo in the style of a medieval woodcut
+
+A spell called 'Magic Jar', a level 6 Necromancy spell. Used by: Wizard. Your body falls into a catatonic state as your soul leaves it and enters the container you used for the spell's material component. While your soul inhabits the container, you are aware of your surrou in the style of a medieval woodcut
+
+A spell called 'Magic Missile', a level 1 Evocation spell. Used by: Sorcerer, Wizard. You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultane in the style of a medieval woodcut
+
+A spell called 'Magic Mouth', a level 2 Illusion spell. Used by: Bard, Wizard. You plant a message to an object in the range of the spell. The message is verbalized when the trigger conditions are met. Choose an object that you see, and that is not worn or carried by another cre in the style of a medieval woodcut
+
+A spell called 'Magic Weapon', a level 2 Transmutation spell. Used by: Paladin, Wizard. You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls. in the style of a medieval woodcut
+
+A spell called 'Magnificent Mansion', a level 7 Conjuration spell. Used by: Bard, Wizard. You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and in the style of a medieval woodcut
+
+A spell called 'Major Image', a level 3 Illusion spell. Used by: Bard, Sorcerer, Warlock, Wizard. You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 20-foot cube. The image appears at a spot that you can see within range and lasts for the durat in the style of a medieval woodcut
+
+A spell called 'Mass Cure Wounds', a level 5 Conjuration spell. Used by: Bard, Cleric, Druid. A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 in the style of a medieval woodcut
+
+A spell called 'Mass Heal', a level 9 Conjuration spell. Used by: Cleric. A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatur in the style of a medieval woodcut
+
+A spell called 'Mass Healing Word', a level 3 Evocation spell. Used by: Cleric. As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on in the style of a medieval woodcut
+
+A spell called 'Mass Suggestion', a level 6 Enchantment spell. Used by: Bard, Sorcerer, Warlock, Wizard. You suggest a course of activity (limited to a sentence or two) and magically influence up to twelve creatures of your choice that you can see within range and that can hear and understand you. Creatu in the style of a medieval woodcut
+
+A spell called 'Maze', a level 8 Conjuration spell. Used by: Wizard. You banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze. The target can use its action to attempt to e in the style of a medieval woodcut
+
+A spell called 'Meld Into Stone', a level 3 Transmutation spell. Used by: Cleric. You step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. Using your movement, you step into th in the style of a medieval woodcut
+
+A spell called 'Mending', a level 0 Transmutation spell. Used by: Cleric, Bard, Druid, Sorcerer, Wizard. This spell repairs a single break or tear in an object you touch, such as a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no longer than 1 foot in any dimension, you in the style of a medieval woodcut
+
+A spell called 'Message', a level 0 Transmutation spell. Used by: Bard, Sorcerer, Wizard. You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. You can cast this spel in the style of a medieval woodcut
+
+A spell called 'Meteor Swarm', a level 9 Evocation spell. Used by: Sorcerer, Wizard. Blazing orbs of fire plummet to the ground at four different points you can see within range. Each creature in a 40-foot-radius sphere centered on each point you choose must make a dexterity saving th in the style of a medieval woodcut
+
+A spell called 'Mind Blank', a level 8 Abjuration spell. Used by: Bard, Wizard. Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the charmed condition. The spell in the style of a medieval woodcut
+
+A spell called 'Minor Illusion', a level 0 Illusion spell. Used by: Bard, Sorcerer, Warlock, Wizard. You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again. If you create a sound, its volume in the style of a medieval woodcut
+
+A spell called 'Mirage Arcane', a level 7 Illusion spell. Used by: Bard, Druid, Wizard. You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. The terrain's general shape remains the same, however. Open fields or a road could be in the style of a medieval woodcut
+
+A spell called 'Mirror Image', a level 2 Illusion spell. Used by: Sorcerer, Warlock, Wizard. Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real in the style of a medieval woodcut
+
+A spell called 'Mislead', a level 5 Illusion spell. Used by: Bard, Wizard. You become invisible at the same time that an illusory double of you appears where you are standing. The double lasts for the duration, but the invisibility ends if you attack or cast a spell. You can in the style of a medieval woodcut
+
+A spell called 'Misty Step', a level 2 Conjuration spell. Used by: Sorcerer, Warlock, Wizard. Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see. in the style of a medieval woodcut
+
+A spell called 'Modify Memory', a level 5 Enchantment spell. Used by: Bard, Wizard. You attempt to reshape another creature's memories. One creature that you can see must make a wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed s in the style of a medieval woodcut
+
+A spell called 'Moonbeam', a level 2 Evocation spell. Used by: Druid. A silvery beam of pale light shines down in a 5-foot radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spel in the style of a medieval woodcut
+
+A spell called 'Move Earth', a level 6 Transmutation spell. Used by: Druid, Sorcerer, Wizard. Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt, sand, or clay in the area in any manner you choose for the duration. You can raise or lower the area's el in the style of a medieval woodcut
+
+A spell called 'Nondetection', a level 3 Abjuration spell. Used by: Bard, Ranger, Wizard. For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targ in the style of a medieval woodcut
+
+A spell called 'Pass Without Trace', a level 2 Abjuration spell. Used by: Druid, Ranger. A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dex in the style of a medieval woodcut
+
+A spell called 'Passwall', a level 5 Transmutation spell. Used by: Wizard. A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the ope in the style of a medieval woodcut
+
+A spell called 'Phantasmal Killer', a level 4 Illusion spell. Used by: Wizard. You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a wisdom saving throw. in the style of a medieval woodcut
+
+A spell called 'Phantom Steed', a level 3 Illusion spell. Used by: Wizard. A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle in the style of a medieval woodcut
+
+A spell called 'Planar Ally', a level 6 Conjuration spell. Used by: Cleric. You beseech an otherworldly entity for aid. The being must be known to you: a god, a primordial, a demon prince, or some other being of cosmic power. That entity sends a celestial, an elemental, or a in the style of a medieval woodcut
+
+A spell called 'Planar Binding', a level 5 Abjuration spell. Used by: Bard, Cleric, Druid, Wizard. With this spell, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is fi in the style of a medieval woodcut
+
+A spell called 'Plane Shift', a level 7 Conjuration spell. Used by: Cleric, Druid, Sorcerer, Warlock, Wizard. You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on in the style of a medieval woodcut
+
+A spell called 'Plant Growth', a level 3 Transmutation spell. Used by: Bard, Druid, Ranger. This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits. If you cast this spell using 1 action, choo in the style of a medieval woodcut
+
+A spell called 'Poison Spray', a level 0 Conjuration spell. Used by: Sorcerer, Warlock, Wizard, Druid. You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a constitution saving throw or take 1d12 poison damage. T in the style of a medieval woodcut
+
+A spell called 'Polymorph', a level 4 Transmutation spell. Used by: Bard, Druid, Sorcerer, Wizard. This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a wisdom saving throw to avoid the effect. A shapechanger automatically succeeds on this in the style of a medieval woodcut
+
+A spell called 'Power Word Kill', a level 9 Enchantment spell. Used by: Bard, Sorcerer, Warlock, Wizard. You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect. in the style of a medieval woodcut
+
+A spell called 'Power Word Stun', a level 8 Enchantment spell. Used by: Bard, Sorcerer, Warlock, Wizard. You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned. Otherwise, the spell h in the style of a medieval woodcut
+
+A spell called 'Prayer of Healing', a level 2 Evocation spell. Used by: Cleric. Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs. in the style of a medieval woodcut
+
+A spell called 'Prestidigitation', a level 0 Transmutation spell. Used by: Bard, Sorcerer, Warlock, Wizard. This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range': You create an instantaneous, harmless sensory effect, suc in the style of a medieval woodcut
+
+A spell called 'Prismatic Spray', a level 7 Evocation spell. Used by: Sorcerer, Wizard. Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a dexterity saving throw. For each in the style of a medieval woodcut
+
+A spell called 'Prismatic Wall', a level 9 Abjuration spell. Used by: Wizard. A shimmering, multicolored plane of light forms a vertical opaque wall--up to 90 feet long, 30 feet high, and 1 inch thick--centered on a point you can see within range. Alternatively, you can shape t in the style of a medieval woodcut
+
+A spell called 'Private Sanctum', a level 4 Abjuration spell. Used by: Wizard. You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration or until you use an action to d in the style of a medieval woodcut
+
+A spell called 'Produce Flame', a level 0 Conjuration spell. Used by: Druid. A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additi in the style of a medieval woodcut
+
+A spell called 'Programmed Illusion', a level 6 Illusion spell. Used by: Bard, Wizard. You create an illusion of an object, a creature, or some other visible phenomenon within range that activates when a specific condition occurs. The illusion is imperceptible until then. It must be no in the style of a medieval woodcut
+
+A spell called 'Project Image', a level 7 Illusion spell. Used by: Bard, Wizard. You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within range that you have seen before, regardless of intervening obstacles. The illusion looks in the style of a medieval woodcut
+
+A spell called 'Protection From Energy', a level 3 Abjuration spell. Used by: Cleric, Druid, Ranger, Sorcerer, Wizard. For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder. in the style of a medieval woodcut
+
+A spell called 'Protection from Evil and Good', a level 1 Abjuration spell. Used by: Cleric, Paladin, Warlock, Wizard. Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead. The protection grants several benefi in the style of a medieval woodcut
+
+A spell called 'Protection from Poison', a level 2 Abjuration spell. Used by: Cleric, Druid, Paladin, Ranger. You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random. Fo in the style of a medieval woodcut
+
+A spell called 'Purify Food and Drink', a level 1 Transmutation spell. Used by: Cleric, Druid, Paladin. All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease. in the style of a medieval woodcut
+
+A spell called 'Raise Dead', a level 5 Necromancy spell. Used by: Bard, Cleric, Paladin. You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to l in the style of a medieval woodcut
+
+A spell called 'Ray of Enfeeblement', a level 2 Necromancy spell. Used by: Warlock, Wizard. A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attack in the style of a medieval woodcut
+
+A spell called 'Ray of Frost', a level 0 Evocation spell. Used by: Sorcerer, Wizard. A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until t in the style of a medieval woodcut
+
+A spell called 'Regenerate', a level 7 Transmutation spell. Used by: Bard, Cleric, Druid. You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns in the style of a medieval woodcut
+
+A spell called 'Reincarnate', a level 5 Transmutation spell. Used by: Druid. You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that in the style of a medieval woodcut
+
+A spell called 'Remove Curse', a level 3 Abjuration spell. Used by: Cleric, Paladin, Warlock, Wizard. At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed in the style of a medieval woodcut
+
+A spell called 'Resilient Sphere', a level 4 Evocation spell. Used by: Wizard. A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a dexterity saving throw. On a failed save, the creature is enclosed f in the style of a medieval woodcut
+
+A spell called 'Resistance', a level 0 Abjuration spell. Used by: Cleric, Druid. You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving in the style of a medieval woodcut
+
+A spell called 'Resurrection', a level 7 Necromancy spell. Used by: Bard, Cleric. You touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit in the style of a medieval woodcut
+
+A spell called 'Reverse Gravity', a level 7 Transmutation spell. Used by: Druid, Sorcerer, Wizard. This spell reverses gravity in a 50-foot-radius, 100-foot high cylinder centered on a point within range. All creatures and objects that aren't somehow anchored to the ground in the area fall upward a in the style of a medieval woodcut
+
+A spell called 'Revivify', a level 3 Conjuration spell. Used by: Cleric, Paladin. You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any m in the style of a medieval woodcut
+
+A spell called 'Rope Trick', a level 2 Transmutation spell. Used by: Wizard. You touch a length of rope that is up to 60 feet long. One end of the rope then rises into the air until the whole rope hangs perpendicular to the ground. At the upper end of the rope, an invisible en in the style of a medieval woodcut
+
+A spell called 'Sacred Flame', a level 0 Evocation spell. Used by: Cleric. Flame-like radiance descends on a creature that you can see within range. The target must succeed on a dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for thi in the style of a medieval woodcut
+
+A spell called 'Sanctuary', a level 1 Abjuration spell. Used by: Cleric. You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a wisdom saving throw. On a failed in the style of a medieval woodcut
+
+A spell called 'Scorching Ray', a level 2 Evocation spell. Used by: Sorcerer, Wizard. You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage. in the style of a medieval woodcut
+
+A spell called 'Scrying', a level 5 Divination spell. Used by: Bard, Cleric, Druid, Warlock, Wizard. You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a wisdom saving throw, which is modified by how well you know the target and t in the style of a medieval woodcut
+
+A spell called 'Secret Chest', a level 4 Conjuration spell. Used by: Wizard. You hide a chest, and all its contents, on the Ethereal Plane. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubi in the style of a medieval woodcut
+
+A spell called 'See Invisibility', a level 2 Divination spell. Used by: Bard, Sorcerer, Wizard. For the duration of the spell, you see invisible creatures and objects as if they were visible, and you can see through Ethereal. The ethereal objects and creatures appear ghostly translucent. in the style of a medieval woodcut
+
+A spell called 'Seeming', a level 5 Illusion spell. Used by: Bard, Sorcerer, Wizard. This spell allows you to change the appearance of any number of creatures that you can see within range. You give each target you choose a new, illusory appearance. An unwilling target can make a char in the style of a medieval woodcut
+
+A spell called 'Sending', a level 3 Evocation spell. Used by: Bard, Cleric, Wizard. You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answe in the style of a medieval woodcut
+
+A spell called 'Sequester', a level 7 Transmutation spell. Used by: Wizard. By means of this spell, a willing creature or an object can be hidden away, safe from detection for the duration. When you cast the spell and touch the target, it becomes invisible and can't be target in the style of a medieval woodcut
+
+A spell called 'Shapechange', a level 9 Transmutation spell. Used by: Druid, Wizard. You assume the form of a different creature for the duration. The new form can be of any creature with a challenge rating equal to your level or lower. The creature can't be a construct or an undead, in the style of a medieval woodcut
+
+A spell called 'Shatter', a level 2 Evocation spell. Used by: Bard, Sorcerer, Warlock, Wizard. A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. in the style of a medieval woodcut
+
+A spell called 'Shield', a level 1 Abjuration spell. Used by: Sorcerer, Wizard. An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic in the style of a medieval woodcut
+
+A spell called 'Shield of Faith', a level 1 Abjuration spell. Used by: Cleric, Paladin. A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration. in the style of a medieval woodcut
+
+A spell called 'Shillelagh', a level 0 Transmutation spell. Used by: Druid. The wood of a club or a quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee in the style of a medieval woodcut
+
+A spell called 'Shocking Grasp', a level 0 Evocation spell. Used by: Sorcerer, Wizard. Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor m in the style of a medieval woodcut
+
+A spell called 'Silence', a level 2 Illusion spell. Used by: Bard, Cleric, Ranger. For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thu in the style of a medieval woodcut
+
+A spell called 'Silent Image', a level 1 Illusion spell. Used by: Bard, Sorcerer, Wizard. You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot cube. The image appears at a spot within range and lasts for the duration. The image is in the style of a medieval woodcut
+
+A spell called 'Simulacrum', a level 7 Illusion spell. Used by: Wizard. You shape an illusory duplicate of one beast or humanoid that is within range for the entire casting time of the spell. The duplicate is a creature, partially real and formed from ice or snow, and it in the style of a medieval woodcut
+
+A spell called 'Sleep', a level 1 Enchantment spell. Used by: Bard, Sorcerer, Wizard. This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affect in the style of a medieval woodcut
+
+A spell called 'Sleet Storm', a level 3 Conjuration spell. Used by: Druid, Sorcerer, Wizard. Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the in the style of a medieval woodcut
+
+A spell called 'Slow', a level 3 Transmutation spell. Used by: Sorcerer, Wizard. You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a wisdom saving throw or be affected by this spell for the duration. An affected ta in the style of a medieval woodcut
+
+A spell called 'Spare the Dying', a level 0 Necromancy spell. Used by: Cleric. You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs. in the style of a medieval woodcut
+
+A spell called 'Speak with Animals', a level 1 Divination spell. Used by: Bard, Druid, Ranger. You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at a minimum, beasts can give in the style of a medieval woodcut
+
+A spell called 'Speak with Dead', a level 3 Necromancy spell. Used by: Bard, Cleric. You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can't be undead. The spel in the style of a medieval woodcut
+
+A spell called 'Speak with Plants', a level 3 Transmutation spell. Used by: Bard, Druid, Ranger. You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in th in the style of a medieval woodcut
+
+A spell called 'Spider Climb', a level 2 Transmutation spell. Used by: Sorcerer, Warlock, Wizard. Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gain in the style of a medieval woodcut
+
+A spell called 'Spike Growth', a level 2 Transmutation spell. Used by: Druid, Ranger. The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the in the style of a medieval woodcut
+
+A spell called 'Spirit Guardians', a level 3 Conjuration spell. Used by: Cleric. You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are in the style of a medieval woodcut
+
+A spell called 'Spiritual Weapon', a level 2 Evocation spell. Used by: Cleric. You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within in the style of a medieval woodcut
+
+A spell called 'Stinking Cloud', a level 3 Conjuration spell. Used by: Bard, Sorcerer, Wizard. You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the in the style of a medieval woodcut
+
+A spell called 'Stone Shape', a level 4 Transmutation spell. Used by: Cleric, Druid, Wizard. You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a lar in the style of a medieval woodcut
+
+A spell called 'Stoneskin', a level 4 Abjuration spell. Used by: Druid, Ranger, Sorcerer, Wizard. This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage. in the style of a medieval woodcut
+
+A spell called 'Storm of Vengeance', a level 9 Conjuration spell. Used by: Druid. A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the cloud in the style of a medieval woodcut
+
+A spell called 'Suggestion', a level 2 Enchantment spell. Used by: Bard, Sorcerer, Warlock, Wizard. You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be charmed are immune in the style of a medieval woodcut
+
+A spell called 'Sunbeam', a level 6 Evocation spell. Used by: Druid, Sorcerer, Wizard. A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a constitution saving throw. On a failed save, a creature takes 6d8 radian in the style of a medieval woodcut
+
+A spell called 'Sunburst', a level 8 Evocation spell. Used by: Druid, Sorcerer, Wizard. Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a constitution saving throw. On a failed save, a creature takes 12d6 r in the style of a medieval woodcut
+
+A spell called 'Symbol', a level 7 Abjuration spell. Used by: Bard, Cleric, Wizard. When you cast this spell, you inscribe a harmful glyph either on a surface (such as a section of floor, a wall, or a table) or within an object that can be closed to conceal the glyph (such as a book, in the style of a medieval woodcut
+
+A spell called 'Telekinesis', a level 5 Transmutation spell. Used by: Sorcerer, Wizard. You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object t in the style of a medieval woodcut
+
+A spell called 'Telepathic Bond', a level 5 Divination spell. Used by: Wizard. You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of in the style of a medieval woodcut
+
+A spell called 'Teleport', a level 7 Conjuration spell. Used by: Bard, Sorcerer, Wizard. This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If yo in the style of a medieval woodcut
+
+A spell called 'Teleportation Circle', a level 5 Conjuration spell. Used by: Bard, Sorcerer, Wizard. As you cast the spell, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know a in the style of a medieval woodcut
+
+A spell called 'Thaumaturgy', a level 0 Transmutation spell. Used by: Cleric. You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range. - Your voice booms up to three times as loud as normal for 1 minu in the style of a medieval woodcut
+
+A spell called 'Thunderwave', a level 1 Evocation spell. Used by: Bard, Druid, Sorcerer, Wizard. A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is in the style of a medieval woodcut
+
+A spell called 'Time Stop', a level 9 Transmutation spell. Used by: Sorcerer, Wizard. You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take 1d4 + 1 turns in a row, during which you can use actions and move as normal. This spell in the style of a medieval woodcut
+
+A spell called 'Tiny Hut', a level 3 Evocation spell. Used by: Bard, Wizard. A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area. Nine creatures of Medium size or smal in the style of a medieval woodcut
+
+A spell called 'Tongues', a level 3 Divination spell. Used by: Bard, Cleric, Sorcerer, Warlock, Wizard. This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target in the style of a medieval woodcut
+
+A spell called 'Transport via Plants', a level 6 Conjuration spell. Used by: Druid. This spell creates a magical link between a Large or larger inanimate plant within range and another plant, at any distance, on the same plane of existence. You must have seen or touched the destinati in the style of a medieval woodcut
+
+A spell called 'Tree Stride', a level 5 Conjuration spell. Used by: Druid, Ranger. You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet o in the style of a medieval woodcut
+
+A spell called 'True Polymorph', a level 9 Transmutation spell. Used by: Bard, Warlock, Wizard. Choose one creature or nonmagical object that you can see within range. You transform the creature into a different creature, the creature into an object, or the object into a creature (the object mus in the style of a medieval woodcut
+
+A spell called 'True Resurrection', a level 9 Necromancy spell. Used by: Cleric, Druid. You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature's soul is free and willing, the creature is restored to life with all in the style of a medieval woodcut
+
+A spell called 'True Seeing', a level 6 Divination spell. Used by: Bard, Cleric, Sorcerer, Warlock, Wizard. This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the in the style of a medieval woodcut
+
+A spell called 'True Strike', a level 0 Divination spell. Used by: Bard, Sorcerer, Warlock, Wizard. You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against in the style of a medieval woodcut
+
+A spell called 'Unseen Servant', a level 1 Conjuration spell. Used by: Bard, Warlock, Wizard. This spell creates an invisible, mindless, shapeless force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground with in the style of a medieval woodcut
+
+A spell called 'Vampiric Touch', a level 3 Necromancy spell. Used by: Warlock, Wizard. The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic da in the style of a medieval woodcut
+
+A spell called 'Vicious Mockery', a level 0 Enchantment spell. Used by: Bard. You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a wisdom savin in the style of a medieval woodcut
+
+A spell called 'Wall of Fire', a level 4 Evocation spell. Used by: Druid, Sorcerer, Wizard. You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foo in the style of a medieval woodcut
+
+A spell called 'Wall of Force', a level 5 Evocation spell. Used by: Wizard. An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free in the style of a medieval woodcut
+
+A spell called 'Wall of Ice', a level 6 Evocation spell. Used by: Wizard. You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-s in the style of a medieval woodcut
+
+A spell called 'Wall of Stone', a level 5 Evocation spell. Used by: Druid, Sorcerer, Wizard. A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous w in the style of a medieval woodcut
+
+A spell called 'Wall of Thorns', a level 6 Conjuration spell. Used by: Druid. You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 in the style of a medieval woodcut
+
+A spell called 'Warding Bond', a level 2 Abjuration spell. Used by: Cleric. This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and in the style of a medieval woodcut
+
+A spell called 'Water Breathing', a level 3 Transmutation spell. Used by: Druid, Ranger, Sorcerer, Wizard. This spell gives a maximum of ten willing creatures within range and you can see, the ability to breathe underwater until the end of its term. Affected creatures also retain their normal breathing pat in the style of a medieval woodcut
+
+A spell called 'Water Walk', a level 3 Transmutation spell. Used by: Cleric, Druid, Ranger, Sorcerer. This spell grants the ability to move across any liquid surface--such as water, acid, mud, snow, quicksand, or lava--as if it were harmless solid ground (creatures crossing molten lava can still take in the style of a medieval woodcut
+
+A spell called 'Web', a level 2 Conjuration spell. Used by: Sorcerer, Wizard. You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure th in the style of a medieval woodcut
+
+A spell called 'Weird', a level 9 Illusion spell. Used by: Wizard. Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere centered on a point of your choice wi in the style of a medieval woodcut
+
+A spell called 'Wind Walk', a level 6 Transmutation spell. Used by: Druid. You and up to ten willing creatures you can see within range assume a gaseous form for the duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet an in the style of a medieval woodcut
+
+A spell called 'Wind Wall', a level 3 Evocation spell. Used by: Druid, Ranger. A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose s in the style of a medieval woodcut
+
+A spell called 'Wish', a level 9 Conjuration spell. Used by: Sorcerer, Wizard. Wish is the mightiest spell a mortal creature can cast. By simply speaking aloud, you can alter the very foundations of reality in accord with your desires. The basic use of this spell is to duplicate in the style of a medieval woodcut
+
+A spell called 'Word of Recall', a level 6 Conjuration spell. Used by: Cleric. You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space t in the style of a medieval woodcut
+
+A spell called 'Zone of Truth', a level 2 Enchantment spell. Used by: Bard, Cleric, Paladin. You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for th in the style of a medieval woodcut
