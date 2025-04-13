@@ -188,3 +188,44 @@ DMForge can now generate AI-style text prompts for spell cards and previews.
 ### 🏁 Status
 ✅ Phase 4 complete  
 🚧 Next: Phase 5 – Card Layout System
+
+## v0.6.0 – Phase 5 Complete: Card Layout System  
+📅 Released: 2025-04-13
+
+---
+
+### ✅ Summary
+
+DMForge now supports full spell card layout and rendering, including:
+
+- 📄 Spell card schema with layout-ready fields
+- 🖨 CLI rendering: `dmforge deck render --format pdf`
+- 🧾 Print-ready grid sheets: `--layout sheet`
+- 🎴 One-card-per-page layout: `--layout cards`
+- 🌐 HTML preview with Jinja2 template
+- ✅ WeasyPrint for high-fidelity PDF output
+
+---
+
+### 🖥 CLI Improvements
+
+- `deck build`: generates JSON deck from spells
+- `deck render`: renders to HTML or PDF
+- `--layout sheet`: 6 cards per A4 page
+- `--layout cards`: 1 card per page
+- Templates stored in `templates/`
+- Debug HTML support in dev mode (manual)
+
+---
+
+### 🧪 Testing
+
+- `spell_to_card()` schema converter tested
+- Deck generator and CLI tested
+- HTML + PDF output tested for structure and layout
+
+---
+
+### 🏁 Status
+✅ Phase 5 complete  
+🎯 Next: Phase 6 – Layout Formatting Enhancements

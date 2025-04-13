@@ -1,32 +1,56 @@
-import typer
+"""Deck generation and rendering commands."""
+
 from pathlib import Path
-from src.deck_forge.generate import generate_spell_deck
-from src.deck_forge.render_html import render_card_html  # <-- import this after typer
+import typer
+from src.utils.console import banner, error, success
+from src.deck.render import render_deck
+from src.deck.build import build_deck
 
-deck_app = typer.Typer(help="Generate and render spell decks.")  # ✅ define this first
+deck_app = typer.Typer(help="Generate and render spell card decks")
 
 
-@deck_app.command("build")
+@deck_app.command()
 def build(
-    output: str = typer.Option(
-        "full_spell_deck.json", "--output", help="Output JSON filename"
+    spells: str = typer.Option(
+        None, "--spells", help="Spells to include (comma-separated)"
     ),
-    limit: int = typer.Option(None, "--limit", help="Limit number of cards"),
-):
-    """Build a full card deck from SRD spells."""
-    generate_spell_deck(output_name=output, limit=limit)
+    all_spells: bool = typer.Option(
+        False, "--all", help="Include all available spells"
+    ),
+    output: str = typer.Option("deck.json", "--output", help="Output file name"),
+) -> None:
+    """Build a deck JSON file from selected spells."""
+    if not (spells or all_spells):
+        error("No spells selected. Use --spells or --all")
+        return
+
+    try:
+        deck = build_deck(
+            spell_list=spells.split(",") if spells else None, all_spells=all_spells
+        )
+        output_path = Path(output)
+        output_path.write_text(deck, encoding="utf-8")
+        success(f"✅ Deck saved to {output_path}")
+    except Exception as e:
+        error(f"Failed to build deck: {e}")
 
 
-@deck_app.command("render")
+@deck_app.command()
 def render(
-    deck_path: str = typer.Argument(..., help="Path to JSON deck file"),
-    output: str = typer.Option("deck.html", "--output", help="Output HTML file"),
-    format: str = typer.Option(
-        "html", "--format", help="Render format: html (default)"
+    deck_file: Path = typer.Argument(..., help="Deck JSON file to render"),
+    format: str = typer.Option("pdf", "--format", help="Output format (pdf or html)"),
+    layout: str = typer.Option(
+        "sheet", "--layout", help="Layout type (sheet or cards)"
     ),
-):
-    """Render a deck into HTML or other formats (PDF/image coming soon)."""
-    if format == "html":
-        render_card_html(Path(deck_path), Path(output))
-    else:
-        typer.echo("❌ Only 'html' format is supported at this stage.")
+    output: str = typer.Option(None, "--output", help="Output file path"),
+) -> None:
+    """Render a deck to PDF or HTML."""
+    banner("🎨 Rendering Deck")
+
+    try:
+        render_deck(
+            deck_file=deck_file, format=format, layout=layout, output_path=output
+        )
+        success("✅ Deck rendered successfully")
+    except Exception as e:
+        error(f"Failed to render deck: {e}")
