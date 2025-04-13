@@ -1,9 +1,9 @@
-# tests/test_paths.py
-
-from src.utils.paths import get_output_path
+from src.utils.paths import get_data_path
 
 
-def test_get_output_path_returns_path():
-    output = get_output_path("exports", "test.pdf")
-    assert "exports" in str(output)
-    assert "test.pdf" in str(output)
+def test_get_data_path_returns_path(monkeypatch):
+    monkeypatch.setenv("DMFORGE_ENV", "test")
+    path = get_data_path("spells.json")
+    assert "data" in str(path)
+    assert "test" in str(path)
+    assert "spells.json" in str(path)
