@@ -1,23 +1,52 @@
-# src/cli/prompt.py
-
-"""CLI commands for prompt generation and management."""
-
-from typer import Typer, Option
+import typer
+import json
 from src.prompts.generate import generate_spell_prompts
-from src.utils.console import error
+from src.utils.paths import get_data_path
+from src.prompts.spells import generate_spell_prompt
+from src.utils.console import banner, info, error
 
-prompt_app = Typer(help="Generate and manage image prompts")
+prompt_app = typer.Typer(help="Generate spell prompts for AI use.")
 
 
-@prompt_app.command()
-def create(
-    spells: bool = Option(False, "--spells", help="Generate spell card prompts"),
-    style: str = Option("", "--style", help="Optional style suffix for prompts"),
-    json_format: bool = Option(False, "--json", help="Output in JSON format"),
-) -> None:
-    """Create image generation prompts from SRD data."""
-    if not spells:
-        error("No content type selected. Use --spells")
-        return
+@prompt_app.command("generate")
+def generate(
+    suffix: str = typer.Option("", "--suffix", help="Optional style/theme suffix"),
+    format: str = typer.Option("txt", "--format", help="Output format: txt or json"),
+):
+    """Generate spell prompts from spells.json."""
+    generate_spell_prompts(suffix=suffix, format=format)
 
-    generate_spell_prompts(suffix=style, format="json" if json_format else "txt")
+
+@prompt_app.command("show")
+def show(
+    name: str = typer.Argument(..., help="Spell name or index to preview"),
+    suffix: str = typer.Option(
+        "", "--suffix", help="Add style/theme/persona to prompt"
+    ),
+):
+    """Show the generated prompt for a specific spell."""
+    input_file = get_data_path("spells.json")
+    if not input_file.exists():
+        error(f"❌ No spell data found at {input_file}")
+        raise typer.Exit(1)
+
+    spells = json.loads(input_file.read_text(encoding="utf-8"))
+
+    # Match by index or name (case insensitive)
+    match = next(
+        (
+            s
+            for s in spells
+            if s.get("index", "").lower() == name.lower()
+            or s.get("name", "").lower() == name.lower()
+        ),
+        None,
+    )
+
+    if not match:
+        error(f"❌ No spell found for: {name}")
+        raise typer.Exit(1)
+
+    banner("🎯 Spell Prompt Preview")
+    prompt = generate_spell_prompt(match, suffix)
+    info(prompt)
