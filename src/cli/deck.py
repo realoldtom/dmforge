@@ -5,7 +5,7 @@ import typer
 from src.utils.console import banner, error, success
 from src.deck_forge.render_pdf import render_card_pdf, render_card_sheet_pdf
 from src.deck_forge.render_html import render_card_html
-from src.deck_forge.generate import build_deck
+from src.deck_forge.generate import generate_spell_deck as build_deck
 
 deck_app = typer.Typer(help="Generate and render spell card decks")
 
