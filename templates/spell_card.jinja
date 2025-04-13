@@ -1,25 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DMForge Spell Deck</title>
-    <style>
-        body { font-family: sans-serif; background: #f4f4f4; padding: 2rem; }
-        .card {
-            background: white;
-            border: 1px solid #aaa;
-            border-radius: 12px;
-            padding: 1rem;
-            margin: 1rem auto;
-            width: 300px;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-        }
-        .card h2 { margin: 0; }
-        .meta { font-size: 0.9rem; color: #666; }
-        .desc { margin-top: 0.5rem; }
-    </style>
+  <meta charset="UTF-8" />
+  <title>DMForge Spell Cards</title>
+  <style>
+    body {
+      background: #f0f0f0;
+      font-family: Georgia, serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+    width: 63mm;
+    height: 88mm;
+    box-sizing: border-box;
+
+    background: white;
+    border-radius: 4mm;
+    box-shadow: 0 0 1mm rgba(0, 0, 0, 0.25);
+    border: 0.3mm solid #333;
+
+    margin: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-inside: avoid;
+    }
+
+
+    .header {
+      background: #f8f8f8;
+      padding: 0.75rem 1rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .image {
+      height: 180px;
+      background: #ccc;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .desc {
+      padding: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .title { font-weight: bold; }
+  </style>
 </head>
 <body>
+  {% for card in cards %}
+  <div class="card">
+    <div class="header">
+      <div class="title">{{ card.title }}</div>
+      <div class="level">● {{ card.level }} {{ card.school }}</div>
+    </div>
+
+    <div class="image"
+      style="background-image: url('https://placekitten.com/300/180');">
+      <!-- Replace with card.art_url or similar in future -->
+    </div>
+
+    <div class="stats">
+      <div>{{ card.casting_time }}</div>
+      <div>{{ card.duration }}</div>
+      <div>{{ card.components | join(', ') }}</div>
+    </div>
+
+    <div class="desc">{{ card.description }}</div>
+  </div>
+  {% endfor %}
+</body>
+</html>
     {% for card in cards %}
     <div class="card">
         <h2>{{ card.title }}</h2>
