@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DMForge Spell Card Sheet</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    body {
+      margin: 10mm;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 66mm);
+      grid-template-rows: repeat(3, 91mm);
+      gap: 5mm;
+      justify-content: center;
+      align-content: center;
+      background: white;
+    }
+
+    .card {
+      width: 63mm;
+      height: 88mm;
+      box-sizing: border-box;
+      background: white;
+      border: 0.25mm solid #000;
+      border-radius: 3mm;
+      padding: 2mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: Georgia, serif;
+      font-size: 9pt;
+      page-break-inside: avoid;
+    }
+
+    .header {
+      font-weight: bold;
+      font-size: 10pt;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 0.2mm solid #aaa;
+      margin-bottom: 1mm;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8pt;
+      border-top: 0.2mm solid #aaa;
+      border-bottom: 0.2mm solid #aaa;
+      margin: 1mm 0;
+    }
+
+    .desc {
+      line-height: 1.2;
+    }
+  </style>
+</head>
+<body>
+  {% for card in cards %}
+    <div class="card">
+      <div class="header">
+        <span>{{ card.title }}</span>
+        <span>{{ card.level }} • {{ card.school }}</span>
+      </div>
+      <div class="desc">{{ card.description }}</div>
+      <div class="stats">
+        <span>{{ card.casting_time }}</span>
+        <span>{{ card.duration }}</span>
+        <span>{{ card.components | join(', ') }}</span>
+      </div>
+    </div>
+  {% endfor %}
+</body>
+</html>
