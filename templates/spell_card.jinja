@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DMForge Spell Deck</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f4; padding: 2rem; }
+        .card {
+            background: white;
+            border: 1px solid #aaa;
+            border-radius: 12px;
+            padding: 1rem;
+            margin: 1rem auto;
+            width: 300px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        .card h2 { margin: 0; }
+        .meta { font-size: 0.9rem; color: #666; }
+        .desc { margin-top: 0.5rem; }
+    </style>
+</head>
+<body>
+    {% for card in cards %}
+    <div class="card">
+        <h2>{{ card.title }}</h2>
+        <div class="meta">
+            Level {{ card.level }} {{ card.school }}<br>
+            Classes: {{ card.classes | join(', ') }}<br>
+            Components: {{ card.components | join(', ') }}<br>
+            Range: {{ card.range }} | Duration: {{ card.duration }}<br>
+            Cast Time: {{ card.casting_time }}
+        </div>
+        <div class="desc">{{ card.description }}</div>
+    </div>
+    {% endfor %}
+</body>
+</html>
