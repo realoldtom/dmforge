@@ -1,35 +1,23 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "DMForge Spell Deck",
+    "title": "DMForge Spell Card Deck",
     "type": "object",
     "properties": {
         "cards": {
             "type": "array",
             "items": {
                 "type": "object",
-                "required": [
-                    "title",
-                    "level",
-                    "school",
-                    "description",
-                    "components",
-                    "art_url"
-                ],
                 "properties": {
                     "title": {
                         "type": "string"
                     },
                     "level": {
-                        "type": "integer",
-                        "minimum": 0
+                        "type": "integer"
                     },
                     "school": {
                         "type": "string"
                     },
                     "description": {
-                        "type": "string"
-                    },
-                    "source": {
                         "type": "string"
                     },
                     "casting_time": {
@@ -47,16 +35,34 @@
                             "type": "string"
                         }
                     },
+                    "source": {
+                        "type": "string"
+                    },
                     "art_url": {
-                        "type": "string",
-                        "format": "uri"
+                        "type": "string"
+                    },
+                    "summary": {
+                        "type": "boolean"
                     }
                 },
+                "required": [
+                    "title",
+                    "level",
+                    "school",
+                    "description",
+                    "casting_time",
+                    "duration",
+                    "range",
+                    "components",
+                    "source",
+                    "art_url"
+                ],
                 "additionalProperties": false
             }
         }
     },
     "required": [
         "cards"
-    ]
+    ],
+    "additionalProperties": false
 }

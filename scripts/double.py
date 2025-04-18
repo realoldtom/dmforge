@@ -1,14 +1,16 @@
-from pathlib import Path
+# scripts/debug_deck.py
 import json
+from pathlib import Path
 
-p = Path("data/dev/spells.json")
-data = json.loads(p.read_text(encoding="utf-8"))
+path = Path("decks/dev/full_deck.json")
+print("Inspecting:", path)
 
-# Fix if it's a list of strings
-if isinstance(data, list) and isinstance(data[0], str):
-    print("🔧 Fixing stringified spell data...")
-    fixed = [json.loads(spell) for spell in data]
-    p.write_text(json.dumps(fixed, indent=2), encoding="utf-8")
-    print("✅ Repaired data/dev/spells.json")
-else:
-    print("✅ File is already in correct format.")
+try:
+    text = path.read_text(encoding="utf-8")
+    print("Raw preview:", text[:150])
+    data = json.loads(text)
+    print("✅ JSON loaded")
+    print("Top keys:", list(data.keys()))
+    print("First card:", data["cards"][0])
+except Exception as e:
+    print("❌ Error loading JSON:", e)

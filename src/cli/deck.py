@@ -1,7 +1,9 @@
 """Deck generation and rendering commands."""
 
-from pathlib import Path
+import json
 import typer
+from jsonschema import Draft7Validator
+from pathlib import Path
 from src.utils.console import banner, error, success, warn
 from src.deck_forge.render_pdf import render_card_pdf, render_card_sheet_pdf
 from src.deck_forge.render_html import render_card_html
@@ -23,17 +25,21 @@ def build(
 
         success(f"✅ Deck saved to {deck_path.resolve()}")
 
-        # Schema validation (auto-run)
-        from jsonschema import Draft7Validator
-        import json
-
         SCHEMA_PATH = Path("schemas/deck.schema.json")
         if not SCHEMA_PATH.exists():
             warn("⚠️  Skipped schema check – schema file missing.")
             return
 
         schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
-        data = json.loads(deck_path.read_text(encoding="utf-8"))
+        with deck_path.open("r", encoding="utf-8") as f:
+            content = f.read().strip()
+            try:
+                data = json.loads(content)
+            except json.JSONDecodeError as e:
+                error(f"❌ JSON Decode Error while loading deck: {e}")
+                print("🔎 Raw deck content (first 300 chars):")
+                print(content[:300])
+                return
 
         validator = Draft7Validator(schema)
         errors = list(validator.iter_errors(data))

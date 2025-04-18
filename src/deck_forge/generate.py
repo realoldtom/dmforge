@@ -104,9 +104,12 @@ def generate_spell_deck(
 
     try:
         # Load and repair data
-        raw_data = json.loads(input_file.read_text(encoding="utf-8"))
-        spells = validate_and_repair_spells(raw_data)
+        raw_text = input_file.read_text(encoding="utf-8-sig").strip()
+        print("=== Raw Input (first 300 chars) ===")
+        print(raw_text[:300])
+        raw_data = json.loads(raw_text)
 
+        spells = validate_and_repair_spells(raw_data)
         if not spells:
             error("❌ No valid spells found")
             return None
@@ -116,10 +119,10 @@ def generate_spell_deck(
             spells = spells[:limit]
             warn(f"Limited to first {limit} spells")
 
-        # Generate cards with error handling
+        # Generate cards with summarization
         cards = []
         for spell in spells:
-            if card := spell_to_card(spell):
+            if card := spell_to_card(spell, summarize=True):
                 cards.append(card)
             else:
                 warn(f"Skipped invalid spell: {spell.get('name', 'UNKNOWN')}")
