@@ -4,6 +4,7 @@ import json
 import typer
 from jsonschema import Draft7Validator
 from pathlib import Path
+from typing import Optional
 from src.utils.console import banner, error, success, warn
 from src.deck_forge.render_pdf import render_card_pdf, render_card_sheet_pdf
 from src.deck_forge.render_html import render_card_html
@@ -15,6 +16,9 @@ deck_app = typer.Typer(help="Generate and render spell card decks")
 @deck_app.command()
 def build(
     output: str = typer.Option("deck.json", "--output", help="Output file name"),
+    limit: Optional[int] = typer.Option(
+        None, "--limit", "-n", help="Only build the first N spells"
+    ),
 ) -> None:
     """Build a full SRD spell deck and validate against schema."""
     try:

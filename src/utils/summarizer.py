@@ -1,45 +1,57 @@
-"""Spell description summarizer utility."""
+# src/utils/summarizer.py
 
+import os
 import logging
+import openai
 
-# Optional: import OpenAI if you plan to integrate directly
-# import openai
+# Character limit for card descriptions
+MAX_CHAR_COUNT = 300
 
-MAX_CHAR_COUNT = 300  # Default max length for card descriptions
+# Load your OpenAI API key (make sure you’ve exported OPENAI_API_KEY)
+openai.api_key = os.getenv("OPENAI_API_KEY", "")
 
 
 def summarize_text(text: str, max_length: int = MAX_CHAR_COUNT) -> str:
     """
     Summarize a block of text to fit within max_length characters.
-
-    Args:
-        text (str): Full original spell description
-        max_length (int): Target character limit for the summary
-
-    Returns:
-        str: Summarized version of the text
+    Uses OpenAI if API key is set, otherwise does a simple truncation.
     """
+    # If it already fits, return as‑is
     if len(text) <= max_length:
-        return text  # No need to summarize
+        return text
 
-    # Placeholder until LLM integration is active
-    logging.warning("⚠️ Summarization placeholder used — description was too long")
-    return text[: max_length - 3].rstrip() + "..."
+    # If no key, warn and truncate
+    if not openai.api_key:
+        logging.warning("⚠️ OPENAI_API_KEY not set — falling back to truncation")
+        return text[: max_length - 3].rstrip() + "..."
 
+    try:
+        # Build system prompt
+        system_prompt = (
+            "You are a D&D assistant. "
+            f"Summarize the following spell description into a single concise paragraph "
+            f"no more than {max_length} characters, preserving key mechanical details."
+        )
 
-# Optional: LLM-based summarization
-# def summarize_with_openai(text: str, max_length: int) -> str:
-#     response = openai.ChatCompletion.create(
-#         model="gpt-4",
-#         messages=[
-#             {
-#                 "role": "system",
-#                 "content": "You are a D&D assistant. Summarize the following spell for a compact card format."
-#             },
-#             {
-#                 "role": "user",
-#                 "content": f"Summarize this spell in under {max_length} characters:\n\n{text}"
-#             }
-#         ]
-#     )
-#     return response.choices[0].message["content"].strip()
+        response = openai.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": text},
+            ],
+            temperature=0.7,
+            # rough token estimate: 4 chars ~ 1 token
+            max_tokens=int(max_length * 0.25),
+        )
+
+        summary = response.choices[0].message.content.strip()
+
+        # Ensure final length
+        if len(summary) > max_length:
+            summary = summary[: max_length - 3].rstrip() + "..."
+        return summary
+
+    except Exception as e:
+        logging.error(f"❌ OpenAI summarization failed: {e}")
+        # fallback to truncation
+        return text[: max_length - 3].rstrip() + "..."
