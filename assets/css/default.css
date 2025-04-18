@@ -1,9 +1,10 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f2f2f2;
-    padding: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f0f0;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 1.5rem;
     justify-content: center;
 }
 
@@ -11,43 +12,86 @@ body {
     width: 63mm;
     height: 88mm;
     background: white;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ffaa00;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 0.4rem;
     display: flex;
     flex-direction: column;
-    padding: 6mm 5mm;
+    justify-content: flex-start;
+    overflow: hidden;
     box-sizing: border-box;
+}
+
+/* Title and school (single line with truncation) */
+.title-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ffaa00;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
+    white-space: nowrap;
     overflow: hidden;
 }
 
-.header {
-    font-size: 14pt;
-    font-weight: bold;
-    margin-bottom: 4mm;
+.title-line .title {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+.title-line .level-school {
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    padding-left: 0.5rem;
+    text-align: right;
+}
+
+/* Art */
 .image {
-    height: 35mm;
+    flex: 0 0 34%;
+    background-color: #ddd;
     background-size: cover;
     background-position: center;
-    margin-bottom: 4mm;
-    border-radius: 6px;
-    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin: 0.3rem 0;
+    height: 34%;
 }
 
-.stats {
-    font-size: 10pt;
-    color: #444;
-    margin-bottom: 3mm;
+/* Stats */
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.72rem;
+    margin: 0.3rem 0;
+    gap: 0.2rem;
+    flex-wrap: wrap;
 }
 
-.desc {
-    font-size: 9pt;
-    color: #222;
+.stats-row span {
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Description */
+.desc {
+    font-size: 0.72rem;
+    line-height: 1.15;
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 10;
+    -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
+    padding-top: 0.3rem;
+    flex: 1;
+}
+
+/* Footer is hidden for now */
+.footer {
+    display: none;
 }
