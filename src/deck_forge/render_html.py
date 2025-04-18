@@ -31,7 +31,11 @@ def render_card_html(deck_path: Path, output_path: Path, theme: str = "default")
         css_path = css_file.absolute().as_uri()
 
         template = env.get_template("spell_card.jinja")
-        html_string = template.render(cards=cards, css_path=css_path)
+        default_image = "https://placekitten.com/300/180"  # or a local image path
+
+        html_string = template.render(
+            cards=cards, css_path=css_path, default_image=default_image
+        )
 
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(html_string, encoding="utf-8")

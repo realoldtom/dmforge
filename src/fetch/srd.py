@@ -34,6 +34,7 @@ def fetch_srd_spells(force: bool = False) -> None:
     """
     banner("📥 Fetching SRD Spells")
 
+    # Use correct path relative to data directory
     output_file = get_data_path("spells.json")
 
     if output_file.exists() and not force:
@@ -54,7 +55,10 @@ def fetch_srd_spells(force: bool = False) -> None:
             spell_response.raise_for_status()
             spells.append(normalize_spell(spell_response.json()))
 
-        # Step 3: Save to local cache
+        # Step 3: Create parent directories if needed
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+
+        # Step 4: Save to local cache
         output_file.write_text(json.dumps(spells, indent=2), encoding="utf-8")
         success(f"✅ Saved {len(spells)} spells to {output_file}")
 

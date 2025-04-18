@@ -26,15 +26,21 @@ def test_generate_spell_deck_writes_json(tmp_path, monkeypatch):
     monkeypatch.setattr("src.deck_forge.generate.get_env", lambda: "test")
     monkeypatch.chdir(tmp_path)
 
-    generate_spell_deck(output_name="test_deck.json")
+    result = generate_spell_deck(output_name="test_deck.json")
+    assert result is not None
 
     output_file = tmp_path / "decks" / "test" / "test_deck.json"
     assert output_file.exists()
 
+    # Check new deck structure with "cards" key
     deck = json.loads(output_file.read_text())
-    assert isinstance(deck, list)
-    assert deck[0]["title"] == "Fireball"
-    assert deck[0]["description"].startswith("A bright streak")
+    assert isinstance(deck, dict)
+    assert "cards" in deck
+    assert len(deck["cards"]) == 1
+
+    card = deck["cards"][0]
+    assert card["title"] == "Fireball"
+    assert card["description"].startswith("A bright streak")
 
 
 def test_generate_spell_deck_limit(tmp_path, monkeypatch):
@@ -48,8 +54,10 @@ def test_generate_spell_deck_limit(tmp_path, monkeypatch):
     monkeypatch.setattr("src.deck_forge.generate.get_env", lambda: "test")
     monkeypatch.chdir(tmp_path)
 
-    generate_spell_deck(output_name="limited_deck.json", limit=5)
+    result = generate_spell_deck(output_name="limited_deck.json", limit=5)
+    assert result is not None
 
     deck_file = tmp_path / "decks" / "test" / "limited_deck.json"
     deck = json.loads(deck_file.read_text())
-    assert len(deck) == 5
+    assert "cards" in deck
+    assert len(deck["cards"]) == 5

@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>DMForge Spell Cards</title>
   <link rel="stylesheet" href="{{ css_path }}">
 </head>
 <body>
   {% for card in cards %}
   <div class="card">
-    <div class="header">
-      <div class="title">{{ card.title }}</div>
-      <div class="level">● {{ card.level }} {{ card.school }}</div>
-    </div>
+    <div class="title">{{ card.title }}</div>
+    <div class="subtitle">{{ card.level }} • {{ card.school }}</div>
 
-    <div class="image"
-      style="background-image: url('https://placekitten.com/300/180');">
-      <!-- Replace with card.art_url or similar in future -->
-    </div>
+    <div class="image" style="background-image: url('{{ card.art_url or default_image }}');"></div>
 
-    <div class="stats">
-      <div>{{ card.casting_time }}</div>
-      <div>{{ card.duration }}</div>
-      <div>{{ card.components | join(', ') }}</div>
+    <div class="stats-row">
+      <span><strong>Time:</strong> {{ card.casting_time }}</span>
+      <span><strong>Duration:</strong> {{ card.duration }}</span>
+    </div>
+    <div class="stats-row">
+      <span><strong>Range:</strong> {{ card.range }}</span>
+      <span><strong>Components:</strong> {{ card.components | join(", ") }}</span>
     </div>
 
     <div class="desc">{{ card.description }}</div>
+
+    <div class="footer">{{ card.source or "SRD" }}</div>
   </div>
   {% endfor %}
 </body>

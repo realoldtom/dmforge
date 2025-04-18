@@ -12,28 +12,19 @@ deck_app = typer.Typer(help="Generate and render spell card decks")
 
 @deck_app.command()
 def build(
-    spells: str = typer.Option(
-        None, "--spells", help="Spells to include (comma-separated)"
-    ),
-    all_spells: bool = typer.Option(
-        False, "--all", help="Include all available spells"
-    ),
     output: str = typer.Option("deck.json", "--output", help="Output file name"),
 ) -> None:
-    """Build a deck JSON file from selected spells."""
-    if not (spells or all_spells):
-        error("No spells selected. Use --spells or --all")
-        return
-
+    """Build a full SRD spell deck."""
     try:
-        deck = build_deck(
-            spell_list=spells.split(",") if spells else None, all_spells=all_spells
-        )
-        output_path = Path(output)
-        output_path.write_text(deck, encoding="utf-8")
-        success(f"✅ Deck saved to {output_path}")
+        deck_path = build_deck(output_name=output)  # alias for generate_spell_deck()
+        if not deck_path:
+            error("❌ Deck generation failed.")
+            return
+
+        success(f"✅ Deck saved to {deck_path.resolve()}")
+
     except Exception as e:
-        error(f"Failed to build deck: {e}")
+        error(f"❌ Failed to build deck: {e}")
 
 
 @deck_app.command()
