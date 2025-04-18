@@ -9,7 +9,7 @@
   {% for card in cards %}
     <div class="card">
       <div class="header">
-        <span>{{ card.title }}</span>
+        <span>{{ card["title"] }</span>
         <span>{{ card.level }} • {{ card.school }}</span>
       </div>
       <div class="desc">{{ card.description }}</div>

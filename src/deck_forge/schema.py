@@ -20,7 +20,7 @@ def spell_to_card(spell: Dict[str, Any]) -> Optional[Dict[str, Any]]:
 
         # Required fields with type conversion
         card = {
-            "title": str(spell["name"]),
+            "title": spell["name"].title(),  # Call the method
             "level": int(spell["level"]),
             "school": str(spell["school"]),
             "description": (

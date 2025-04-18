@@ -4,27 +4,92 @@
   <meta charset="UTF-8" />
   <title>DMForge Spell Cards</title>
   <link rel="stylesheet" href="{{ css_path }}">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .card {
+      width: 63mm;
+      height: 88mm;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.5rem;
+      box-sizing: border-box;
+    }
+
+    .title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .image {
+      margin: 0.4rem 0;
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      border-radius: 6px;
+      min-height: 30mm;
+    }
+
+    .stats-row {
+      font-size: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .desc {
+      font-size: 0.75rem;
+      margin: 0.4rem 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+
+    .footer {
+      font-size: 0.6rem;
+      text-align: right;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
   {% for card in cards %}
   <div class="card">
-    <div class="title">{{ card.title }}</div>
-    <div class="subtitle">{{ card.level }} • {{ card.school }}</div>
+    <div class="title">{{ card["title"] }}</div>
+    <div class="subtitle">{{ card["level"] }} • {{ card["school"] }}</div>
 
-    <div class="image" style="background-image: url('{{ card.art_url or default_image }}');"></div>
-
-    <div class="stats-row">
-      <span><strong>Time:</strong> {{ card.casting_time }}</span>
-      <span><strong>Duration:</strong> {{ card.duration }}</span>
-    </div>
-    <div class="stats-row">
-      <span><strong>Range:</strong> {{ card.range }}</span>
-      <span><strong>Components:</strong> {{ card.components | join(", ") }}</span>
+    <div class="image"
+         style="background-image: url('{{ card['art_url'] or default_image }}');">
     </div>
 
-    <div class="desc">{{ card.description }}</div>
+    <div class="stats-row">
+      <span><strong>Time:</strong> {{ card["casting_time"] }}</span>
+      <span><strong>Duration:</strong> {{ card["duration"] }}</span>
+    </div>
+    <div class="stats-row">
+      <span><strong>Range:</strong> {{ card["range"] }}</span>
+      <span><strong>Components:</strong> {{ card["components"] | join(", ") }}</span>
+    </div>
 
-    <div class="footer">{{ card.source or "SRD" }}</div>
+    <div class="desc">{{ card["description"] }}</div>
+    <div class="footer">{{ card["source"] or "SRD" }}</div>
   </div>
   {% endfor %}
 </body>

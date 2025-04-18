@@ -21,7 +21,12 @@ def render_card_html(deck_path: Path, output_path: Path, theme: str = "default")
         return
 
     try:
-        cards = json.loads(deck_path.read_text(encoding="utf-8"))
+        cards_data = json.loads(deck_path.read_text(encoding="utf-8"))
+
+        if isinstance(cards_data, dict) and "cards" in cards_data:
+            cards = cards_data["cards"]
+        else:
+            cards = cards_data  # fallback if already a list
 
         css_file = Path(f"assets/css/{theme}.css")
         if not css_file.exists():

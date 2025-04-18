@@ -47,9 +47,15 @@ def validate_and_repair_spells(data: Any) -> List[Dict[str, Any]]:
                     continue
 
                 # Normalize the spell data
+                # Sanitize spell name
+                name_field = spell.get("name", "")
+                if callable(name_field):
+                    warn(f"Skipping corrupted spell name (callable): {name_field}")
+                    continue
+                # Now construct the normalized dict
                 normalized = {
                     "index": str(spell["index"]),
-                    "name": str(spell["name"]),
+                    "name": str(name_field),
                     "level": int(spell["level"]),
                     "school": (
                         spell["school"]
