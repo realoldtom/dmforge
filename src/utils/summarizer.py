@@ -29,7 +29,7 @@ def summarize_text(text: str, max_length: int = MAX_CHAR_COUNT) -> str:
             "You are a D&D assistant. Summarize the following spell description "
             f"into a single concise paragraph no more than {max_length} characters."
         )
-        resp = openai.ChatCompletion.create(
+        resp = openai.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": system_prompt},

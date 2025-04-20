@@ -1,0 +1,297 @@
+[
+  {
+    "title": "Acid Arrow",
+    "level": 2,
+    "school": "Evocation",
+    "description": "Hurl a green arrow at a target, dealing 4d4 acid damage on hit and 2d4 on the target's next turn. On miss, target takes half initial damage with no damage later.",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Instantaneous",
+    "range": "90 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "https://placekitten.com/300/180",
+    "desc": [
+      "Hurl a green arrow at a target, dealing 4d4 acid damage on hit and 2d4 on the target's next turn. On miss, target takes half initial damage with no damage later."
+    ]
+  },
+  {
+    "title": "Acid Splash",
+    "level": 0,
+    "school": "Conjuration",
+    "description": "Hurl a bubble of acid at one creature or two within 5 feet. Dex save or take 1d6 acid damage, scaling to 4d6 at higher levels.",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Instantaneous",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "source": "SRD",
+    "art_url": "https://picsum.photos/300/180",
+    "desc": [
+      "Hurl a bubble of acid at one creature or two within 5 feet. Dex save or take 1d6 acid damage, scaling to 4d6 at higher levels."
+    ]
+  },
+  {
+    "title": "Aid",
+    "level": 2,
+    "school": "Abjuration",
+    "description": "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration.",
+    "summary": false,
+    "casting_time": "1 action",
+    "duration": "8 hours",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "https://placekitten.com/300/180",
+    "desc": [
+      "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration."
+    ]
+  },
+  {
+    "title": "Alarm",
+    "level": 1,
+    "school": "Abjuration",
+    "description": "Alarm spell protects a 20-foot cube area. Detects intrusions by Tiny+ creatures, alerts you mentally within 1 mile or audibly with a hand bell within 60 feet for 10 seconds. Choose creatures that won't trigger the alarm.",
+    "summary": true,
+    "casting_time": "1 minute",
+    "duration": "8 hours",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "https://placekitten.com/300/180",
+    "desc": [
+      "Alarm spell protects a 20-foot cube area. Detects intrusions by Tiny+ creatures, alerts you mentally within 1 mile or audibly with a hand bell within 60 feet for 10 seconds. Choose creatures that won't trigger the alarm."
+    ]
+  },
+  {
+    "title": "Alter Self",
+    "level": 2,
+    "school": "Transmutation",
+    "description": "\"Alter Self\" spell lets you choose Aquatic Adaptation for breathing underwater and swimming, Change Appearance for disguises, or Natural Weapons for magical melee attacks dealing 1d6 damage with +1 to attack and damage rolls.",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Up to 1 hour",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "source": "SRD",
+    "art_url": "https://placebear.com/300/180",
+    "desc": [
+      "\"Alter Self\" spell lets you choose Aquatic Adaptation for breathing underwater and swimming, Change Appearance for disguises, or Natural Weapons for magical melee attacks dealing 1d6 damage with +1 to attack and damage rolls."
+    ]
+  },
+  {
+    "title": "Animal Friendship",
+    "level": 1,
+    "school": "Enchantment",
+    "description": "Calm Emotions: Convince a beast you mean no harm by casting on one within range that sees and hears you. Beast must fail a Wisdom saving throw to be charmed, unless Intelligence is 4+. Ends if harmed.",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "24 hours",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "https://picsum.photos/300/180",
+    "desc": [
+      "Calm Emotions: Convince a beast you mean no harm by casting on one within range that sees and hears you. Beast must fail a Wisdom saving throw to be charmed, unless Intelligence is 4+. Ends if harmed."
+    ]
+  },
+  {
+    "title": "Animal Messenger",
+    "level": 2,
+    "school": "Enchantment",
+    "description": "Use a Tiny beast to send a 25-word message to a known location and a specific recipient. If the messenger doesn't arrive in time, the message is lost.",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "24 hours",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "https://picsum.photos/300/180",
+    "desc": [
+      "Use a Tiny beast to send a 25-word message to a known location and a specific recipient. If the messenger doesn't arrive in time, the message is lost."
+    ]
+  },
+  {
+    "title": "Animal Shapes",
+    "level": 8,
+    "school": "Transmutation",
+    "description": "\"Polymorph\" transforms willing creatures into Large or smaller beasts of CR 4 or lower. Stats change, but alignment and mental scores remain. Can revert by choice or 0 HP, with excess damage carrying over. Limited actions, can't speak or cast spel...",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Up to 24 hours",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "source": "SRD",
+    "art_url": "https://picsum.photos/300/180",
+    "desc": [
+      "\"Polymorph\" transforms willing creatures into Large or smaller beasts of CR 4 or lower. Stats change, but alignment and mental scores remain. Can revert by choice or 0 HP, with excess damage carrying over. Limited actions, can't speak or cast spel..."
+    ]
+  },
+  {
+    "title": "Animate Dead",
+    "level": 3,
+    "school": "Necromancy",
+    "description": "Animate Dead: Turn bones or a corpse into a zombie or skeleton under your control. Command it mentally within 60 feet as a bonus action. Control lasts 24 hours; reassert control by recasting.",
+    "summary": true,
+    "casting_time": "1 minute",
+    "duration": "Instantaneous",
+    "range": "10 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "https://picsum.photos/300/180",
+    "desc": [
+      "Animate Dead: Turn bones or a corpse into a zombie or skeleton under your control. Command it mentally within 60 feet as a bonus action. Control lasts 24 hours; reassert control by recasting."
+    ]
+  },
+  {
+    "title": "Animate Objects",
+    "level": 5,
+    "school": "Transmutation",
+    "description": "Animate Objects brings up to ten nonmagical objects to life under your control until they reach 0 HP or the spell ends. Objects' size determines their stats; they can follow commands within 500 feet, attacking or guarding as instructed.",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Up to 1 minute",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S"
+    ],
+    "source": "SRD",
+    "art_url": "https://placebear.com/300/180",
+    "desc": [
+      "Animate Objects brings up to ten nonmagical objects to life under your control until they reach 0 HP or the spell ends. Objects' size determines their stats; they can follow commands within 500 feet, attacking or guarding as instructed."
+    ]
+  },
+  {
+    "title": "Antilife Shell",
+    "level": 5,
+    "school": "Abjuration",
+    "description": "Create a 10ft radius barrier around you, preventing creatures (except undead and constructs) from passing through. They can attack through it but if you force them through, the spell ends.",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Up to 1 hour",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "source": "SRD",
+    "art_url": "https://picsum.photos/300/180",
+    "desc": [
+      "Create a 10ft radius barrier around you, preventing creatures (except undead and constructs) from passing through. They can attack through it but if you force them through, the spell ends."
+    ]
+  },
+  {
+    "title": "Antimagic Field",
+    "level": 8,
+    "school": "Abjuration",
+    "description": "Antimagic Field creates a 10-foot-radius sphere around you that nullifies spells, suppresses magical effects, and temporarily disables magic items, preventing spells and effects from crossing its barrier, making teleportation and planar travel imp...",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Up to 1 hour",
+    "range": "Self",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "https://placebear.com/300/180",
+    "desc": [
+      "Antimagic Field creates a 10-foot-radius sphere around you that nullifies spells, suppresses magical effects, and temporarily disables magic items, preventing spells and effects from crossing its barrier, making teleportation and planar travel imp..."
+    ]
+  },
+  {
+    "title": "Antipathy/Sympathy",
+    "level": 8,
+    "school": "Enchantment",
+    "description": "**Antipathy/Sympathy:** Choose a target to repel or attract specified creatures. The aura either frightens creatures away or compels them to approach. Creatures must make wisdom saves or be affected accordingly, using their movement to avoid or re...",
+    "summary": true,
+    "casting_time": "1 hour",
+    "duration": "10 days",
+    "range": "60 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "https://placekitten.com/300/180",
+    "desc": [
+      "**Antipathy/Sympathy:** Choose a target to repel or attract specified creatures. The aura either frightens creatures away or compels them to approach. Creatures must make wisdom saves or be affected accordingly, using their movement to avoid or re..."
+    ]
+  },
+  {
+    "title": "Arcane Eye",
+    "level": 4,
+    "school": "Divination",
+    "description": "Create an invisible, hovering eye with normal and darkvision to see in all directions within 30 feet. Move it 30 feet as an action, no distance limit but can't enter another plane. Pass through openings as small as 1 inch.",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Up to 1 hour",
+    "range": "30 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "https://placebear.com/300/180",
+    "desc": [
+      "Create an invisible, hovering eye with normal and darkvision to see in all directions within 30 feet. Move it 30 feet as an action, no distance limit but can't enter another plane. Pass through openings as small as 1 inch."
+    ]
+  },
+  {
+    "title": "Arcane Hand",
+    "level": 5,
+    "school": "Evocation",
+    "description": "Create a Large hand of force with AC 20 and hit points equal to yours. Choose from Clenched Fist (4d8 force damage), Forceful Hand (push or grapple), Grasping Hand (grapple and crush), or Interposing Hand (provides half cover).",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Up to 1 minute",
+    "range": "120 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "https://placekitten.com/300/180",
+    "desc": [
+      "Create a Large hand of force with AC 20 and hit points equal to yours. Choose from Clenched Fist (4d8 force damage), Forceful Hand (push or grapple), Grasping Hand (grapple and crush), or Interposing Hand (provides half cover)."
+    ]
+  }
+]
