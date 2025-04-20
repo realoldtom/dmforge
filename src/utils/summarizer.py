@@ -2,8 +2,10 @@
 
 import os
 import logging
-
+from dotenv import load_dotenv
 import openai
+
+load_dotenv()
 
 MAX_CHAR_COUNT = 250
 
@@ -18,6 +20,7 @@ def summarize_text(text: str, max_length: int = MAX_CHAR_COUNT) -> str:
         return text
 
     api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    print("🔑 api_key loaded:", repr(api_key))  # ← you should see your key!
     if not api_key:
         logging.warning("⚠️ falling back to truncation")
         truncated = text[: max_length - 3].rstrip()

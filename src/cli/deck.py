@@ -2,9 +2,10 @@
 
 import json
 from pathlib import Path
+import typer
+from src.deck_forge.art import generate_art_for_deck
 from typing import Optional
 
-import typer
 
 from src.utils.console import banner, error, success
 from src.deck_forge.generate import generate_spell_deck
@@ -154,3 +155,20 @@ def render(
         raise typer.Exit(1)
 
     success("✅ Deck rendered successfully")
+
+
+@deck_app.command("art")
+def art(
+    deck_file: Path = typer.Argument(..., help="Deck JSON file to enrich with art"),
+    art_dir: Path = typer.Option(
+        Path("assets/art"), "--art-dir", help="Where to save generated images"
+    ),
+    size: str = typer.Option("512x512", "--size", help="Image size for DALL·E"),
+    n: int = typer.Option(
+        1, "--n", help="Number of images per card (always uses first)"
+    ),
+):
+    """
+    Generate DALL·E art for each card in a deck JSON and update its art_url.
+    """
+    generate_art_for_deck(deck_file, art_dir, size=size, n_per_card=n)

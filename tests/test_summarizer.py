@@ -3,7 +3,6 @@
 import os
 import logging
 import openai
-
 from src.utils.summarizer import summarize_text, MAX_CHAR_COUNT
 from src.deck_forge.schema import spell_to_card
 

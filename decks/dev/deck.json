@@ -14,7 +14,7 @@
       "M"
     ],
     "source": "SRD",
-    "art_url": "https://placekitten.com/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Acid_Arrow.png",
     "desc": [
       "Hurl a green arrow at a target, dealing 4d4 acid damage on hit and 2d4 on the target's next turn. On miss, target takes half initial damage with no damage later."
     ]
@@ -33,7 +33,7 @@
       "S"
     ],
     "source": "SRD",
-    "art_url": "https://picsum.photos/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Acid_Splash.png",
     "desc": [
       "Hurl a bubble of acid at one creature or two within 5 feet. Dex save or take 1d6 acid damage, scaling to 4d6 at higher levels."
     ]
@@ -53,7 +53,7 @@
       "M"
     ],
     "source": "SRD",
-    "art_url": "https://placekitten.com/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Aid.png",
     "desc": [
       "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration."
     ]
@@ -73,7 +73,7 @@
       "M"
     ],
     "source": "SRD",
-    "art_url": "https://placekitten.com/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Alarm.png",
     "desc": [
       "Alarm spell protects a 20-foot cube area. Detects intrusions by Tiny+ creatures, alerts you mentally within 1 mile or audibly with a hand bell within 60 feet for 10 seconds. Choose creatures that won't trigger the alarm."
     ]
@@ -92,7 +92,7 @@
       "S"
     ],
     "source": "SRD",
-    "art_url": "https://placebear.com/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Alter_Self.png",
     "desc": [
       "\"Alter Self\" spell lets you choose Aquatic Adaptation for breathing underwater and swimming, Change Appearance for disguises, or Natural Weapons for magical melee attacks dealing 1d6 damage with +1 to attack and damage rolls."
     ]
@@ -112,7 +112,7 @@
       "M"
     ],
     "source": "SRD",
-    "art_url": "https://picsum.photos/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Animal_Friendship.png",
     "desc": [
       "Calm Emotions: Convince a beast you mean no harm by casting on one within range that sees and hears you. Beast must fail a Wisdom saving throw to be charmed, unless Intelligence is 4+. Ends if harmed."
     ]
@@ -132,7 +132,7 @@
       "M"
     ],
     "source": "SRD",
-    "art_url": "https://picsum.photos/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Animal_Messenger.png",
     "desc": [
       "Use a Tiny beast to send a 25-word message to a known location and a specific recipient. If the messenger doesn't arrive in time, the message is lost."
     ]
@@ -151,7 +151,7 @@
       "S"
     ],
     "source": "SRD",
-    "art_url": "https://picsum.photos/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Animal_Shapes.png",
     "desc": [
       "\"Polymorph\" transforms willing creatures into Large or smaller beasts of CR 4 or lower. Stats change, but alignment and mental scores remain. Can revert by choice or 0 HP, with excess damage carrying over. Limited actions, can't speak or cast spel..."
     ]
@@ -171,7 +171,7 @@
       "M"
     ],
     "source": "SRD",
-    "art_url": "https://picsum.photos/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Animate_Dead.png",
     "desc": [
       "Animate Dead: Turn bones or a corpse into a zombie or skeleton under your control. Command it mentally within 60 feet as a bonus action. Control lasts 24 hours; reassert control by recasting."
     ]
@@ -190,7 +190,7 @@
       "S"
     ],
     "source": "SRD",
-    "art_url": "https://placebear.com/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Animate_Objects.png",
     "desc": [
       "Animate Objects brings up to ten nonmagical objects to life under your control until they reach 0 HP or the spell ends. Objects' size determines their stats; they can follow commands within 500 feet, attacking or guarding as instructed."
     ]
@@ -209,7 +209,7 @@
       "S"
     ],
     "source": "SRD",
-    "art_url": "https://picsum.photos/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Antilife_Shell.png",
     "desc": [
       "Create a 10ft radius barrier around you, preventing creatures (except undead and constructs) from passing through. They can attack through it but if you force them through, the spell ends."
     ]
@@ -229,7 +229,7 @@
       "M"
     ],
     "source": "SRD",
-    "art_url": "https://placebear.com/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Antimagic_Field.png",
     "desc": [
       "Antimagic Field creates a 10-foot-radius sphere around you that nullifies spells, suppresses magical effects, and temporarily disables magic items, preventing spells and effects from crossing its barrier, making teleportation and planar travel imp..."
     ]
@@ -269,7 +269,7 @@
       "M"
     ],
     "source": "SRD",
-    "art_url": "https://placebear.com/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Arcane_Eye.png",
     "desc": [
       "Create an invisible, hovering eye with normal and darkvision to see in all directions within 30 feet. Move it 30 feet as an action, no distance limit but can't enter another plane. Pass through openings as small as 1 inch."
     ]
@@ -289,7 +289,7 @@
       "M"
     ],
     "source": "SRD",
-    "art_url": "https://placekitten.com/300/180",
+    "art_url": "C:\\Games\\Hobbies\\DnD\\dmforge\\assets\\art\\Arcane_Hand.png",
     "desc": [
       "Create a Large hand of force with AC 20 and hit points equal to yours. Choose from Clenched Fist (4d8 force damage), Forceful Hand (push or grapple), Grasping Hand (grapple and crush), or Interposing Hand (provides half cover)."
     ]
