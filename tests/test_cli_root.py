@@ -1,5 +1,4 @@
 # tests/test_cli_root.py
-
 from typer.testing import CliRunner
 from src.cli import app
 

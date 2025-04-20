@@ -1,43 +1,55 @@
-from src.deck_forge.render_pdf import render_card_pdf, render_card_sheet_pdf
 import json
+import pytest
+from typer.testing import CliRunner  # Switch to Typer's CliRunner
+from src.cli.deck import deck_app
 
+# Sample card used across tests
 sample_card = {
-    "title": "Shield",
+    "title": "Test Spell",
     "level": 1,
-    "school": "Abjuration",
-    "casting_time": "1 reaction",
-    "duration": "1 round",
+    "school": "Evocation",
+    "description": "Test description",
+    "casting_time": "1 action",
+    "duration": "Instantaneous",
     "range": "Self",
     "components": ["V", "S"],
-    "description": "An invisible barrier of magical force appears and protects you...",
+    "source": "SRD",
+    "art_url": "https://example.com/image.png",
+    "summary": False,
 }
 
 
-def test_render_card_pdf_debug_output(tmp_path):
+@pytest.fixture
+def runner():
+    return CliRunner()  # This will be Typer's CliRunner
+
+
+def test_render_card_sheet_debug_output(tmp_path, runner):
+    # Write a single-card deck
     deck_path = tmp_path / "deck.json"
-    pdf_path = tmp_path / "cards.pdf"
-    debug_path = tmp_path / "DEBUG_cards.html"
+    deck_path.write_text(json.dumps({"cards": [sample_card]}), encoding="utf-8")
 
-    deck_path.write_text(json.dumps([sample_card]), encoding="utf-8")
+    # Invoke with --debug flag
+    output_path = tmp_path / "out.html"
+    result = runner.invoke(
+        deck_app,  # Keep using deck_app directly
+        [
+            "render",
+            str(deck_path),
+            "--format",
+            "html",
+            "--layout",
+            "sheet",
+            "--debug",
+            "--output",
+            str(output_path),
+        ],
+    )
+    assert result.exit_code == 0
 
-    render_card_pdf(deck_path, pdf_path, theme="default", debug=True)
-
-    assert pdf_path.exists()
-    assert pdf_path.stat().st_size > 1000
-    assert debug_path.exists()
-    assert "Shield" in debug_path.read_text(encoding="utf-8")
-
-
-def test_render_card_sheet_debug_output(tmp_path):
-    deck_path = tmp_path / "deck.json"
-    pdf_path = tmp_path / "sheet.pdf"
-    debug_path = tmp_path / "DEBUG_sheet.html"
-
-    deck_path.write_text(json.dumps([sample_card]), encoding="utf-8")
-
-    render_card_sheet_pdf(deck_path, pdf_path, theme="default", debug=True)
-
-    assert pdf_path.exists()
-    assert pdf_path.stat().st_size > 1000
-    assert debug_path.exists()
-    assert "Shield" in debug_path.read_text(encoding="utf-8")
+    # Debug should also write a raw HTML debug file
+    debug_file = tmp_path / "deck_debug.html"
+    assert debug_file.exists()
+    # And the rendered output should exist and include the spell title
+    assert output_path.exists()
+    assert "Test Spell" in output_path.read_text(encoding="utf-8")

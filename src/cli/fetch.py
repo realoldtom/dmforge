@@ -1,10 +1,11 @@
 """Data fetching commands for D&D 5e content."""
 
-from typer import Typer, Option
+import typer
+from typer import Option
 from src.fetch.srd import fetch_srd_spells, fetch_srd_traits, fetch_srd_features
 from src.utils.console import banner, error, success
 
-fetch_app = Typer(help="Data fetching commands")
+fetch_app = typer.Typer(name="fetch", help="Data fetching commands")
 
 
 @fetch_app.command("srd")

@@ -3,26 +3,30 @@
 import random
 from typing import Dict, Any, Optional
 from src.utils.console import warn
-from src.utils.summarizer import summarize_text, MAX_CHAR_COUNT
+import src.utils.summarizer as summarizer
+from src.utils.summarizer import MAX_CHAR_COUNT
 
 
 def spell_to_card(
     spell: Dict[str, Any], summarize: bool = True
 ) -> Optional[Dict[str, Any]]:
-    """Convert a raw spell dictionary to a card-ready format."""
+    """Convert a raw spell dictionary to a card-ready format, summarizing if needed."""
     try:
         if not isinstance(spell, dict):
             return None
 
-        required = ["name", "level", "school"]
-        if not all(key in spell for key in required):
-            return None
+        # Required
+        for key in ("name", "level", "school", "desc"):
+            if key not in spell:
+                return None
 
-        # Handle long descriptions with summarization
-        desc_raw = spell.get("desc", [])
-        full_desc = " ".join(desc_raw) if isinstance(desc_raw, list) else str(desc_raw)
+        full_desc = (
+            " ".join(spell["desc"])
+            if isinstance(spell["desc"], list)
+            else str(spell["desc"])
+        )
         was_summarized = len(full_desc) > MAX_CHAR_COUNT
-        final_desc = summarize_text(full_desc)
+        final_desc = summarizer.summarize_text(full_desc) if summarize else full_desc
 
         card = {
             "title": spell["name"].title(),
@@ -43,7 +47,6 @@ def spell_to_card(
                 ]
             ),
         }
-
         return card
 
     except Exception as e:
