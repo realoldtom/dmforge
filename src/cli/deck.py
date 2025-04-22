@@ -14,6 +14,15 @@ from src.deck_forge.render_html import render_card_html
 from src.utils.summarizer import summarize_text, MAX_CHAR_COUNT
 
 deck_app = typer.Typer(name="deck", help="Generate and render spell card decks")
+class_filter: Optional[str] = (
+    typer.Option(None, "--class", help="Filter by class (comma-separated)"),
+)
+level_filter: Optional[str] = (
+    typer.Option(None, "--level", help="Filter by spell level(s)"),
+)
+school_filter: Optional[str] = (
+    typer.Option(None, "--school", help="Filter by school(s)"),
+)
 
 
 def _load_deck(path: Path):
@@ -65,10 +74,26 @@ def build(
         "--summary-length",
         help=f"Max chars for summary (default {MAX_CHAR_COUNT})",
     ),
+    class_filter: Optional[str] = typer.Option(
+        None, "--class", help="Filter by class (comma-separated)"
+    ),
+    level_filter: Optional[str] = typer.Option(
+        None, "--level", help="Filter by level (comma-separated integers)"
+    ),
+    school_filter: Optional[str] = typer.Option(
+        None, "--school", help="Filter by school (comma-separated)"
+    ),
 ):
-    """Build a full SRD spell deck, optionally summarizing descriptions."""
+    """Build a full or filtered SRD spell deck, optionally summarizing descriptions."""
     banner("🧱 Generating Spell Card Deck")
-    deck_path_str = generate_spell_deck(output_name=output, limit=limit)
+    deck_path_str = generate_spell_deck(
+        output_name=output,
+        limit=limit,
+        class_filter=class_filter,
+        level_filter=level_filter,
+        school_filter=school_filter,
+    )
+
     if not deck_path_str:
         error("❌ Deck generation failed.")
         raise typer.Exit(1)

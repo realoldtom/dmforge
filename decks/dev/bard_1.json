@@ -1,0 +1,461 @@
+{
+  "cards": [
+    {
+      "title": "Animal Friendship",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "Calm Emotions: Convince a beast you mean no harm. Target must see and hear you, with Intelligence less than 4. On failed save, charm beast until harmed by you or allies.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "24 hours",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Bane",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "Choose up to 3 creatures to make Charisma saves. If they fail, deduct a d4 from their attack rolls and saving throws while the spell lasts.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Charm Person",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "Charm Person: Charm humanoid, grants advantage on save if in combat. Charmed target sees caster as friend until harmed; realizes charm after spell ends.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Comprehend Languages",
+      "level": 1,
+      "school": "Divination",
+      "description": "Comprehend Languages: Understand spoken and written languages for the duration, but can't decode secret messages or glyphs. Reading text takes 1 minute per page.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Cure Wounds",
+      "level": 1,
+      "school": "Evocation",
+      "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Dancing Lights",
+      "level": 0,
+      "school": "Evocation",
+      "description": "Create up to four lights in torch, lantern, or orb form, each shedding dim light in a 10-ft radius. Combine them into a Medium humanoid form. Move lights 60 ft as bonus action, winking out if exceeding 20 ft range from another light.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Detect Magic",
+      "level": 1,
+      "school": "Divination",
+      "description": "Detect Magic: Sense magic within 30 feet, use action to see aura around magical creatures or objects, learn school of magic. Penetrates most barriers, blocked by specific materials.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Disguise Self",
+      "level": 1,
+      "school": "Illusion",
+      "description": "Disguise Self: Change appearance and clothing but not body type. Illusion doesn't hold up to physical inspection. Can't add real objects or change body structure. Others can see through it with a successful check.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Feather Fall",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "\"Slow Fall: Choose up to five falling creatures to slow their descent to 60 feet per round. They take no falling damage and land safely if they touch ground before the spell ends.\"",
+      "summary": true,
+      "casting_time": "1 reaction",
+      "duration": "1 minute",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Healing Word",
+      "level": 1,
+      "school": "Evocation",
+      "description": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "summary": false,
+      "casting_time": "1 bonus action",
+      "duration": "Instantaneous",
+      "range": "60 feet",
+      "components": [
+        "V"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Heroism",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "\"Touch a willing creature to grant bravery: immune to fear, gains temp HP equal to your spellcasting ability modifier each turn. Temp HP vanish when spell ends.\"",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Hideous Laughter",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "Tasha's Hideous Laughter causes a target to perceive everything as funny, making it fall prone and incapacitated if it fails a wisdom saving throw. It can attempt new saves at the end of turns or when damaged, with advantage on saves triggered by...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Identify",
+      "level": 1,
+      "school": "Divination",
+      "description": "Identify: Touch object to learn its magical properties, attunement needs, charges. Touch creature to identify spells affecting it.",
+      "summary": true,
+      "casting_time": "1 minute",
+      "duration": "Instantaneous",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Illusory Script",
+      "level": 1,
+      "school": "Illusion",
+      "description": "Illusory Script creates hidden messages on documents that appear normal to designated creatures but as unintelligible or different to others. Dispel ends illusion, truesight can reveal true message.",
+      "summary": true,
+      "casting_time": "1 minute",
+      "duration": "10 days",
+      "range": "Touch",
+      "components": [
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Light",
+      "level": 0,
+      "school": "Evocation",
+      "description": "\"Cast light on a small object, shedding bright light in a 20-ft radius and dim light for 20 ft. Choose the light's color. Blocking the object's view stops the light. Ends on recast, dismissal, or hostile creature's successful Dex save.\"",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Touch",
+      "components": [
+        "V",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Longstrider",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "You touch a creature. The target's speed increases by 10 feet until the spell ends.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Mage Hand",
+      "level": 0,
+      "school": "Conjuration",
+      "description": "Create a floating spectral hand within 30 feet that can perform tasks like object manipulation, opening doors, or pouring from vials. Controlled with an action, it can't attack, carry over 10 pounds, or activate magic items, vanishing if over 30 f...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Mending",
+      "level": 0,
+      "school": "Transmutation",
+      "description": "\"Mending repairs breaks or tears in objects up to 1 foot in any dimension, leaving no trace. It can fix non-magical and magical items but doesn't restore magic.\"",
+      "summary": true,
+      "casting_time": "1 minute",
+      "duration": "Instantaneous",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Message",
+      "level": 0,
+      "school": "Transmutation",
+      "description": "Message: Whisper to a target within range who can reply only you. Cast through barriers you're familiar with. Can bend around corners and obstacles.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 round",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Minor Illusion",
+      "level": 0,
+      "school": "Illusion",
+      "description": "Create illusion of sound or object within range lasting until dismissed or recast. Sound volume varies, objects no larger than 5-ft cube. Illusion lacks sensory effects, revealed on physical interaction or successful Investigation check.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "30 feet",
+      "components": [
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Prestidigitation",
+      "level": 0,
+      "school": "Transmutation",
+      "description": "Prestidigitation allows novice spellcasters to create minor magical effects within range, including sensory effects, lighting or extinguishing fires, cleaning or soiling objects, altering the temperature or taste of materials, creating colors or s...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "10 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Silent Image",
+      "level": 1,
+      "school": "Illusion",
+      "description": "Create a 15-foot cube visual illusion of an object or creature that can move within range. It lacks other sensory effects, can be altered to appear natural, and is revealed as an illusion upon physical interaction or a successful Intelligence check.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 10 minutes",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Sleep",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "5d8 roll determines total hit points of creatures affected. Unconscious in 20ft radius in ascending HP order. Damage, awakening, or spell end breaks sleep. Subtract HP from total for each affected. Undead and charm-immune are unaffected.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "90 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Speak With Animals",
+      "level": 1,
+      "school": "Divination",
+      "description": "\"Speak with Beasts\" spell grants you the power to understand and talk to beasts, gaining information about locations, monsters, and potentially persuading them to help, based on their intelligence.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Thunderwave",
+      "level": 1,
+      "school": "Evocation",
+      "description": "\"Thunderwave: A 15-ft cube centered on you forces creatures to make a Con save. Fail takes 2d8 thunder damage, pushed 10 ft; success takes half damage, no push. Objects pushed 10 ft, loud boom heard 300 ft.\"",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "True Strike",
+      "level": 0,
+      "school": "Divination",
+      "description": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "Up to 1 round",
+      "range": "30 feet",
+      "components": [
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Unseen Servant",
+      "level": 1,
+      "school": "Conjuration",
+      "description": "Create an invisible servant that follows simple commands until the spell ends. It can move 15 feet, interact with objects, and perform tasks like cleaning, mending, and serving food. If it drops to 0 hit points or moves over 60 feet away, the spel...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Vicious Mockery",
+      "level": 0,
+      "school": "Enchantment",
+      "description": "Vicious Mockery: Insult a creature, forcing a Wisdom save. On a fail, target takes 1d4 psychic damage and gets disadvantage on its next attack. Damage increases with levels (2d4 at 5th, 3d4 at 11th, 4d4 at",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "60 feet",
+      "components": [
+        "V"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    }
+  ]
+}
