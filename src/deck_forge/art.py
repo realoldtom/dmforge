@@ -88,8 +88,8 @@ def generate_art_for_deck(
             img_bytes = requests.get(image_url).content
             out_path.write_bytes(img_bytes)
 
-            card["art_url"] = str(out_path.resolve())
-            success(f"→ {title}: image saved to {out_path.name}")
+            card["art_url"] = (Path("../../assets/art") / out_path.name).as_posix()
+            print(f"✅ Updating art_url for {title}: {card['art_url']}")
 
         except Exception as e:
             error(f"❌ {title}: Exception while generating art: {e}")
