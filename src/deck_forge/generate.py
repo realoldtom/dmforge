@@ -32,20 +32,17 @@ def generate_spell_deck(
     if not spells:
         return None
 
-    # Parse filters
-    class_set = (
-        {c.strip().lower() for c in class_filter.split(",")} if class_filter else set()
-    )
-    level_set = (
-        {int(level.strip()) for level in level_filter.split(",")}
-        if level_filter
-        else set()
-    )
-    school_set = (
-        {school.strip().lower() for school in school_filter.split(",")}
-        if school_filter
-        else set()
-    )
+    # Normalize filter inputs
+    def parse_filter(val):
+        if isinstance(val, str):
+            return {v.strip().lower() for v in val.split(",")}
+        elif isinstance(val, (list, tuple)):
+            return {str(v).strip().lower() for v in val}
+        return set()
+
+    class_set = parse_filter(class_filter)
+    level_set = {int(v) for v in parse_filter(level_filter)}  # cast to int
+    school_set = parse_filter(school_filter)
 
     def matches_filters(spell):
         spell_classes = [c.lower() for c in spell.get("classes", [])]
@@ -53,7 +50,7 @@ def generate_spell_deck(
         spell_school = spell.get("school", "").lower()
 
         return (
-            (not class_set or any(c in class_set for c in spell_classes))
+            (not class_set or any(cls in class_set for cls in spell_classes))
             and (not level_set or spell_level in level_set)
             and (not school_set or spell_school in school_set)
         )

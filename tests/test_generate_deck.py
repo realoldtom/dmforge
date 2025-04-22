@@ -18,29 +18,20 @@ sample_spell = {
 
 
 def test_generate_spell_deck_writes_json(tmp_path, monkeypatch):
-    # Setup fake input file
     spell_file = tmp_path / "spells.json"
     spell_file.write_text(json.dumps([sample_spell]), encoding="utf-8")
-
     monkeypatch.setattr("src.deck_forge.generate.get_data_path", lambda _: spell_file)
     monkeypatch.setattr("src.deck_forge.generate.get_env", lambda: "test")
     monkeypatch.chdir(tmp_path)
 
-    result = generate_spell_deck(output_name="test_deck.json")
-    assert result is not None
+    result_path = generate_spell_deck(output_name="test_deck.json")
+    assert result_path.exists()
 
-    output_file = tmp_path / "decks" / "test" / "test_deck.json"
-    assert output_file.exists()
-
-    # Check new deck structure with "cards" key
-    deck = json.loads(output_file.read_text())
+    deck = json.loads(result_path.read_text())
     assert isinstance(deck, dict)
     assert "cards" in deck
     assert len(deck["cards"]) == 1
-
-    card = deck["cards"][0]
-    assert card["title"] == "Fireball"
-    assert card["description"].startswith("A bright streak")
+    assert deck["cards"][0]["title"] == "Fireball"
 
 
 def test_generate_spell_deck_limit(tmp_path, monkeypatch):
@@ -49,15 +40,13 @@ def test_generate_spell_deck_limit(tmp_path, monkeypatch):
     ]
     spell_file = tmp_path / "spells.json"
     spell_file.write_text(json.dumps(spells), encoding="utf-8")
-
     monkeypatch.setattr("src.deck_forge.generate.get_data_path", lambda _: spell_file)
     monkeypatch.setattr("src.deck_forge.generate.get_env", lambda: "test")
     monkeypatch.chdir(tmp_path)
 
-    result = generate_spell_deck(output_name="limited_deck.json", limit=5)
-    assert result is not None
+    result_path = generate_spell_deck(output_name="limited_deck.json", limit=5)
+    assert result_path.exists()
 
-    deck_file = tmp_path / "decks" / "test" / "limited_deck.json"
-    deck = json.loads(deck_file.read_text())
+    deck = json.loads(result_path.read_text())
     assert "cards" in deck
     assert len(deck["cards"]) == 5

@@ -1,0 +1,102 @@
+{
+  "cards": [
+    {
+      "title": "Animal Messenger",
+      "level": 2,
+      "school": "Enchantment",
+      "description": "Use a Tiny beast to deliver a message to a specified location and recipient within range. The beast travels towards the location at a speed of 50 miles per 24 hours for flying creatures, or 25 miles for others. If the message is not delivered befo...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "24 hours",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Calm Emotions",
+      "level": 2,
+      "school": "Enchantment",
+      "description": "\"Emotion Suppression: Suppress charm/fear effects or make targets indifferent to chosen creatures in a 20-ft radius. Ends if attacked or harm seen. Hostility resumes when spell ends.\"",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Enthrall",
+      "level": 2,
+      "school": "Enchantment",
+      "description": "Cast \"Dissonant Whispers\" to force creatures to make a wisdom saving throw or take psychic damage and move away. Those who fail have disadvantage on perception checks against others while they can hear you.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Hold Person",
+      "level": 2,
+      "school": "Enchantment",
+      "description": "Paralyze humanoid target with a failed Wis save, allowing saves each turn to end the spell.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Suggestion",
+      "level": 2,
+      "school": "Enchantment",
+      "description": "Suggestion: Influences a creature to follow a reasonable course of action for the spell's duration, as long as it does not cause direct harm. Target must make a Wisdom saving throw; ends if harmed or if the task is completed.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 8 hours",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Zone Of Truth",
+      "level": 2,
+      "school": "Enchantment",
+      "description": "Zone of Truth creates a 15-ft magical area where creatures must make a Charisma saving throw to avoid being unable to lie. You know their saving throw results and they can choose to stay silent or be evasive within the truth's limits.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "10 minutes",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    }
+  ]
+}
