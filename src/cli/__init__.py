@@ -1,11 +1,20 @@
 # src/cli/__init__.py
 
+import os
+import warnings
 import typer
 from typing import Optional
 from src.utils.console import banner, info
 from .fetch import fetch_app
 from .deck import deck_app
 from .prompt import prompt_app
+
+# Suppress GLib and GTK warnings
+os.environ["G_MESSAGES_DEBUG"] = "none"
+
+# Optional: suppress all warnings
+warnings.filterwarnings("ignore")
+
 
 app = typer.Typer(
     name="dmforge", help="DMForge CLI – Generate spell decks, scenes, and more."

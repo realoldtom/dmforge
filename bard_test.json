@@ -1,0 +1,21 @@
+{
+  "cards": [
+    {
+      "title": "Unseen Servant",
+      "level": 1,
+      "school": "Conjuration",
+      "description": "Create a mindless force to perform simple tasks. AC 10, 1 HP, Str 2, no attacks. Commands: move 15ft, interact with objects, fetch items, clean, mend, fold, light fires, serve food, pour wine. Ends if it reaches 0 HP or",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    }
+  ]
+}

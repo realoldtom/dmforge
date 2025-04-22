@@ -1,0 +1,68 @@
+{
+  "cards": [
+    {
+      "title": "Charm Person",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "Charm Person: Charm a humanoid with a wisdom saving throw, advantage if in combat. Charmed until spell ends or if harmed, seeing you as a friend. Recognizes charm when spell ends.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Hideous Laughter",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "\"Tasha's Hideous Laughter\" causes a target to perceive everything as funny, potentially falling prone and becoming incapacitated. They can attempt to end the effect with successful Wisdom saving throws.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Minor Illusion",
+      "level": 0,
+      "school": "Illusion",
+      "description": "Create an illusion of sound or a small object that lasts until dismissed or recast. Sound can range from whisper to scream, while image can't create sensory effects and reveals itself when physically interacted with or upon a successful Investigat...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "30 feet",
+      "components": [
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Vicious Mockery",
+      "level": 0,
+      "school": "Enchantment",
+      "description": "Vicious Mockery: Insult a creature to deal 1d4 psychic damage and give disadvantage on its next attack if it fails a wisdom saving throw. Damage increases with levels.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "60 feet",
+      "components": [
+        "V"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    }
+  ]
+}

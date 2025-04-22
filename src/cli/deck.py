@@ -1,8 +1,8 @@
 # src/cli/deck.py
 
 import json
-from pathlib import Path
 import typer
+from pathlib import Path
 from src.deck_forge.art import generate_art_for_deck
 from typing import Optional
 
@@ -63,35 +63,36 @@ def _summarize_cards(cards: list, max_length: int):
 @deck_app.command("build")
 def build(
     output: str = typer.Option("deck.json", "--output", help="Output file name"),
-    limit: Optional[int] = typer.Option(
-        None, "--limit", "-n", help="Only build the first N spells"
-    ),
+    limit: Optional[int] = typer.Option(None, "--limit", "-n", help="Limit N spells"),
     summarize: bool = typer.Option(
-        False, "--summarize/--no-summarize", help="Summarize spell descriptions"
+        False, "--summarize/--no-summarize", help="Summarize descriptions"
     ),
     summary_length: int = typer.Option(
-        MAX_CHAR_COUNT,
-        "--summary-length",
-        help=f"Max chars for summary (default {MAX_CHAR_COUNT})",
+        MAX_CHAR_COUNT, "--summary-length", help="Max chars for summary"
     ),
     class_filter: Optional[str] = typer.Option(
         None, "--class", help="Filter by class (comma-separated)"
     ),
     level_filter: Optional[str] = typer.Option(
-        None, "--level", help="Filter by level (comma-separated integers)"
+        None, "--level", help="Filter by spell level(s)"
     ),
     school_filter: Optional[str] = typer.Option(
-        None, "--school", help="Filter by school (comma-separated)"
+        None, "--school", help="Filter by school(s)"
+    ),
+    interactive: bool = typer.Option(
+        False, "--interactive", help="Select spells interactively"
     ),
 ):
-    """Build a full or filtered SRD spell deck, optionally summarizing descriptions."""
+    """Build a full or filtered SRD spell deck, optionally with interactive selection."""
     banner("🧱 Generating Spell Card Deck")
+
     deck_path_str = generate_spell_deck(
         output_name=output,
         limit=limit,
         class_filter=class_filter,
         level_filter=level_filter,
         school_filter=school_filter,
+        interactive=interactive,
     )
 
     if not deck_path_str:
