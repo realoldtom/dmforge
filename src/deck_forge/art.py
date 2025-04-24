@@ -1,12 +1,10 @@
-# src/deck_forge/art.py
-
 import os
 import json
 import requests
-from typing import Optional
-from pathlib import Path
 from datetime import datetime
-from src.utils.console import banner, error, warn, success
+from pathlib import Path
+from typing import Optional
+from src.utils.console import banner, success, error, warn
 
 API_URL = "https://api.openai.com/v1/images/generations"
 MODEL = "dall-e-3"
@@ -20,8 +18,9 @@ def generate_art_for_deck(
     n_per_card: int = 1,
     prompt_suffix: Optional[str] = None,
     character_style: Optional[str] = None,
+    version: str = "v1",
 ):
-    banner("🎨 Generating Card Art with DALL·E (API fallback)")
+    banner("🎨 Generating Card Art with DALL·E (versioning enabled)")
 
     if not deck_path.exists():
         error(f"❌ Deck not found: {deck_path}")
@@ -38,6 +37,7 @@ def generate_art_for_deck(
         if isinstance(raw, dict)
         else raw if isinstance(raw, list) else []
     )
+
     if not cards:
         error("❌ No cards found in deck.")
         return
@@ -46,28 +46,23 @@ def generate_art_for_deck(
 
     for card in cards:
         title = card["title"]
-        filename = f"{title.replace(' ', '_')}.png"
+        filename = f"{title.replace(' ', '_')}_{version}.png"
         out_path = art_dir / filename
 
         if out_path.exists():
             warn(f"⏭️ Skipping existing: {filename}")
             continue
 
-        # Construct prompt
         prompt = (
-            f"Fantasy artwork of the spell '{title}'. "
-            #           f"Depict a magical scene representing a level {card['level']} {card['school']} spell. "
+            f"Fantasy artwork of the spell '{title}', from a tabletop RPG. "
+            f"Depict a magical scene representing a level {card['level']} {card['school']} spell. "
             f"Include dramatic lighting, detailed environment, and cinematic style. "
         )
-
         if character_style:
             prompt += f" Show a {character_style} casting the spell. "
-
         prompt += f"Focus on the spell's effects: {card['description']}. "
-
         if prompt_suffix:
             prompt += f"{prompt_suffix} "
-
         prompt += "Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
 
         try:
@@ -90,7 +85,6 @@ def generate_art_for_deck(
                 warn(f"❌ Failed to generate art for {title}")
                 warn(f"   → Status: {response.status_code}")
                 warn(f"   → Error: {response.text}")
-
                 timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
                 debug_path = (
                     art_dir / f"{title.replace(' ', '_')}_error_{timestamp}.json"
@@ -102,9 +96,19 @@ def generate_art_for_deck(
             img_bytes = requests.get(image_url).content
             out_path.write_bytes(img_bytes)
 
-            card["art_url"] = (Path("../../assets/art") / out_path.name).as_posix()
-            print(f"✅ Updating art_url for {title}: {card['art_url']}")
-            success(f"→ {title}: image saved to {out_path.name}")
+            relative_path = (Path("../../assets/art") / filename).as_posix()
+            art_info = {
+                "tag": version,
+                "path": relative_path,
+                "prompt": prompt,
+            }
+
+            # Add or update art_versions field
+            card.setdefault("art_versions", []).append(art_info)
+            card["art_url"] = relative_path  # default image path
+
+            print(f"✅ Updating art_url for {title}: {relative_path}")
+            success(f"→ {title}: image saved to {filename}")
 
         except Exception as e:
             error(f"❌ {title}: Exception while generating art: {e}")

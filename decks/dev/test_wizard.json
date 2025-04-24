@@ -13,9 +13,16 @@
       "S"
     ],
     "source": "SRD",
-    "art_url": "../../assets/art/Burning_Hands.png",
+    "art_url": "../../assets/art/Burning_Hands_v2.png",
     "desc": [
       "Casting Burning Hands creates a 15-foot cone of flames shooting from your fingertips, dealing 3d6 fire damage on a failed Dexterity saving throw to creatures within the area. Flammable objects not being worn or carried may also ignite."
+    ],
+    "art_versions": [
+      {
+        "tag": "v2",
+        "path": "../../assets/art/Burning_Hands_v2.png",
+        "prompt": "Fantasy artwork of the spell 'Burning Hands', from a tabletop RPG. Depict a magical scene representing a level 1 Evocation spell. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. Focus on the spell's effects: Casting Burning Hands creates a 15-foot cone of flames shooting from your fingertips, dealing 3d6 fire damage on a failed Dexterity saving throw to creatures within the area. Flammable objects not being worn or carried may also ignite.. foggy ruins Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+      }
     ]
   },
   {
@@ -32,9 +39,16 @@
       "S"
     ],
     "source": "SRD",
-    "art_url": "../../assets/art/Shield.png",
+    "art_url": "../../assets/art/Shield_v2.png",
     "desc": [
       "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile."
+    ],
+    "art_versions": [
+      {
+        "tag": "v2",
+        "path": "../../assets/art/Shield_v2.png",
+        "prompt": "Fantasy artwork of the spell 'Shield', from a tabletop RPG. Depict a magical scene representing a level 1 Abjuration spell. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. Focus on the spell's effects: An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.. foggy ruins Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+      }
     ]
   },
   {
@@ -51,9 +65,16 @@
       "S"
     ],
     "source": "SRD",
-    "art_url": "../../assets/art/Shocking_Grasp.png",
+    "art_url": "../../assets/art/Shocking_Grasp_v2.png",
     "desc": [
       "Shocking Grasp: Melee spell attack to shock target, deals 1d8 lightning damage, target can't react next turn. Damage increases at 5th (2d8), 11th (3d8), and 17th (4d8) levels. Metal armor gives attack advantage"
+    ],
+    "art_versions": [
+      {
+        "tag": "v2",
+        "path": "../../assets/art/Shocking_Grasp_v2.png",
+        "prompt": "Fantasy artwork of the spell 'Shocking Grasp', from a tabletop RPG. Depict a magical scene representing a level 0 Evocation spell. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. Focus on the spell's effects: Shocking Grasp: Melee spell attack to shock target, deals 1d8 lightning damage, target can't react next turn. Damage increases at 5th (2d8), 11th (3d8), and 17th (4d8) levels. Metal armor gives attack advantage. foggy ruins Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+      }
     ]
   },
   {
@@ -71,9 +92,16 @@
       "M"
     ],
     "source": "SRD",
-    "art_url": "../../assets/art/Sleep.png",
+    "art_url": "../../assets/art/Sleep_v2.png",
     "desc": [
       "Roll 5d8 to determine total hit points affected. Creatures near a point you choose fall asleep based on ascending hit points. Sleep ends if damage is taken or shaken awake. Undead and charm-immune creatures are unaffected."
+    ],
+    "art_versions": [
+      {
+        "tag": "v2",
+        "path": "../../assets/art/Sleep_v2.png",
+        "prompt": "Fantasy artwork of the spell 'Sleep', from a tabletop RPG. Depict a magical scene representing a level 1 Enchantment spell. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. Focus on the spell's effects: Roll 5d8 to determine total hit points affected. Creatures near a point you choose fall asleep based on ascending hit points. Sleep ends if damage is taken or shaken awake. Undead and charm-immune creatures are unaffected.. foggy ruins Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+      }
     ]
   }
 ]

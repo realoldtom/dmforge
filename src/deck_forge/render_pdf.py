@@ -35,8 +35,9 @@ def render_card_pdf(
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
         if debug:
-            debug_path = output_path.with_name(f"DEBUG_{output_path.stem}.html")
+            debug_path = output_path.with_name(f"{output_path.stem}_debug.html")
             debug_path.write_text(html_string, encoding="utf-8")
+            output_path.parent.mkdir(parents=True, exist_ok=True)
             success(f"📝 Debug HTML saved to {debug_path.resolve()}")
 
         HTML(string=html_string).write_pdf(
@@ -74,7 +75,8 @@ def render_card_sheet_pdf(
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
         if debug:
-            debug_path = output_path.with_name(f"DEBUG_{output_path.stem}.html")
+            debug_path = output_path.with_name(f"{output_path.stem}_debug.html")
+            output_path.parent.mkdir(parents=True, exist_ok=True)
             debug_path.write_text(html_string, encoding="utf-8")
             success(f"📝 Debug HTML saved to {debug_path.resolve()}")
 

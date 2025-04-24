@@ -172,12 +172,16 @@ def art(
     size: str = typer.Option("512x512", "--size", help="Size for generated images."),
     n: int = typer.Option(1, "--n", help="Number of images per card (uses first)."),
     prompt_suffix: Optional[str] = typer.Option(
-        None, "--prompt-suffix", help="Append text to the generated prompt."
+        None, "--prompt-suffix", help="Additional text to append to the prompt."
     ),
     character_style: Optional[str] = typer.Option(
-        None, "--character-style", help="Describe the caster for the prompt."
+        None, "--character-style", help="Describe the character casting the spell."
+    ),
+    version: str = typer.Option(
+        "v1", "--version", help="Tag for this version of the generated art."
     ),
 ):
+    """Attach AI-generated artwork to each card in the given deck."""
     generate_art_for_deck(
         deck_path=deck_file,
         art_dir=art_dir,
@@ -185,4 +189,5 @@ def art(
         n_per_card=n,
         prompt_suffix=prompt_suffix,
         character_style=character_style,
+        version=version,
     )

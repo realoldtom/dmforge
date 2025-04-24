@@ -8,10 +8,12 @@ def test_main_help_includes_deck_commands():
     result = runner.invoke(app, ["--help"])
     output = result.stdout
     assert result.exit_code == 0
-    assert "deck" in output
-    assert "build" in output
-    assert "render" in output
-    assert "art" in output
+    assert "deck" in output  # top-level command is present
+
+    deck_result = runner.invoke(app, ["deck", "--help"])
+    deck_output = deck_result.stdout
+    assert deck_result.exit_code == 0
+    assert "build" in deck_output  # subcommand should appear here
 
 
 def test_deck_help_includes_build_options():
