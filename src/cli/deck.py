@@ -144,6 +144,12 @@ def render(
                 render_card_sheet_pdf(to_render, out_path, theme, debug)
             else:
                 render_card_pdf(to_render, out_path, theme, debug)
+
+            if debug:
+                debug_file = to_render.parent / f"{to_render.stem}_debug.html"
+                render_card_html(to_render, debug_file, theme)
+                success(f"📝 Debug HTML saved to {debug_file.resolve()}")
+
         elif format.lower() == "html":
             render_card_html(to_render, out_path, theme)
         else:

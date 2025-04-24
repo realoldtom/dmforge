@@ -48,7 +48,7 @@ def test_render_card_sheet_debug_output(tmp_path, runner):
     assert result.exit_code == 0
 
     # Debug should also write a raw HTML debug file
-    debug_file = tmp_path / "deck_debug.html"
+    debug_file = output_path.parent / f"{output_path.stem}_debug.html"
     assert debug_file.exists()
     # And the rendered output should exist and include the spell title
     assert output_path.exists()
