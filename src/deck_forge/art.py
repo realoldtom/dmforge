@@ -88,8 +88,10 @@ def generate_art_for_deck(
             img_bytes = requests.get(image_url).content
             out_path.write_bytes(img_bytes)
 
-            card["art_url"] = (Path("../../assets/art") / out_path.name).as_posix()
-            print(f"✅ Updating art_url for {title}: {card['art_url']}")
+            # Save path relative to project root with forward slashes
+            rel_path = out_path.relative_to(Path.cwd()).as_posix()
+            card["art_url"] = rel_path
+            success(f"→ {title}: image saved to {rel_path}")
 
         except Exception as e:
             error(f"❌ {title}: Exception while generating art: {e}")

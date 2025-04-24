@@ -1,8 +1,0 @@
-{
-  "error": {
-    "message": "Invalid value: 'gpt-3.5-turbo'. Supported values are: 'dall-e-2' and 'dall-e-3'.",
-    "type": "invalid_request_error",
-    "param": "model",
-    "code": "invalid_value"
-  }
-}

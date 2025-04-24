@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Burning Hands",
+    "level": 1,
+    "school": "Evocation",
+    "description": "Casting Burning Hands creates a 15-foot cone of flames shooting from your fingertips, dealing 3d6 fire damage on a failed Dexterity saving throw to creatures within the area. Flammable objects not being worn or carried may also ignite.",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Instantaneous",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "source": "SRD",
+    "art_url": "../../assets/art/Burning_Hands.png",
+    "desc": [
+      "Casting Burning Hands creates a 15-foot cone of flames shooting from your fingertips, dealing 3d6 fire damage on a failed Dexterity saving throw to creatures within the area. Flammable objects not being worn or carried may also ignite."
+    ]
+  },
+  {
+    "title": "Shield",
+    "level": 1,
+    "school": "Abjuration",
+    "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
+    "summary": false,
+    "casting_time": "1 reaction",
+    "duration": "1 round",
+    "range": "Self",
+    "components": [
+      "V",
+      "S"
+    ],
+    "source": "SRD",
+    "art_url": "../../assets/art/Shield.png",
+    "desc": [
+      "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile."
+    ]
+  },
+  {
+    "title": "Shocking Grasp",
+    "level": 0,
+    "school": "Evocation",
+    "description": "Shocking Grasp: Melee spell attack to shock target, deals 1d8 lightning damage, target can't react next turn. Damage increases at 5th (2d8), 11th (3d8), and 17th (4d8) levels. Metal armor gives attack advantage",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "Instantaneous",
+    "range": "Touch",
+    "components": [
+      "V",
+      "S"
+    ],
+    "source": "SRD",
+    "art_url": "../../assets/art/Shocking_Grasp.png",
+    "desc": [
+      "Shocking Grasp: Melee spell attack to shock target, deals 1d8 lightning damage, target can't react next turn. Damage increases at 5th (2d8), 11th (3d8), and 17th (4d8) levels. Metal armor gives attack advantage"
+    ]
+  },
+  {
+    "title": "Sleep",
+    "level": 1,
+    "school": "Enchantment",
+    "description": "Roll 5d8 to determine total hit points affected. Creatures near a point you choose fall asleep based on ascending hit points. Sleep ends if damage is taken or shaken awake. Undead and charm-immune creatures are unaffected.",
+    "summary": true,
+    "casting_time": "1 action",
+    "duration": "1 minute",
+    "range": "90 feet",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "source": "SRD",
+    "art_url": "../../assets/art/Sleep.png",
+    "desc": [
+      "Roll 5d8 to determine total hit points affected. Creatures near a point you choose fall asleep based on ascending hit points. Sleep ends if damage is taken or shaken awake. Undead and charm-immune creatures are unaffected."
+    ]
+  }
+]

@@ -8,13 +8,16 @@ from src.utils.console import banner, info
 from .fetch import fetch_app
 from .deck import deck_app
 from .prompt import prompt_app
+from .utils.docs import generate_cli_docs
+
+# Make sure it's after app is defined
+
 
 # Suppress GLib and GTK warnings
 os.environ["G_MESSAGES_DEBUG"] = "none"
 
 # Optional: suppress all warnings
 warnings.filterwarnings("ignore")
-
 
 app = typer.Typer(
     name="dmforge", help="DMForge CLI – Generate spell decks, scenes, and more."
@@ -23,6 +26,12 @@ app = typer.Typer(
 app.add_typer(fetch_app, name="fetch")
 app.add_typer(deck_app, name="deck")
 app.add_typer(prompt_app, name="prompt")
+
+
+@app.command("docs-cli")
+def docs_cli_command():
+    """Generate CLI reference documentation."""
+    generate_cli_docs(app)
 
 
 @app.callback()
@@ -54,6 +63,7 @@ def help_cmd(ctx: typer.Context):
     info("  dmforge fetch srd")
     info("  dmforge deck build")
     info("  dmforge deck render")
+    info("  dmforge deck art")
     info("  dmforge prompt show")
     info("\n📄 Developer Docs:")
     info("  - dev-log.md")

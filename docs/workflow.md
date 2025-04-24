@@ -116,3 +116,66 @@ PDF Cards	exports/dev/cards.pdf
 PDF Sheet	exports/dev/sheet.pdf
 Snapshots	.snapshots/dev/*.md
 Logs	done_log/, session_log.md
+
+
+.
+
+🧙 DMForge Workflow: Custom Spell Deck (Interactive, Filtered)
+✅ 1. Launch the Interactive Deck Builder
+Use the deck build command with filters for class and level, and enable interactive selection:
+
+bash
+Copy
+Edit
+python main.py deck build --interactive --class wizard --level 3
+🔍 What Happens:
+The CLI fetches all SRD spells matching your filters (e.g., Wizard Level 3).
+
+You’re shown a numbered list of those spells.
+
+You're prompted to select individual spells by number:
+
+mathematica
+Copy
+Edit
+📜 Available Spells (filtered):
+
+ 1. Fireball (Level 3, Evocation)
+ 2. Counterspell (Level 3, Abjuration)
+ 3. Fly (Level 3, Transmutation)
+ ...
+Enter spell numbers to include (comma-separated): 1,2,3
+A new deck JSON is created, e.g. deck.json.
+
+✨ 2. (Optional) Summarize Descriptions
+If your deck is intended for new players or compact cards, run:
+
+bash
+Copy
+Edit
+python main.py deck render deck.json --format html --summarize
+Or include it during build with:
+
+bash
+Copy
+Edit
+python main.py deck build --interactive --class wizard --level 3 --summarize
+🎨 3. Generate Card Art
+Automatically create AI-based art for each selected spell:
+
+bash
+Copy
+Edit
+python main.py deck art deck.json --art-dir assets/art --size 512x512
+✔ Each card’s art_url is updated with a relative image path.
+
+🖼 4. Render as HTML (for digital use)
+bash
+Copy
+Edit
+python main.py deck render deck.json --format html --output exports/deck.html
+🖨 5. Render as PDF Sheet (for printing)
+bash
+Copy
+Edit
+python main.py deck render deck.json --format pdf --layout sheet --output exports/deck.pdf

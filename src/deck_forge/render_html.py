@@ -35,8 +35,20 @@ def render_card_html(deck_path: Path, output_path: Path, theme: str = "default")
 
         css_path = css_file.absolute().as_uri()
 
+        # Adjust image paths relative to output HTML file
+        for card in cards:
+            if "art_url" in card:
+                try:
+                    art_path = Path(card["art_url"])
+                    if not art_path.is_absolute():
+                        art_path = Path.cwd() / art_path
+                    relative_path = art_path.relative_to(output_path.parent)
+                    card["art_url"] = relative_path.as_posix()
+                except Exception:
+                    warn(f"⚠️ Could not adjust path for {card.get('title')}")
+
         template = env.get_template("spell_card.jinja")
-        default_image = "https://placekitten.com/300/180"  # or a local image path
+        default_image = "https://placebear.com/300/180"
 
         html_string = template.render(
             cards=cards, css_path=css_path, default_image=default_image
