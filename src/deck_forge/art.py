@@ -1,8 +1,9 @@
+# src/deck_forge/art.py
+
 import os
 import json
 import requests
 from pathlib import Path
-from datetime import datetime
 from src.utils.console import banner, success, error, warn
 
 API_URL = "https://api.openai.com/v1/images/generations"
@@ -15,8 +16,9 @@ def generate_art_for_deck(
     art_dir: Path,
     size: str = DEFAULT_SIZE,
     n_per_card: int = 1,
+    versioned: bool = False,
 ):
-    banner("🎨 Generating Card Art with DALL·E (API fallback)")
+    banner("🎨 Generating Card Art with DALL·E")
 
     if not deck_path.exists():
         error(f"❌ Deck not found: {deck_path}")
@@ -41,11 +43,14 @@ def generate_art_for_deck(
 
     for card in cards:
         title = card["title"]
-        filename = f"{title.replace(' ', '_')}.png"
-        out_path = art_dir / filename
+        safe_title = title.replace(" ", "_")
+        base_filename = safe_title + (
+            f"_v{len(card.get('art_versions', [])) + 1}" if versioned else ""
+        )
+        out_path = art_dir / f"{base_filename}.png"
 
-        if out_path.exists():
-            warn(f"⏭️ Skipping existing: {filename}")
+        if out_path.exists() and not versioned:
+            warn(f"⏭️ Skipping existing: {out_path.name}")
             continue
 
         prompt = (
@@ -76,22 +81,21 @@ def generate_art_for_deck(
                 warn(f"❌ Failed to generate art for {title}")
                 warn(f"   → Status: {response.status_code}")
                 warn(f"   → Error: {response.text}")
-
-                timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-                debug_path = (
-                    art_dir / f"{title.replace(' ', '_')}_error_{timestamp}.json"
-                )
-                debug_path.write_text(response.text, encoding="utf-8")
                 continue
 
             image_url = response.json()["data"][0]["url"]
             img_bytes = requests.get(image_url).content
             out_path.write_bytes(img_bytes)
 
-            # Save path relative to project root with forward slashes
-            rel_path = out_path.relative_to(Path.cwd()).as_posix()
-            card["art_url"] = rel_path
-            success(f"→ {title}: image saved to {rel_path}")
+            art_url = (Path("../../assets/art") / out_path.name).as_posix()
+
+            if versioned:
+                card.setdefault("art_versions", []).append(art_url)
+                card["art_url"] = art_url  # Use most recent version
+            else:
+                card["art_url"] = art_url
+
+            success(f"→ {title}: image saved to {out_path.name}")
 
         except Exception as e:
             error(f"❌ {title}: Exception while generating art: {e}")

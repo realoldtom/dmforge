@@ -171,6 +171,13 @@ def art(
     ),
     size: str = typer.Option("512x512", "--size", help="Size for generated images."),
     n: int = typer.Option(1, "--n", help="Number of images per card (uses first)."),
+    versioned: bool = typer.Option(
+        False,
+        "--versioned",
+        help="Save multiple image versions per spell and update `art_versions` list.",
+    ),
 ):
     """Attach AI-generated artwork to each card in the given deck."""
-    generate_art_for_deck(deck_file, art_dir, size=size, n_per_card=n)
+    generate_art_for_deck(
+        deck_file, art_dir, size=size, n_per_card=n, versioned=versioned
+    )
