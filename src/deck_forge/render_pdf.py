@@ -3,6 +3,7 @@ import json
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML, CSS
 from src.utils.console import banner, success, error, warn
+from src.utils.formatting import abbreviate_duration
 
 TEMPLATE_DIR = Path("templates")
 ASSETS_DIR = Path("assets")
@@ -115,6 +116,26 @@ def render_card_pdf(
         # Process cards to resolve image paths
         process_cards(cards, base_dir=deck_path.parent)
 
+        for c in cards:
+            # ---- Title fallback ----
+            c["title"] = c.get("title") or c.get("name", "Untitled")
+
+            # ---- Level / school one-liner (optional) ----
+            lvl = "Cantrip" if c.get("level", 0) == 0 else f"L{c['level']}"
+            sch = c.get("school", "")[:3].upper()  # EVO, ABJ, etc.
+            c["level_school"] = f"{lvl}·{sch}"
+
+            # ---- Duration abbreviation ----
+            if "duration" in c:
+                c["duration_short"] = abbreviate_duration(c["duration"])
+
+                # --- Clean components ---
+                if isinstance(c.get("components"), list):
+                    # ['V', 'S', 'M']  ->  "V,S,M"
+                    c["components_short"] = ",".join(c["components"])
+                else:
+                    c["components_short"] = c.get("components", "")
+
         # Get CSS path
         css_path = get_css_path(theme)
 
@@ -147,7 +168,7 @@ def render_card_pdf(
             success(f"📝 Paths debug saved to {path_debug_file.resolve()}")
 
         # Render PDF
-        HTML(string=html_string).write_pdf(
+        HTML(string=html_string, base_url=str(ASSETS_DIR)).write_pdf(
             str(output_path), stylesheets=[CSS(css_path)]
         )
         success(f"✅ PDF saved to {output_path.resolve()}")
@@ -174,6 +195,26 @@ def render_card_sheet_pdf(
     try:
         # Process cards to resolve image paths
         process_cards(cards, base_dir=deck_path.parent)
+
+        for c in cards:
+            # ---- Title fallback ----
+            c["title"] = c.get("title") or c.get("name", "Untitled")
+
+            # ---- Level / school one-liner (optional) ----
+            lvl = "Cantrip" if c.get("level", 0) == 0 else f"L{c['level']}"
+            sch = c.get("school", "")[:3].upper()  # EVO, ABJ, etc.
+            c["level_school"] = f"{lvl}·{sch}"
+
+            # ---- Duration abbreviation ----
+            if "duration" in c:
+                c["duration_short"] = abbreviate_duration(c["duration"])
+
+            # --- Clean components ---
+            if isinstance(c.get("components"), list):
+                # ['V', 'S', 'M']  ->  "V,S,M"
+                c["components_short"] = ",".join(c["components"])
+            else:
+                c["components_short"] = c.get("components", "")
 
         # Get CSS path
         css_path = get_css_path(theme)

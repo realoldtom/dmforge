@@ -9,7 +9,7 @@
     .image {
       position: relative;
       width: 100%;
-      height: 140px;
+      height: 160px;
       margin-bottom: 10px;
       overflow: hidden;
     }
@@ -55,22 +55,30 @@
   <div class="card">
     <div class="title-line">
       <span class="title">{{ card.title }}</span>
-      <span class="level-school">{{ card.level }} • {{ card.school }}</span>
+      <span class="level_school">{{ card.level }} • {{ card.school }}</span>
     </div>
 
-    <!-- Direct image tag instead of background-image -->
-    <div class="image">
-      <img src="{{ card.art_url or default_image }}" alt="{{ card.title }}">
-    </div>
+      <!-- Art with new frame ------------------------- -->
+        <div class="image-frame">
+            <img src="{{ card.art_url or default_image }}"
+                alt=""
+                class="image">
+        </div>
 
-    <div class="stats-row">
-      <span>{{ card.casting_time }}</span>
-      <span>{{ card.range }}</span>
-      <span>{{ card.duration }}</span>
-      <span>{{ card.components | join(", ") }}</span>
-    </div>
+      <!-- Stats strip in its own framed box ---------- -->
+      <div class="stats-frame">
+        <div class="stats-strip">
+          <span>{{ card.casting_time }}</span>
+          <span>{{ card.range }}</span>
+          <span>{{ card.duration_short }}</span>
+          <span>{{ card.components_short }}</span>
+        </div>
+      </div>
 
-    <div class="desc">{{ card.description }}</div>
+    <div class="desc-frame">
+    <p class="desc">{{ card.description }}</p>
+    </div>
+    
   </div>
   {% endfor %}
 </body>
