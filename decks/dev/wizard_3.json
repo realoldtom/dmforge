@@ -1,0 +1,51 @@
+{
+  "cards": [
+    {
+      "title": "Stinking Cloud",
+      "level": 3,
+      "school": "Conjuration",
+      "description": "Create a 20-ft sphere of nauseating gas, heavily obscuring the area. Creatures inside must make a con save or spend their turn retching. Wind can disperse it in 1-4 rounds.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "90 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Stinking_Cloud_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Stinking_Cloud_v1.png",
+          "prompt": "Fantasy artwork of the spell 'Stinking Cloud', from a tabletop RPG. Depict a magical scene representing a level 3 Conjuration spell. Include dramatic lighting, detailed environment, and cinematic style. Focus on the spell's effects: Create a 20-ft sphere of nauseating gas, heavily obscuring the area. Creatures inside must make a con save or spend their turn retching. Wind can disperse it in 1-4 rounds.. twilight sky Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        }
+      ]
+    },
+    {
+      "title": "Vampiric Touch",
+      "level": 3,
+      "school": "Necromancy",
+      "description": "\"Siphon life force with Shadow Touch: 3d6 necrotic damage to target, heal for half damage dealt. Repeat attack each turn.\"",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Vampiric_Touch_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Vampiric_Touch_v1.png",
+          "prompt": "Fantasy artwork of the spell 'Vampiric Touch', from a tabletop RPG. Depict a magical scene representing a level 3 Necromancy spell. Include dramatic lighting, detailed environment, and cinematic style. Focus on the spell's effects: \"Siphon life force with Shadow Touch: 3d6 necrotic damage to target, heal for half damage dealt. Repeat attack each turn.\". twilight sky Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        }
+      ]
+    }
+  ]
+}

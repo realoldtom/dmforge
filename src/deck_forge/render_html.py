@@ -5,6 +5,29 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from src.utils.console import banner, success, error, warn
 import json
 
+
+def _absolutize_art_urls(cards: list[dict], deck_base: Path):
+    """
+    Convert each card['art_url'] to an absolute file:// URI that WeasyPrint
+    can load regardless of cwd.
+    """
+    for card in cards:
+        url = card.get("art_url")
+        if not url:
+            continue
+
+        if url.startswith(("http://", "https://", "file://")):
+            # already absolute
+            continue
+
+        path = (deck_base / url).resolve()
+        if path.exists():
+            card["art_url"] = path.as_uri()
+        else:
+            # fall back to placeholder
+            card["art_url"] = "https://via.placeholder.com/300x180?text=Missing+Image"
+
+
 TEMPLATE_DIR = Path("templates")
 env = Environment(
     loader=FileSystemLoader(TEMPLATE_DIR),

@@ -8,7 +8,7 @@ from src.utils.console import banner, success, error, warn
 
 API_URL = "https://api.openai.com/v1/images/generations"
 MODEL = "dall-e-3"
-DEFAULT_SIZE = "512x512"
+DEFAULT_SIZE = "1024x1024"
 
 
 def generate_art_for_deck(
