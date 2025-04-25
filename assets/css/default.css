@@ -55,10 +55,12 @@ body {
     background-color: #ddd;
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
     border-radius: 4px;
     margin: 0.3rem 0;
+    margin-bottom: 10px;
     height: auto;
-    max-height: 50%;
+    max-height: 180px;
     width: 100%;
     object-fit: cover;
 }
@@ -93,6 +95,57 @@ body {
     padding-top: 0.3rem;
     flex: 1;
 }
+
+/* Anything inside this block affects the PDF render only */
+@media print {
+    .card {
+        /* or whatever wraps an entire spell card */
+        display: block;
+        /* don’t use grid/flex for the outer shell */
+        position: relative;
+    }
+
+    .stats {
+        display: block;
+        /* simple flow works everywhere */
+        font-size: 10pt;
+        margin: 0.2em 0 0.4em;
+        white-space: nowrap;
+    }
+}
+
+/* assets/css/default.css */
+
+@media print {
+
+    /* Already present … keep it */
+    .card {
+        display: block;
+        position: relative;
+    }
+
+    /* NEW — replace unsupported Flexbox */
+    .stats-row {
+        /* the wrapper */
+        display: block;
+        /* ordinary flow */
+        margin: 0.2em 0 0.3em;
+        font-size: 7.5pt;
+        /* tweak as needed */
+        text-align: center;
+    }
+
+    .stats-row span {
+        /* each stat value */
+        display: inline-block;
+        min-width: 30%;
+        /* three fit nicely on one line */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
 
 /* Footer is hidden for now */
 .footer {

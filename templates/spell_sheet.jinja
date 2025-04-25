@@ -9,13 +9,44 @@
     .image {
       position: relative;
       width: 100%;
-      height: 180px;
+      height: 140px;
+      margin-bottom: 10px;
       overflow: hidden;
     }
     .image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    /* Stats */
+    .stats-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.72rem;
+        margin: 0.3rem 0;
+        gap: 0.2rem;
+        flex-wrap: wrap;
+    }
+
+    .stats-row span {
+        flex: 1;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Description */
+    .desc {
+        font-size: 0.72rem;
+        line-height: 1.15;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        padding-top: 0.3rem;
+        flex: 1;
     }
   </style>
 </head>
