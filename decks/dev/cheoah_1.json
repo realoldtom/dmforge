@@ -1,0 +1,95 @@
+{
+  "cards": [
+    {
+      "title": "Disguise Self",
+      "level": 1,
+      "school": "Illusion",
+      "description": "Disguise Self: Change your appearance, height, weight, and clothes. Illusion doesn't hold to touch but resists casual observation. Can't alter body type.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Disguise_Self_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Disguise_Self_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Disguise Self**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Disguise Self: Change your appearance, height, weight, and clothes.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Fire Bolt",
+      "level": 0,
+      "school": "Evocation",
+      "description": "Hurl a mote of fire at a target, making a ranged spell attack. Deals 1d10 fire damage, ignites flammable objects. Damage increases with levels: 2d10 at 5th level, 3d10 at 11th, and 4d10 at 17",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Fire_Bolt_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Fire_Bolt_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Fire Bolt**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Hurl a mote of fire at a target, making a ranged spell attack.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Mage Hand",
+      "level": 0,
+      "school": "Conjuration",
+      "description": "Create a spectral hand within 30 feet, lasting until dismissed. Control hand to manipulate objects, open doors, or pour liquids, within 30 feet of you and not exceeding 10 pounds in weight.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Mage_Hand_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Mage_Hand_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Mage Hand**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Create a spectral hand within 30 feet, lasting until dismissed.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "True Strike",
+      "level": 0,
+      "school": "Divination",
+      "description": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "Up to 1 round",
+      "range": "30 feet",
+      "components": [
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/True_Strike_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/True_Strike_v1.png",
+          "prompt": "High-fantasy illustration of the spell **True Strike**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: the caster extend your hand and point a finger at a target in range.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    }
+  ]
+}

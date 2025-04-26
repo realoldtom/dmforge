@@ -1,0 +1,289 @@
+{
+  "cards": [
+    {
+      "title": "Mage Armor",
+      "level": 1,
+      "school": "Abjuration",
+      "description": "\"Shield of Faith\" grants a willing creature a protective force field, setting its AC to 13 + Dexterity. Ends if armor is worn or dismissed as an action.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "8 hours",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Mage_Armor_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Mage_Armor_v1.png",
+          "prompt": "Fantasy artwork of the spell 'Mage Armor', from a tabletop RPG. Depict a magical scene representing a level 1 Abjuration spell. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. Focus on the spell's effects: \"Shield of Faith\" grants a willing creature a protective force field, setting its AC to 13 + Dexterity. Ends if armor is worn or dismissed as an action.. raining field, fighting manticores Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v3",
+          "path": "../../assets/art/Mage_Armor_v3.png",
+          "prompt": "Fantasy artwork of a character casting the spell 'Mage Armor'. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. The art should reflect the spell's effects: \"Shield of Faith\" grants a willing creature a protective force field, setting its AC to 13 + Dexterity. Ends if armor is worn or dismissed as an action.. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v6",
+          "path": "../../assets/art/Mage_Armor_v6.png",
+          "prompt": "Fantasy illustration of the spell 'Mage Armor'. Include dramatic lighting, detailed environment, and cinematic style. Do not use any character on image. Focus on visuals. Show a tiefling sorcerer casting the spell. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v7",
+          "path": "../../assets/art/Mage_Armor_v7.png",
+          "prompt": "Fantasy illustration of the spell 'Mage Armor'. Include dramatic lighting, detailed environment, and cinematic style.Sharp focus, dynamic composition, aspect 3:4. Show a tiefling sorcerer casting the spell. Visualize the core effect: \"Shield of Faith\" grants a willing creature a protective force field, setting its AC to 13 + Dexterity. Ends if armor is worn or dismissed as an action.. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v2",
+          "path": "../../assets/art/Mage_Armor_v2.png",
+          "prompt": "Fantasy illustration of the spell 'Mage Armor'. Include dramatic lighting, detailed environment, and cinematic style.Sharp focus, dynamic composition, aspect 3:4. Show a tiefling sorcerer casting the spell. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v3",
+          "path": "../../assets/art/Mage_Armor_v3.png",
+          "prompt": "High-fantasy illustration of the spell **Mage Armor**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: \"Shield of Faith\" grants a willing creature a protective force field, setting its AC to 13 + Dexterity.. Sharp focus, dynamic composition, aspect 3:4."
+        },
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Mage_Armor_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Mage Armor**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: \"Shield of Faith\" grants a willing creature a protective force field, setting its AC to 13 + Dexterity.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Magic Missile",
+      "level": 1,
+      "school": "Evocation",
+      "description": "Create three glowing force darts that hit targets for 1d4 + 1 force damage each. Hit one or multiple creatures simultaneously within range.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Magic_Missile_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Magic_Missile_v1.png",
+          "prompt": "Fantasy artwork of the spell 'Magic Missile', from a tabletop RPG. Depict a magical scene representing a level 1 Evocation spell. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. Focus on the spell's effects: Create three glowing force darts that hit targets for 1d4 + 1 force damage each. Hit one or multiple creatures simultaneously within range.. raining field, fighting manticores Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v3",
+          "path": "../../assets/art/Magic_Missile_v3.png",
+          "prompt": "Fantasy artwork of a character casting the spell 'Magic Missile'. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. The art should reflect the spell's effects: Create three glowing force darts that hit targets for 1d4 + 1 force damage each. Hit one or multiple creatures simultaneously within range.. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v6",
+          "path": "../../assets/art/Magic_Missile_v6.png",
+          "prompt": "Fantasy illustration of the spell 'Magic Missile'. Include dramatic lighting, detailed environment, and cinematic style. Do not use any character on image. Focus on visuals. Show a tiefling sorcerer casting the spell. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v7",
+          "path": "../../assets/art/Magic_Missile_v7.png",
+          "prompt": "Fantasy illustration of the spell 'Magic Missile'. Include dramatic lighting, detailed environment, and cinematic style.Sharp focus, dynamic composition, aspect 3:4. Show a tiefling sorcerer casting the spell. Visualize the core effect: Create three glowing force darts that hit targets for 1d4 + 1 force damage each. Hit one or multiple creatures simultaneously within range.. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v2",
+          "path": "../../assets/art/Magic_Missile_v2.png",
+          "prompt": "Fantasy illustration of the spell 'Magic Missile'. Include dramatic lighting, detailed environment, and cinematic style.Sharp focus, dynamic composition, aspect 3:4. Show a tiefling sorcerer casting the spell. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v3",
+          "path": "../../assets/art/Magic_Missile_v3.png",
+          "prompt": "High-fantasy illustration of the spell **Magic Missile**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: Create three glowing force darts that hit targets for + 1 force damage each.. Sharp focus, dynamic composition, aspect 3:4."
+        },
+        {
+          "tag": "v10",
+          "path": "../../assets/art/Magic_Missile_v10.png",
+          "prompt": "High-fantasy illustration of the spell **Magic Missile**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome warlock** in mid-cast. Visualise the core effect: Create three glowing force darts that hit targets for + 1 force damage each.. Sharp focus, dynamic composition, aspect 3:4."
+        },
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Magic_Missile_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Magic Missile**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: Create three glowing force darts that hit targets for + 1 force damage each.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Prestidigitation",
+      "level": 0,
+      "school": "Transmutation",
+      "description": "Create minor sensory effects, light or extinguish a flame, clean or soil objects, chill, warm, or flavor materials, add color or symbols, make trinkets, or illusions lasting one hour. Maintain up to three effects simultaneously, dismissing them as...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "10 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Prestidigitation_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Prestidigitation_v1.png",
+          "prompt": "Fantasy artwork of the spell 'Prestidigitation', from a tabletop RPG. Depict a magical scene representing a level 0 Transmutation spell. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. Focus on the spell's effects: Create minor sensory effects, light or extinguish a flame, clean or soil objects, chill, warm, or flavor materials, add color or symbols, make trinkets, or illusions lasting one hour. Maintain up to three effects simultaneously, dismissing them as.... raining field, fighting manticores Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v3",
+          "path": "../../assets/art/Prestidigitation_v3.png",
+          "prompt": "Fantasy artwork of a character casting the spell 'Prestidigitation'. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. The art should reflect the spell's effects: Create minor sensory effects, light or extinguish a flame, clean or soil objects, chill, warm, or flavor materials, add color or symbols, make trinkets, or illusions lasting one hour. Maintain up to three effects simultaneously, dismissing them as.... Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v6",
+          "path": "../../assets/art/Prestidigitation_v6.png",
+          "prompt": "Fantasy illustration of the spell 'Prestidigitation'. Include dramatic lighting, detailed environment, and cinematic style. Do not use any character on image. Focus on visuals. Show a tiefling sorcerer casting the spell. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v7",
+          "path": "../../assets/art/Prestidigitation_v7.png",
+          "prompt": "Fantasy illustration of the spell 'Prestidigitation'. Include dramatic lighting, detailed environment, and cinematic style.Sharp focus, dynamic composition, aspect 3:4. Show a tiefling sorcerer casting the spell. Visualize the core effect: Create minor sensory effects, light or extinguish a flame, clean or soil objects, chill, warm, or flavor materials, add color or symbols, make trinkets, or illusions lasting one hour. Maintain up to three effects simultaneously, dismissing them as.... Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v2",
+          "path": "../../assets/art/Prestidigitation_v2.png",
+          "prompt": "Fantasy illustration of the spell 'Prestidigitation'. Include dramatic lighting, detailed environment, and cinematic style.Sharp focus, dynamic composition, aspect 3:4. Show a tiefling sorcerer casting the spell. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v3",
+          "path": "../../assets/art/Prestidigitation_v3.png",
+          "prompt": "High-fantasy illustration of the spell **Prestidigitation**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: Create minor sensory effects, light or extinguish a flame, clean or soil objects, chill, warm, or flavor materials, add\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        },
+        {
+          "tag": "v10",
+          "path": "../../assets/art/Prestidigitation_v10.png",
+          "prompt": "High-fantasy illustration of the spell **Prestidigitation**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome warlock** in mid-cast. Visualise the core effect: Create minor sensory effects, light or extinguish a flame, clean or soil objects, chill, warm, or flavor materials, add\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        },
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Prestidigitation_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Prestidigitation**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: Create minor sensory effects, light or extinguish a flame, clean or soil objects, chill, warm, or flavor materials, add\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Ray Of Frost",
+      "level": 0,
+      "school": "Evocation",
+      "description": "Ray of Frost: Shoot a beam at a target, dealing 1d8 cold damage and reducing its speed by 10 feet until your next turn. Damage increases at higher levels (2d8 at 5th level, 3d8 at 11th, 4d8 at 17",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Ray_Of_Frost_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Ray_Of_Frost_v1.png",
+          "prompt": "Fantasy artwork of the spell 'Ray Of Frost', from a tabletop RPG. Depict a magical scene representing a level 0 Evocation spell. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. Focus on the spell's effects: Ray of Frost: Shoot a beam at a target, dealing 1d8 cold damage and reducing its speed by 10 feet until your next turn. Damage increases at higher levels (2d8 at 5th level, 3d8 at 11th, 4d8 at 17. raining field, fighting manticores Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v3",
+          "path": "../../assets/art/Ray_Of_Frost_v3.png",
+          "prompt": "Fantasy artwork of a character casting the spell 'Ray Of Frost'. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. The art should reflect the spell's effects: Ray of Frost: Shoot a beam at a target, dealing 1d8 cold damage and reducing its speed by 10 feet until your next turn. Damage increases at higher levels (2d8 at 5th level, 3d8 at 11th, 4d8 at 17. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v6",
+          "path": "../../assets/art/Ray_Of_Frost_v6.png",
+          "prompt": "Fantasy illustration of the spell 'Ray Of Frost'. Include dramatic lighting, detailed environment, and cinematic style. Do not use any character on image. Focus on visuals. Show a tiefling sorcerer casting the spell. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v7",
+          "path": "../../assets/art/Ray_Of_Frost_v7.png",
+          "prompt": "Fantasy illustration of the spell 'Ray Of Frost'. Include dramatic lighting, detailed environment, and cinematic style.Sharp focus, dynamic composition, aspect 3:4. Show a tiefling sorcerer casting the spell. Visualize the core effect: Ray of Frost: Shoot a beam at a target, dealing 1d8 cold damage and reducing its speed by 10 feet until your next turn. Damage increases at higher levels (2d8 at 5th level, 3d8 at 11th, 4d8 at 17. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v2",
+          "path": "../../assets/art/Ray_Of_Frost_v2.png",
+          "prompt": "Fantasy illustration of the spell 'Ray Of Frost'. Include dramatic lighting, detailed environment, and cinematic style.Sharp focus, dynamic composition, aspect 3:4. Show a tiefling sorcerer casting the spell. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v3",
+          "path": "../../assets/art/Ray_Of_Frost_v3.png",
+          "prompt": "High-fantasy illustration of the spell **Ray Of Frost**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: Ray of Frost: Shoot a beam at a target, dealing cold damage and reducing its speed by 10 feet until your next turn.. Sharp focus, dynamic composition, aspect 3:4."
+        },
+        {
+          "tag": "v10",
+          "path": "../../assets/art/Ray_Of_Frost_v10.png",
+          "prompt": "High-fantasy illustration of the spell **Ray Of Frost**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome warlock** in mid-cast. Visualise the core effect: Ray of Frost: Shoot a beam at a target, dealing cold damage and reducing its speed by 10 feet until your next turn.. Sharp focus, dynamic composition, aspect 3:4."
+        },
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Ray_Of_Frost_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Ray Of Frost**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: Ray of Frost: Shoot a beam at a target, dealing cold damage and reducing its speed by 10 feet until your next turn.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "True Strike",
+      "level": 0,
+      "school": "Divination",
+      "description": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "Up to 1 round",
+      "range": "30 feet",
+      "components": [
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/True_Strike_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/True_Strike_v1.png",
+          "prompt": "Fantasy artwork of the spell 'True Strike', from a tabletop RPG. Depict a magical scene representing a level 0 Divination spell. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. Focus on the spell's effects: You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.. raining field, fighting manticores Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v3",
+          "path": "../../assets/art/True_Strike_v3.png",
+          "prompt": "Fantasy artwork of a character casting the spell 'True Strike'. Include dramatic lighting, detailed environment, and cinematic style.  Show a tiefling sorcerer casting the spell. The art should reflect the spell's effects: You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v6",
+          "path": "../../assets/art/True_Strike_v6.png",
+          "prompt": "Fantasy illustration of the spell 'True Strike'. Include dramatic lighting, detailed environment, and cinematic style. Do not use any character on image. Focus on visuals. Show a tiefling sorcerer casting the spell. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v7",
+          "path": "../../assets/art/True_Strike_v7.png",
+          "prompt": "Fantasy illustration of the spell 'True Strike'. Include dramatic lighting, detailed environment, and cinematic style.Sharp focus, dynamic composition, aspect 3:4. Show a tiefling sorcerer casting the spell. Visualize the core effect: You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v2",
+          "path": "../../assets/art/True_Strike_v2.png",
+          "prompt": "Fantasy illustration of the spell 'True Strike'. Include dramatic lighting, detailed environment, and cinematic style.Sharp focus, dynamic composition, aspect 3:4. Show a tiefling sorcerer casting the spell. Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
+        },
+        {
+          "tag": "v3",
+          "path": "../../assets/art/True_Strike_v3.png",
+          "prompt": "High-fantasy illustration of the spell **True Strike**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: the caster extend your hand and point a finger at a target in range.. Sharp focus, dynamic composition, aspect 3:4."
+        },
+        {
+          "tag": "v10",
+          "path": "../../assets/art/True_Strike_v10.png",
+          "prompt": "High-fantasy illustration of the spell **True Strike**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome warlock** in mid-cast. Visualise the core effect: the caster extend your hand and point a finger at a target in range.. Sharp focus, dynamic composition, aspect 3:4."
+        },
+        {
+          "tag": "v1",
+          "path": "../../assets/art/True_Strike_v1.png",
+          "prompt": "High-fantasy illustration of the spell **True Strike**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: the caster extend your hand and point a finger at a target in range.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    }
+  ]
+}

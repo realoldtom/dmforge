@@ -1,0 +1,55 @@
+{
+  "cards": [
+    {
+      "title": "Gust Of Wind",
+      "level": 2,
+      "school": "Evocation",
+      "description": "Create a 60-foot line of wind that pushes creatures 15 feet away on a failed save, slows movement toward you, disperses gas, and extinguishes unprotected flames. Can be redirected as a bonus action.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Gust_Of_Wind_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Gust_Of_Wind_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Gust Of Wind**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: Create a 60-foot line of wind that pushes creatures 15 feet away on a failed save, slows movement toward the caster,\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        },
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Gust_Of_Wind_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Gust Of Wind**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: Create a 60-foot line of wind that pushes creatures 15 feet away on a failed save, slows movement toward the caster,\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Thaumaturgy",
+      "level": 0,
+      "school": "Transmutation",
+      "description": "Manifest a minor wonder within range: amplify voice, manipulate flames, cause ground tremors, create sound, open/close doors, change eye appearance. Maintain up to 3 effects simultaneously, dismissing as an action.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "30 feet",
+      "components": [
+        "V"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Thaumaturgy_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Thaumaturgy_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Thaumaturgy**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **tiefling sorcerer** in mid-cast. Visualise the core effect: Manifest a minor wonder within. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    }
+  ]
+}

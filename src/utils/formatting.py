@@ -1,5 +1,6 @@
 # utils/formatting.py
 import re
+from textwrap import shorten
 
 _ABBREV = {
     "Instantaneous": "Inst.",
@@ -71,3 +72,53 @@ def components_short(raw) -> str:
     # 2) If it's a string → strip spaces, split on ',', then re-join
     parts = [p.strip() for p in str(raw).split(",") if p.strip()]
     return ", ".join(parts)
+
+
+_MECH_REGEX = re.compile(
+    r"""
+    # remove dice, DCs, ranges, melee/ranged weapon text, etc.
+    (\b\d+d\d+\b)|                       # 2d6, 8d8 ...
+    (\bDC\s*\d+\b)|                     # DC 15
+    (\b(range|duration|components):.*?$)|  # headers
+    (\b(at\s+higher\s+levels?).*)       # scaling text
+    """,
+    flags=re.I | re.M | re.S | re.VERBOSE,
+)
+
+
+def spell_effect_snippet(desc: str, max_chars: int = 120) -> str:
+    """
+    Return a compact, cinematic phrase describing the spell's visual effect.
+
+    Examples
+    --------
+    "A streak of flame whips from your finger..." -> "A streak of flame whips
+    from a caster’s hand, erupting into a roaring fireball."
+
+    Notes
+    -----
+    • Removes mechanics, dice numbers, section headers.
+    • Rewrites 2nd-person (“you”) to 3rd-person (“the caster”).
+    • Trims to `max_chars` without cutting mid-word.
+    """
+    if not desc:
+        return ""
+
+    # 1) strip line breaks
+    text = " ".join(desc.splitlines())
+
+    # 2) kill obvious mechanics
+    text = _MECH_REGEX.sub("", text)
+
+    # 3) first sentence (up to the first ‘.’ or 150 chars)
+    m = re.match(r"(.{10,200}?\.)(\s|$)", text)
+    text = m.group(1) if m else text[:200]
+
+    # 4) 2nd-person ➜ 3rd-person
+    text = re.sub(r"\b[Yy]ou\b", "the caster", text)
+
+    # 5) collapse doubled spaces
+    text = re.sub(r"\s{2,}", " ", text).strip()
+
+    # 6) final safe truncate
+    return shorten(text, width=max_chars, placeholder="…")

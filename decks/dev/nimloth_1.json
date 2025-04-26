@@ -1,0 +1,72 @@
+{
+  "cards": [
+    {
+      "title": "Chill Touch",
+      "level": 0,
+      "school": "Necromancy",
+      "description": "Create a spectral hand to attack a creature, dealing necrotic damage and preventing healing until your next turn. Undead targets have disadvantage on attacks against you. Damage increases with levels.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 round",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Chill_Touch_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Chill_Touch_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Chill Touch**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **high elf druid** in mid-cast. Visualise the core effect: Create a spectral hand to attack a creature, dealing necrotic damage and preventing healing until your next turn.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Entangle",
+      "level": 1,
+      "school": "Conjuration",
+      "description": "Entangling plants sprout in a 20-ft square, creating difficult terrain. Creatures must save or be restrained. They can attempt to break free with a Strength check. Plants vanish when the spell ends.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "90 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Entangle_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Entangle_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Entangle**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **high elf druid** in mid-cast. Visualise the core effect: Entangling plants sprout in a 20-ft square, creating difficult terrain.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Healing Word",
+      "level": 1,
+      "school": "Evocation",
+      "description": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "summary": false,
+      "casting_time": "1 bonus action",
+      "duration": "Instantaneous",
+      "range": "60 feet",
+      "components": [
+        "V"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Healing_Word_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Healing_Word_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Healing Word**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **high elf druid** in mid-cast. Visualise the core effect: A creature of your choice that the caster can see within range regains hit points equal to + your spellcasting ability\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    }
+  ]
+}

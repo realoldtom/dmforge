@@ -1,0 +1,95 @@
+{
+  "cards": [
+    {
+      "title": "Cure Wounds",
+      "level": 1,
+      "school": "Evocation",
+      "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Cure_Wounds_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Cure_Wounds_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Cure Wounds**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **female dragonborn druid** in mid-cast. Visualise the core effect: A creature the caster touch regains a number of hit points equal to + your spellcasting ability modifier.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Faerie Fire",
+      "level": 1,
+      "school": "Evocation",
+      "description": "Create a 20ft cube of light that outlines objects & creatures, causing dim light for 10ft. Attacked creatures are visible & lose invisibility benefits. Attackers have advantage if they can see the outlined targets.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "60 feet",
+      "components": [
+        "V"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Faerie_Fire_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Faerie_Fire_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Faerie Fire**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **female dragonborn druid** in mid-cast. Visualise the core effect: Create a 20ft cube of light that outlines objects & creatures, causing dim light for 10ft.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Guidance",
+      "level": 0,
+      "school": "Divination",
+      "description": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Guidance_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Guidance_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Guidance**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **female dragonborn druid** in mid-cast. Visualise the core effect: the caster touch one willing creature.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Produce Flame",
+      "level": 0,
+      "school": "Conjuration",
+      "description": "Create a flickering flame in your hand shedding bright light for 10ft. You can attack with it, dealing 1d8 fire damage to a creature within 30ft. Damage increases with levels.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Produce_Flame_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Produce_Flame_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Produce Flame**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **female dragonborn druid** in mid-cast. Visualise the core effect: Create a flickering flame in your hand shedding bright light for 10ft.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    }
+  ]
+}

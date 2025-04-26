@@ -1,0 +1,74 @@
+{
+  "cards": [
+    {
+      "title": "Eldritch Blast",
+      "level": 0,
+      "school": "Evocation",
+      "description": "Eldritch Blast shoots a beam of energy at a target within range, dealing 1d10 force damage on hit. At higher levels, it shoots multiple beams, with up to four beams at 17th level, each requiring a separate attack roll.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Eldritch_Blast_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Eldritch_Blast_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Eldritch Blast**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **female gnome warlock** in mid-cast. Visualise the core effect: Eldritch Blast shoots a beam of energy at a target within range, dealing force damage on hit.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Find Familiar",
+      "level": 1,
+      "school": "Conjuration",
+      "description": "Summon a celestial, fey, or fiend familiar in animal form (bat, cat, crab, etc.) that obeys your commands, acts independently in combat, communicates telepathically, and can deliver touch spells for you within 100 feet.",
+      "summary": true,
+      "casting_time": "1 hour",
+      "duration": "Instantaneous",
+      "range": "10 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Find_Familiar_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Find_Familiar_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Find Familiar**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **female gnome warlock** in mid-cast. Visualise the core effect: Summon a celestial, fey, or fiend familiar in animal form (bat, cat, crab, etc.) that obeys your commands, acts\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Minor Illusion",
+      "level": 0,
+      "school": "Illusion",
+      "description": "Create a lasting sound or image within range, ending when dismissed or recast. Sounds range from whispers to screams, while images can't create senses. Interacting reveals the illusion, and creatures can discern it with a successful check.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "30 feet",
+      "components": [
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Minor_Illusion_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Minor_Illusion_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Minor Illusion**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **female gnome warlock** in mid-cast. Visualise the core effect: Create a lasting sound or image within range, ending when dismissed or recast.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    }
+  ]
+}

@@ -172,4 +172,36 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+
+    body {
+        /* keeps everything printable     */
+        display: block;
+        /* no flex, no columns            */
+    }
+
+    .card {
+        /* make each card behave like a “tile” */
+        display: inline-block;
+        /* sit left-to-right              */
+        vertical-align: top;
+        /* line up at the top             */
+
+        /* spacing between cards */
+        margin-right: 6mm;
+        /* horizontal gap                 */
+        margin-bottom: 6mm;
+        /* vertical gap                   */
+
+        /* DON’T grow/shrink; keep exact size */
+        width: 63mm;
+        height: 88mm;
+
+        /* keep card from splitting */
+        page-break-inside: avoid;
+    }
+
+    /* remove the right margin after the 3rd card in each row          */
+    .card:nth-of-type(3n) {
+        margin-right: 0;
+    }
 }

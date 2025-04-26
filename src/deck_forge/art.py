@@ -5,6 +5,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 from src.utils.console import banner, success, error, warn
+from src.utils.formatting import spell_effect_snippet
+from src.utils.prompt_utils import build_spell_prompt
 
 API_URL = "https://api.openai.com/v1/images/generations"
 MODEL = "dall-e-3"
@@ -48,22 +50,22 @@ def generate_art_for_deck(
         title = card["title"]
         filename = f"{title.replace(' ', '_')}_{version}.png"
         out_path = art_dir / filename
+        # ───────────────────── inside the for-card loop ─────────────────────
+
+        # 1)  Create a short, cinematic effect phrase from the raw SRD text
+        effect = spell_effect_snippet(card.get("description", ""))
+
+        # 2)  Build the final prompt with optional style / suffix
+        prompt = build_spell_prompt(
+            title=title,
+            description=effect,
+            character_style=character_style,  # None → “No characters …”
+            prompt_suffix=prompt_suffix,  # extra tags from CLI/GUI
+        )
 
         if out_path.exists():
             warn(f"⏭️ Skipping existing: {filename}")
             continue
-
-        prompt = (
-            f"Fantasy artwork of the spell '{title}', from a tabletop RPG. "
-            f"Depict a magical scene representing a level {card['level']} {card['school']} spell. "
-            f"Include dramatic lighting, detailed environment, and cinematic style. "
-        )
-        if character_style:
-            prompt += f" Show a {character_style} casting the spell. "
-        prompt += f"Focus on the spell's effects: {card['description']}. "
-        if prompt_suffix:
-            prompt += f"{prompt_suffix} "
-        prompt += "Use a painterly look inspired by ArtStation and Wizards of the Coast illustrations."
 
         try:
             response = requests.post(
