@@ -1,0 +1,437 @@
+{
+  "cards": [
+    {
+      "title": "Alarm",
+      "level": 1,
+      "school": "Abjuration",
+      "description": "Alarm spell protects a 20-foot area, alerting you mentally or audibly if creatures enter. Can exclude chosen creatures from triggering the alarm.",
+      "summary": true,
+      "casting_time": "1 minute",
+      "duration": "8 hours",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Alarm_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Alarm_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Alarm**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. No characters; focus on the spell\u2019s visual effects. Visualise the core effect: Alarm spell protects a 20-foot area, alerting the caster mentally or audibly if creatures enter.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Animal Friendship",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "Charm a beast with less than 4 Intelligence by convincing it you mean no harm. If successful, it is charmed until harmed by you or your allies.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "24 hours",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Animal_Friendship_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Animal_Friendship_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Animal Friendship**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. No characters; focus on the spell\u2019s visual effects. Visualise the core effect: Charm a beast with less than 4 Intelligence by convincing it the caster mean no harm.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Charm Person",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "Charm Person: Charm humanoid, make Wis save. Advantage if fighting it. Charmed until spell ends or harm done. Regards as friend. Knows charmed after.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Comprehend Languages",
+      "level": 1,
+      "school": "Divination",
+      "description": "Comprehend Languages: Understand spoken and written languages for duration, touching text to read. Can't decode secret messages or arcane sigils.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Create Or Destroy Water",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "Create Water: Create 10 gallons of clean water in a container or as rain. Destroy Water: Eliminate 10 gallons of water in a container or fog in a 30-foot cube.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Create_Or_Destroy_Water_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Create_Or_Destroy_Water_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Create Or Destroy Water**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. No characters; focus on the spell\u2019s visual effects. Visualise the core effect: Create Water: Create 10 gallons of clean water in a container or as rain.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Cure Wounds",
+      "level": 1,
+      "school": "Evocation",
+      "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Detect Magic",
+      "level": 1,
+      "school": "Divination",
+      "description": "For a period of time, you detect magic within 30 feet. By using your action, you can see magical auras around visible creatures or objects, learning their school of magic. Barriers like stone, metal, lead, wood, or dirt can block the spell.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Detect Poison And Disease",
+      "level": 1,
+      "school": "Divination",
+      "description": "For a period of time, detect the presence and whereabouts of poisons, poisonous beings, and diseases within 30 feet. Identify the type of poison, creature, or disease. Can penetrate most obstacles, except specific materials.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Detect_Poison_And_Disease_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Detect_Poison_And_Disease_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Detect Poison And Disease**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. No characters; focus on the spell\u2019s visual effects. Visualise the core effect: For a period of time, detect the presence and whereabouts of poisons, poisonous beings, and diseases within 30 feet.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Entangle",
+      "level": 1,
+      "school": "Conjuration",
+      "description": "Entangling plants sprout in a 20-foot area, creating difficult terrain. Creatures must save or be restrained. They can try to break free with a Strength check. Plants disappear when the spell ends.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "90 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Expeditious Retreat",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.",
+      "summary": false,
+      "casting_time": "1 bonus action",
+      "duration": "Up to 10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Faerie Fire",
+      "level": 1,
+      "school": "Evocation",
+      "description": "Choose a 20-ft cube area and objects/creatures glow in blue, green, or violet light, causing dim light. Attacks against them have advantage and they can't benefit from invisibility for the spell's duration if they fail a Dex save.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 minute",
+      "range": "60 feet",
+      "components": [
+        "V"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Fog Cloud",
+      "level": 1,
+      "school": "Conjuration",
+      "description": "Create a 20-ft radius sphere of heavily obscured fog lasting until dispersed by moderate wind, centered on a point within range.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 hour",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Goodberry",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "Create ten magical berries that can be eaten to restore 1 hit point each and sustain a creature for a day. Berries lose potency if not consumed within 24 hours.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Goodberry_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Goodberry_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Goodberry**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. No characters; focus on the spell\u2019s visual effects. Visualise the core effect: Create ten magical berries that can be eaten to restore 1 hit point each and sustain a creature for a day.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Healing Word",
+      "level": 1,
+      "school": "Evocation",
+      "description": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "summary": false,
+      "casting_time": "1 bonus action",
+      "duration": "Instantaneous",
+      "range": "60 feet",
+      "components": [
+        "V"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Hellish Rebuke",
+      "level": 1,
+      "school": "Evocation",
+      "description": "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.",
+      "summary": false,
+      "casting_time": "1 reaction",
+      "duration": "Instantaneous",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Hellish_Rebuke_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Hellish_Rebuke_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Hellish Rebuke**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. No characters; focus on the spell\u2019s visual effects. Visualise the core effect: the caster point your finger, and the creature that damaged the caster is momentarily surrounded by hellish flames.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Hunter'S Mark",
+      "level": 1,
+      "school": "Divination",
+      "description": "Choose a target to mark as your quarry, dealing extra damage and gaining advantage on finding it. If it dies, you can mark a new target with a bonus action.",
+      "summary": true,
+      "casting_time": "1 bonus action",
+      "duration": "Up to 1 hour",
+      "range": "90 feet",
+      "components": [
+        "V"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Illusory Script",
+      "level": 1,
+      "school": "Illusion",
+      "description": "\"Magic Mouth\" spell creates an illusion on written material to appear normal to designated creatures while appearing as unintelligible or a different message to others. Dispelled by dispel magic. Truesight reveals hidden message.",
+      "summary": true,
+      "casting_time": "1 minute",
+      "duration": "10 days",
+      "range": "Touch",
+      "components": [
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Jump",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "You touch a creature. The creature's jump distance is tripled until the spell ends.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Longstrider",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "You touch a creature. The target's speed increases by 10 feet until the spell ends.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Protection From Evil And Good",
+      "level": 1,
+      "school": "Abjuration",
+      "description": "\"Protect a touched creature against aberrations, celestials, elementals, fey, fiends, and undead. They gain advantage on saving throws against charm, fear, and possession, while those creatures have disadvantage on attacks against them.\"",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 10 minutes",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Purify Food And Drink",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "10 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Speak With Animals",
+      "level": 1,
+      "school": "Divination",
+      "description": "\"Speak with Animals\" spell allows you to understand and talk to beasts, gaining info on surroundings and creatures. Beasts may help or share recent experiences, but their intelligence limits communication.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Thunderwave",
+      "level": 1,
+      "school": "Evocation",
+      "description": "Cast Thunderwave to unleash a wave of thunderous force in a 15-foot cube around you. Creatures in the area must save or take 2d8 thunder damage, be pushed 10 feet on a fail, and half damage on a success. Objects are pushed away, and a loud boom is...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Unseen Servant",
+      "level": 1,
+      "school": "Conjuration",
+      "description": "Create an invisible, mindless force serving simple tasks at your command until the spell ends. Can move 15ft, interact with objects, and perform servant-like duties. Ends if it drops to 0 HP or moves more than 60ft away.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "cards": [
+    {
+      "title": "Burning Hands",
+      "level": 1,
+      "school": "Evocation",
+      "description": "Shoot a 15-foot cone of flames from your hands, dealing 3d6 fire damage to creatures in its path. They can make a Dexterity saving throw for half damage. Flammable objects ignite in the area.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Burning_Hands_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Burning_Hands_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Burning Hands**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Shoot a 15-foot cone of flames from your hands, dealing fire damage to creatures in its path.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Charm Person",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "Charm Person: Charm a humanoid with a wisdom saving throw; they are charmed until spell ends or harmed, viewing you as a friendly acquaintance. They realize they were charmed when it ends.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Charm_Person_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Charm_Person_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Charm Person**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Charm Person: Charm a humanoid with a wisdom saving throw; they are charmed until spell ends or harmed, viewing the\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Color Spray",
+      "level": 1,
+      "school": "Illusion",
+      "description": "Color Spray: Roll 6d10 to determine total hit points affected. Blinds creatures in a 15-foot cone based on ascending hit points until total hit points are depleted.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 round",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Color_Spray_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Color_Spray_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Color Spray**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Color Spray: Roll to determine total hit points affected.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Comprehend Languages",
+      "level": 1,
+      "school": "Divination",
+      "description": "Comprehend Languages allows you to understand spoken and written languages for the duration, but does not decode secret messages or non-written glyphs. Reading text takes about 1 minute per page.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Comprehend_Languages_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Comprehend_Languages_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Comprehend Languages**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Comprehend Languages allows the caster to understand spoken and written languages for the duration, but does not decode\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Detect Magic",
+      "level": 1,
+      "school": "Divination",
+      "description": "Detect Magic: Sense magic within 30 feet, see aura around magical creatures/objects, learn school of magic. Penetrates most barriers but blocked by stone, metal, lead, wood, or dirt.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Detect_Magic_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Detect_Magic_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Detect Magic**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Detect Magic: Sense magic within 30 feet, see aura around magical creatures/objects, learn school of magic.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Disguise Self",
+      "level": 1,
+      "school": "Illusion",
+      "description": "Disguise Self: Change appearance and clothing, but not body type. Illusion fails under physical inspection. Requires Investigation check to see through disguise.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Expeditious Retreat",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.",
+      "summary": false,
+      "casting_time": "1 bonus action",
+      "duration": "Up to 10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Expeditious_Retreat_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Expeditious_Retreat_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Expeditious Retreat**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: This spell allows the caster to move at an incredible pace.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "False Life",
+      "level": 1,
+      "school": "Necromancy",
+      "description": "Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/False_Life_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/False_Life_v1.png",
+          "prompt": "High-fantasy illustration of the spell **False Life**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Bolstering yourself with a necromantic facsimile of life, the caster gain + 4 temporary hit points for the duration.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Feather Fall",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "Slow fall spell slows falling creatures' descent to 60 ft per round, preventing falling damage and allowing them to land safely on their feet if they touch the ground before the spell ends.",
+      "summary": true,
+      "casting_time": "1 reaction",
+      "duration": "1 minute",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Feather_Fall_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Feather_Fall_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Feather Fall**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Slow fall spell slows falling creatures' descent to 60 ft per round, preventing falling damage and allowing them to\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Fog Cloud",
+      "level": 1,
+      "school": "Conjuration",
+      "description": "Create a 20ft radius sphere of heavily obscured fog at a point, lasting until wind disperses it or up to the spell's duration.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 hour",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Fog_Cloud_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Fog_Cloud_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Fog Cloud**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Create a 20ft radius sphere of heavily obscured fog at a point, lasting until wind disperses it or up to the spell's\u2026. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Jump",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "You touch a creature. The creature's jump distance is tripled until the spell ends.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Jump_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Jump_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Jump**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: the caster touch a creature.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Mage Armor",
+      "level": 1,
+      "school": "Abjuration",
+      "description": "Mage Armor spell: Touch willing creature, grants AC of 13 + Dexterity mod, no armor. Ends if armor worn or dismissed.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "8 hours",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Magic Missile",
+      "level": 1,
+      "school": "Evocation",
+      "description": "Create three glowing force darts to strike creatures, dealing 1d4 + 1 force damage each, hitting simultaneously and target of your choice within range. Can direct darts to hit one or multiple creatures.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    },
+    {
+      "title": "Shield",
+      "level": 1,
+      "school": "Abjuration",
+      "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
+      "summary": false,
+      "casting_time": "1 reaction",
+      "duration": "1 round",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Shield_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Shield_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Shield**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: An invisible barrier of magical force appears and protects the caster.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Silent Image",
+      "level": 1,
+      "school": "Illusion",
+      "description": "Create a visual illusion of an object or creature within 15ft cube that can move and change appearance. Interactions reveal it as an illusion, and a successful check allows seeing through it.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 10 minutes",
+      "range": "60 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Silent_Image_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Silent_Image_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Silent Image**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Create a visual illusion of an object or creature within 15ft cube that can move and change appearance.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Sleep",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "Roll 5d8 to determine total hit points affected. Creatures within 20 feet of a point chosen fall asleep based on ascending hit points until spell ends, they take damage, or are awakened. Subtract HP from total affected. Undead and charm-immune cre...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "90 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Sleep_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Sleep_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Sleep**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Roll to determine total hit points affected.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    },
+    {
+      "title": "Thunderwave",
+      "level": 1,
+      "school": "Evocation",
+      "description": "Thunderwave: 15-ft cube from you, creatures make Con save or take 2d8 thunder damage, pushed 10 ft if fail. Objects pushed 10 ft. Audible thunderous boom out to 300 ft.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "../../assets/art/Thunderwave_v1.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "../../assets/art/Thunderwave_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Thunderwave**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome sorcerer who gets his power from a river goddess** in mid-cast. Visualise the core effect: Thunderwave: 15-ft cube from the caster, creatures make Con save or take thunder damage, pushed 10 ft if fail.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    }
+  ]
+}

@@ -6,34 +6,11 @@ from src.deck_forge.art import generate_art_for_deck
 from src.deck_forge.generate import generate_spell_deck
 from src.deck_forge.render_pdf import render_card_pdf, render_card_sheet_pdf
 from src.deck_forge.render_html import render_card_html
+from src.cli.utils.deck_utils import load_deck, summarize_cards
 from src.utils.console import banner, error, success
-from src.utils.summarizer import summarize_text, MAX_CHAR_COUNT
+from src.utils.summarizer import MAX_CHAR_COUNT
 
 deck_app = typer.Typer(name="deck", help="Create, render, and enrich spell card decks.")
-
-
-def _load_deck(path: Path):
-    data = json.loads(path.read_text(encoding="utf-8"))
-    if isinstance(data, list):
-        return data
-    if isinstance(data, dict):
-        for key in ("cards", "spells"):
-            if key in data and isinstance(data[key], list):
-                return data[key]
-        return [data]
-    raise ValueError("Unexpected deck JSON format: root must be list or dict")
-
-
-def _summarize_cards(cards: list, max_length: int):
-    for card in cards:
-        raw = card.get("description") or card.get("desc") or ""
-        if isinstance(raw, list):
-            raw_text = " ".join(raw)
-        else:
-            raw_text = raw
-        summary = summarize_text(raw_text, max_length=max_length)
-        card["desc"] = [summary]
-        card["description"] = summary
 
 
 @deck_app.command(
@@ -85,8 +62,8 @@ def build(
 
     if summarize:
         try:
-            cards = _load_deck(deck_path)
-            _summarize_cards(cards, summary_length)
+            cards = load_deck(deck_path)
+            summarize_cards(cards, summary_length)
             deck_path.write_text(
                 json.dumps({"cards": cards}, indent=2), encoding="utf-8"
             )
@@ -124,8 +101,8 @@ def render(
     to_render = deck_file
     if summarize:
         try:
-            cards = _load_deck(deck_file)
-            _summarize_cards(cards, summary_length)
+            cards = load_deck(deck_file)
+            summarize_cards(cards, summary_length)
             temp_file = deck_file.parent / f"{deck_file.stem}_summ.json"
             temp_file.write_text(
                 json.dumps({"cards": cards}, indent=2), encoding="utf-8"

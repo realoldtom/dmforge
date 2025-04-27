@@ -1,0 +1,185 @@
+{
+  "cards": [
+    {
+      "title": "Alarm",
+      "level": 1,
+      "school": "Abjuration",
+      "description": "You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. Wh...",
+      "summary": true,
+      "casting_time": "1 minute",
+      "duration": "8 hours",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Animal Friendship",
+      "level": 1,
+      "school": "Enchantment",
+      "description": "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a wisdom savin...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "24 hours",
+      "range": "30 feet",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Cure Wounds",
+      "level": 1,
+      "school": "Evocation",
+      "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Detect Magic",
+      "level": 1,
+      "school": "Divination",
+      "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of ma...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Detect Poison And Disease",
+      "level": 1,
+      "school": "Divination",
+      "description": "For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case. The spell can penetrate most barriers...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://placebear.com/300/180"
+    },
+    {
+      "title": "Fog Cloud",
+      "level": 1,
+      "school": "Conjuration",
+      "description": "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) di...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Up to 1 hour",
+      "range": "120 feet",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Goodberry",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for a day. The...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "Instantaneous",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Hunter'S Mark",
+      "level": 1,
+      "school": "Divination",
+      "description": "You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or W...",
+      "summary": true,
+      "casting_time": "1 bonus action",
+      "duration": "Up to 1 hour",
+      "range": "90 feet",
+      "components": [
+        "V"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Jump",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "You touch a creature. The creature's jump distance is tripled until the spell ends.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "1 minute",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Longstrider",
+      "level": 1,
+      "school": "Transmutation",
+      "description": "You touch a creature. The target's speed increases by 10 feet until the spell ends.",
+      "summary": false,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Touch",
+      "components": [
+        "V",
+        "S",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "https://picsum.photos/300/180"
+    },
+    {
+      "title": "Speak With Animals",
+      "level": 1,
+      "school": "Divination",
+      "description": "You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at a minimum, beasts can give you information about nearby locations and mon...",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "10 minutes",
+      "range": "Self",
+      "components": [
+        "V",
+        "S"
+      ],
+      "source": "SRD",
+      "art_url": "https://placekitten.com/300/180"
+    }
+  ]
+}
