@@ -1,0 +1,21 @@
+{
+    "sources": [
+        {
+            "name": "5etools-mirror",
+            "path": "../data/5etools-mirror/data"
+        }
+    ],
+    "generators": [
+        {
+            "type": "markdown",
+            "format": "obsidian",
+            "tags": [
+                "spell",
+                "trait",
+                "feature",
+                "monster",
+                "item"
+            ]
+        }
+    ]
+}
