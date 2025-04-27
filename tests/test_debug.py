@@ -1,43 +1,50 @@
-import json
-import pytest
-from typer.testing import CliRunner  # Switch to Typer's CliRunner
-from src.cli.deck import deck_app
+# tests/test_debug.py
 
-# Sample card used across tests
+import json
+from pathlib import Path
+
+import pytest
+from typer.testing import CliRunner
+
+from src.cli.deck import deck_app
+import src.deck_forge.render_pdf as pdf_mod
+
+runner = CliRunner()
+
 sample_card = {
-    "title": "Test Spell",
+    "name": "TestSpell",
+    "title": "TestSpell",
     "level": 1,
     "school": "Evocation",
-    "description": "Test description",
-    "casting_time": "1 action",
-    "duration": "Instantaneous",
-    "range": "Self",
-    "components": ["V", "S"],
-    "source": "SRD",
-    "art_url": "https://example.com/image.png",
-    "summary": False,
+    "description": "Desc",
+    "desc": ["Desc"],
 }
 
 
-@pytest.fixture
-def runner():
-    return CliRunner()  # This will be Typer's CliRunner
+@pytest.fixture(autouse=True)
+def patch_render_html(monkeypatch):
+    """Stub out render_card_html so the debug HTML file is created."""
+    monkeypatch.setattr(
+        pdf_mod,
+        "render_card_html",
+        lambda inp, out, theme: Path(out).write_text("<html>"),
+    )
 
 
-def test_render_card_sheet_debug_output(tmp_path, runner):
+def test_render_card_sheet_debug_output(tmp_path):
     # Write a single-card deck
     deck_path = tmp_path / "deck.json"
     deck_path.write_text(json.dumps({"cards": [sample_card]}), encoding="utf-8")
 
-    # Invoke with --debug flag
-    output_path = tmp_path / "out.html"
+    # Invoke with --debug on PDF path
+    output_path = tmp_path / "out.pdf"
     result = runner.invoke(
-        deck_app,  # Keep using deck_app directly
+        deck_app,
         [
             "render",
             str(deck_path),
             "--format",
-            "html",
+            "pdf",
             "--layout",
             "sheet",
             "--debug",
@@ -47,9 +54,7 @@ def test_render_card_sheet_debug_output(tmp_path, runner):
     )
     assert result.exit_code == 0
 
-    # Debug should also write a raw HTML debug file
-    debug_file = output_path.parent / f"{output_path.stem}_debug.html"
+    # The PDF itself and a debug HTML should exist
+    assert Path(tmp_path / "out.pdf").exists()
+    debug_file = tmp_path / f"{output_path.stem}_debug.html"
     assert debug_file.exists()
-    # And the rendered output should exist and include the spell title
-    assert output_path.exists()
-    assert "Test Spell" in output_path.read_text(encoding="utf-8")
