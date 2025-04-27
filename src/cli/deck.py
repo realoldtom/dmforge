@@ -142,29 +142,85 @@ def render(
 
 @deck_app.command("art", help="Generate DALL·E art for each spell card in a deck.")
 def art(
-    deck_file: Path = typer.Argument(..., help="Path to deck JSON to enrich with art."),
-    art_dir: Path = typer.Option(
-        Path("assets/art"), "--art-dir", help="Directory to store generated images."
+    deck_file: Path = typer.Argument(
+        ...,
+        exists=True,
+        file_okay=True,
+        dir_okay=False,
+        help="Path to the deck JSON file to enrich with art.",
     ),
-    size: str = typer.Option("512x512", "--size", help="Size for generated images."),
-    n: int = typer.Option(1, "--n", help="Number of images per card (uses first)."),
+    art_dir: Path = typer.Option(
+        Path("assets/art"),
+        "--art-dir",
+        "-a",
+        file_okay=False,
+        dir_okay=True,
+        help="Directory to store generated images.",
+    ),
+    size: str = typer.Option(
+        "1024x1024", "--size", "-s", help="Size for generated images."
+    ),
+    n_per_card: int = typer.Option(
+        1, "--n", "-n", help="Number of images per card (uses the first)."
+    ),
     prompt_suffix: Optional[str] = typer.Option(
-        None, "--prompt-suffix", help="Additional text to append to the prompt."
+        None,
+        "--prompt-suffix",
+        "-p",
+        help="Additional text to append to the art prompt.",
     ),
     character_style: Optional[str] = typer.Option(
-        None, "--character-style", help="Describe the character casting the spell."
+        None,
+        "--character-style",
+        "-c",
+        help="Describe the character casting the spell.",
     ),
     version: str = typer.Option(
-        "v1", "--version", help="Tag for this version of the generated art."
+        "v1", "--version", help="Tag appended to generated art filenames."
+    ),
+    versioned: bool = typer.Option(
+        False,
+        "--versioned",
+        help="If set, filenames become `<Slug>_<version>.png` and track `art_versions`.",
     ),
 ):
-    """Attach AI-generated artwork to each card in the given deck."""
+    """
+    Attach AI-generated artwork to each card in the given deck.
+
+    By default, files are named `<TitleSlug>.png`. If --versioned is set,
+    filenames become `<TitleSlug>_<version>.png` and each card gets an
+    `art_versions` list in addition to `art_url`.
+    """
+    # 1) Ensure output folder exists
+    art_dir.mkdir(parents=True, exist_ok=True)
+
+    # 2) Generate the images (single invocation)
     generate_art_for_deck(
         deck_path=deck_file,
         art_dir=art_dir,
         size=size,
-        n_per_card=n,
+        n_per_card=n_per_card,
         prompt_suffix=prompt_suffix,
         character_style=character_style,
         version=version,
+    )
+
+    # 3) Load & patch the deck JSON
+    data = json.loads(deck_file.read_text(encoding="utf-8"))
+    for card in data.get("cards", []):
+        slug = card["title"].replace(" ", "_")
+        if versioned:
+            fname = f"{slug}_{version}.png"
+            card["art_versions"] = [str(art_dir / fname)]
+        else:
+            fname = f"{slug}.png"
+        card["art_url"] = str(art_dir / fname)
+
+    # 4) Write enriched deck back to disk
+    deck_file.write_text(json.dumps(data, indent=2), encoding="utf-8")
+
+    # 5) Feedback
+    typer.echo(
+        f"✅ Art generated for {len(data.get('cards', []))} cards"
+        + (" (versioned)" if versioned else "")
     )

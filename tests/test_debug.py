@@ -7,7 +7,6 @@ import pytest
 from typer.testing import CliRunner
 
 from src.cli.deck import deck_app
-import src.deck_forge.render_pdf as pdf_mod
 
 runner = CliRunner()
 
@@ -24,8 +23,11 @@ sample_card = {
 @pytest.fixture(autouse=True)
 def patch_render_html(monkeypatch):
     """Stub out render_card_html so the debug HTML file is created."""
+    # Import the correct module where render_card_html lives
+    import src.deck_forge.render_html as html_mod
+
     monkeypatch.setattr(
-        pdf_mod,
+        html_mod,  # Use html_mod instead of pdf_mod
         "render_card_html",
         lambda inp, out, theme: Path(out).write_text("<html>"),
     )

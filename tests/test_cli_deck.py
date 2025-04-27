@@ -12,7 +12,7 @@ runner = CliRunner()
 
 def write_minimal_deck(path: Path):
     """Writes a minimal deck JSON with one card."""
-    payload = {"cards": [{"name": "TestSpell", "description": "A test spell."}]}
+    payload = {"cards": [{"title": "TestSpell", "description": "A test spell."}]}
     path.write_text(json.dumps(payload), encoding="utf-8")
 
 

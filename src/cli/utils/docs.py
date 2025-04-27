@@ -11,19 +11,20 @@ def generate_cli_docs(app: Typer, output: str = "docs/cli.md"):
     runner = CliRunner()
     lines = ["# DMForge CLI Reference\n"]
 
-    # Get root help
+    # Root help (catch errors)
     lines.append("## `dmforge`")
     lines.append("**Help:** DMForge CLI – Generate spell decks, scenes, and more.\n")
-
-    result = runner.invoke(app, ["--help"])
-    if result.exit_code == 0:
-        lines.append("```shell")
-        lines.append(result.stdout.strip())
-        lines.append("```")
-
+    try:
+        root = runner.invoke(app, ["--help"])
+    except Exception:
+        root = None
+    if root and root.exit_code == 0:
+        lines.extend(["```shell", root.stdout.strip(), "```"])
+    else:
+        lines.append("_Failed to generate help output for root command._")
     lines.append("\n---\n")
 
-    # Commands to document - add all your commands here
+    # Commands to document
     commands = [
         "version",
         "help",
@@ -40,16 +41,19 @@ def generate_cli_docs(app: Typer, output: str = "docs/cli.md"):
 
     for cmd in commands:
         lines.append(f"## `dmforge {cmd}`")
-        result = runner.invoke(app, cmd.split() + ["--help"])
-        if result.exit_code == 0:
-            lines.append("```shell")
-            lines.append(result.stdout.strip())
-            lines.append("```")
+        try:
+            result = runner.invoke(app, cmd.split() + ["--help"])
+        except Exception:
+            result = None
+
+        if result and result.exit_code == 0:
+            lines.extend(["```shell", result.stdout.strip(), "```"])
         else:
             lines.append(f"_Failed to generate help output for '{cmd}'._")
 
         lines.append("\n---\n")
 
+    # Write out
     output_path = Path(output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text("\n".join(lines), encoding="utf-8")

@@ -11,7 +11,7 @@ runner = CliRunner()
 
 
 def write_minimal_deck(path: Path):
-    payload = {"cards": [{"name": "TestSpell", "description": "A test spell."}]}
+    payload = {"cards": [{"title": "TestSpell", "description": "A test spell."}]}
     path.write_text(json.dumps(payload), encoding="utf-8")
 
 
@@ -125,10 +125,10 @@ def test_art_default_parameters(monkeypatch):
         result = runner.invoke(deck_app, ["art", "deck.json"])
         assert result.exit_code == 0
 
-    # Defaults from deck.py: art_dir=assets/art, size=512x512, n=1, no suffix/style, version v1
+    # Defaults from deck.py: art_dir=assets/art, size=1024x1024, n=1, no suffix/style, version v1
     assert captured["deck_path"] == Path("deck.json")
     assert captured["art_dir"] == Path("assets/art")
-    assert captured["size"] == "512x512"
+    assert captured["size"] == "1024x1024"
     assert captured["n"] == 1
     assert captured["suffix"] is None
     assert captured["style"] is None

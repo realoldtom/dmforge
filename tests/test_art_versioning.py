@@ -1,5 +1,4 @@
 import json
-from pathlib import Path
 from typer.testing import CliRunner
 from unittest.mock import patch
 from src.cli.deck import deck_app
@@ -12,6 +11,7 @@ sample_card = {
     "school": "Evocation",
     "description": "A magical fire bursts forth.",
 }
+
 
 @patch("src.deck_forge.art.requests.post")
 @patch("src.deck_forge.art.requests.get")

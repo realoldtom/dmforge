@@ -1,5 +1,5 @@
 import json
-
+from pathlib import Path
 import pytest
 
 from src.deck_forge.art import generate_art_for_deck
@@ -162,3 +162,14 @@ def test_exception_in_generation(tmp_path, monkeypatch, capsys):
     # deck.json still rewritten, even if no art_versions
     updated = json.loads(deck.read_text())
     assert "cards" in updated
+
+
+def write_minimal_deck(path: Path):
+    """Create a minimal deck JSON file for testing."""
+    test_cards = [
+        {
+            "title": "Test Spell",  # Add title field to prevent KeyError
+            "description": "This is a test spell description",
+        }
+    ]
+    path.write_text(json.dumps({"cards": test_cards}, indent=2))

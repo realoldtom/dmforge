@@ -2,7 +2,7 @@
     "sources": [
         {
             "name": "5etools-mirror",
-            "path": "../data/5etools-mirror/data"
+            "path": "../data/dev/5etools-mirror/data"
         }
     ],
     "generators": [
