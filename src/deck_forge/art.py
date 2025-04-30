@@ -65,6 +65,15 @@ def generate_art_for_deck(
 
         if out_path.exists():
             print(f"⏭️ Skipping existing: {filename}", file=sys.stderr)
+            # IMPORTANT CHANGE: Make sure we're recording the versioned path even for skipped images
+            relative_path = (Path("assets/art") / filename).as_posix()
+            art_info = {
+                "tag": version,
+                "path": relative_path,
+                "prompt": prompt,
+            }
+            card.setdefault("art_versions", []).append(art_info)
+            card["art_url"] = relative_path  # Use versioned path
             continue
 
         try:
@@ -98,7 +107,7 @@ def generate_art_for_deck(
             img_bytes = requests.get(image_url).content
             out_path.write_bytes(img_bytes)
 
-            relative_path = (Path("../../assets/art") / filename).as_posix()
+            relative_path = (Path("assets/art") / filename).as_posix()
             art_info = {
                 "tag": version,
                 "path": relative_path,

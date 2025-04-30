@@ -1,320 +1,182 @@
 from pathlib import Path
 import json
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 from weasyprint import HTML, CSS
 from src.utils.console import banner, success, error, warn
 from src.utils.formatting import abbreviate_duration
+from src.deck_forge.render_html import PLACEHOLDER_DATA_URI
 
-TEMPLATE_DIR = Path("templates")
-ASSETS_DIR = Path("assets")
-env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
+# Directories
+PROJECT_ROOT = Path(__file__).parent.parent.parent
+TEMPLATE_DIR = PROJECT_ROOT / "templates"
+ASSETS_DIR = PROJECT_ROOT / "assets"
+
+env = Environment(
+    loader=FileSystemLoader(TEMPLATE_DIR),
+    autoescape=select_autoescape(["html", "jinja"]),
+)
 
 
-def resolve_image_path(path_str, base_dir):
-    """Convert relative paths to absolute file URIs."""
-    if not path_str or path_str.startswith(("http://", "https://", "file://")):
+def resolve_image_path(path_str: str, base_dir: Path) -> str:
+    """Convert relative or versioned paths to file URIs or data URIs."""
+    if not path_str:
+        return PLACEHOLDER_DATA_URI
+    if path_str.startswith(("http://", "https://", "data:", "file://")):
         return path_str
 
-    # Handle relative paths
-    path = Path(path_str)
-    if not path.is_absolute():
-        # Try multiple resolution strategies
-        potential_paths = [(base_dir / path).resolve(), (Path.cwd() / path).resolve()]
+    # Try relative to deck folder then to assets
+    candidates = [
+        (base_dir / path_str).resolve(),
+        (ASSETS_DIR / path_str).resolve(),
+    ]
+    for p in candidates:
+        if p.exists():
+            return p.as_uri()
 
-        # Use the first path that exists
-        for potential_path in potential_paths:
-            if potential_path.exists():
-                print(f"✓ Found image at: {potential_path}")
-                return potential_path.as_uri()
-
-        # If we got here, no path worked
-        warn(f"⚠️ Image not found: {path} (tried {len(potential_paths)} locations)")
-        return None
-
-    # Handle absolute paths
-    if not path.exists():
-        warn(f"⚠️ Image not found: {path}")
-        return None
-
-    # Return as file URI
-    return path.as_uri()
+    warn(f"⚠️ Image not found: {path_str} (tried {len(candidates)} locations)")
+    return PLACEHOLDER_DATA_URI
 
 
-def process_cards(cards, base_dir):
-    """Process all cards to ensure image paths are properly resolved."""
-    print(f"Base directory for image resolution: {base_dir.absolute()}")
-    print(f"Current working directory: {Path.cwd().absolute()}")
-
-    for card in cards:
-        if "art_url" in card:
-            original_path = card["art_url"]
-            card["art_url"] = resolve_image_path(card["art_url"], base_dir)
-
-            # Enhanced debugging
-            print(f"Card '{card.get('title', 'Untitled')}':")
-            print(f"  → Original path: {original_path}")
-            print(f"  → Resolved to: {card['art_url'] or 'FAILED'}")
-
-        # Process art versions if present
-        if "art_versions" in card:
-            for version in card["art_versions"]:
-                if "path" in version:
-                    original_path = version["path"]
-                    version["path"] = resolve_image_path(version["path"], base_dir)
-                    print(f"  → Art version '{version.get('tag', 'Unknown')}':")
-                    print(f"    → Original path: {original_path}")
-                    print(f"    → Resolved to: {version['path'] or 'FAILED'}")
-
-
-def load_deck(deck_path):
-    """Load and parse the deck file, handling both list and dict formats."""
+def load_deck(deck_path: Path) -> list[dict]:
+    """Load JSON deck, supporting both list and dict formats."""
     if not deck_path.exists():
         error(f"❌ Deck not found: {deck_path}")
-        return None
-
-    try:
-        content = deck_path.read_text(encoding="utf-8")
-        data = json.loads(content)
-
-        # Handle both formats: {"cards": [...]} or just [...]
-        if isinstance(data, dict) and "cards" in data:
-            return data["cards"]
-        elif isinstance(data, list):
-            return data
-        else:
-            error(
-                "❌ Invalid deck format: expected list of cards or object with 'cards' property"
-            )
-            return None
-    except Exception as e:
-        error(f"❌ Failed to load deck: {e}")
-        return None
+        return []
+    data = json.loads(deck_path.read_text(encoding="utf-8"))
+    return (
+        data.get("cards")
+        if isinstance(data, dict)
+        else (data if isinstance(data, list) else [])
+    )
 
 
-def get_css_path(theme):
-    """Get the absolute URI path to the CSS file."""
+def get_css_path(theme: str) -> str:
+    """Return the CSS file URI for a given theme."""
     css_file = ASSETS_DIR / "css" / f"{theme}.css"
     if not css_file.exists():
-        warn(f"⚠️ Theme not found: {theme}. Using default.css.")
+        warn(f"⚠️ Theme '{theme}' not found; using default.css")
         css_file = ASSETS_DIR / "css" / "default.css"
+    return css_file.as_uri()
 
-    return css_file.absolute().as_uri()
+
+def process_cards(cards: list[dict], base_dir: Path):
+    """Resolve all art_url entries to URIs."""
+    for card in cards:
+        original = card.get("art_url", "")
+        card["art_url"] = resolve_image_path(original, base_dir)
+        # log troubleshooting
+        if card["art_url"] == PLACEHOLDER_DATA_URI:
+            warn(
+                f"Card '{card.get('name','')}': art_url '{original}' resolved to placeholder"
+            )
 
 
 def render_card_pdf(
-    deck_path: Path, output_path: Path, theme: str = "default", debug: bool = False
+    deck_path: Path,
+    output_path: Path,
+    theme: str = "default",
+    debug: bool = False,
 ):
-    """Render a JSON deck to PDF using HTML + WeasyPrint (one card per page)."""
-    banner("🖨 Rendering Card Deck (1 card/page)")
-
-    # Load deck
+    banner("🖨 Rendering Card Deck (1 per page)")
     cards = load_deck(deck_path)
     if not cards:
         return
 
-    try:
-        # Process cards to resolve image paths
-        process_cards(cards, base_dir=deck_path.parent)
+    from src.deck_forge.render_html import (
+        _fix_image_paths,
+        PROJECT_ROOT,
+        PLACEHOLDER_DATA_URI,
+    )
 
-        for c in cards:
-            # ---- Title fallback ----
-            c["title"] = c.get("title") or c.get("name", "Untitled")
+    # After loading `cards` from JSON:
+    _fix_image_paths(cards, PROJECT_ROOT, output_path.parent)
 
-            # ---- Level / school one-liner (optional) ----
-            lvl = "Cantrip" if c.get("level", 0) == 0 else f"L{c['level']}"
-            sch = c.get("school", "")[:3].upper()  # EVO, ABJ, etc.
-            c["level_school"] = f"{lvl}·{sch}"
-
-            # ---- Duration abbreviation ----
-            if "duration" in c:
-                c["duration_short"] = abbreviate_duration(c["duration"])
-
-                # --- Clean components ---
-                if isinstance(c.get("components"), list):
-                    # ['V', 'S', 'M']  ->  "V,S,M"
-                    c["components_short"] = ",".join(c["components"])
-                else:
-                    c["components_short"] = c.get("components", "")
-
-        # Get CSS path
-        css_path = get_css_path(theme)
-
-        # Generate HTML
-        template = env.get_template("spell_card.jinja")
-        html_string = template.render(
-            cards=cards,
-            css_path=css_path,
-            default_image="assets/images/placeholder.png",
+    # Prepare data
+    process_cards(cards, base_dir=deck_path.parent)
+    for c in cards:
+        c["title"] = c.get("title") or c.get("name", "Untitled")
+        lvl = "Cantrip" if c.get("level", 0) == 0 else f"L{c['level']}"
+        sch = c.get("school", "").upper()[:3]
+        c["level_school"] = f"{lvl}·{sch}"
+        if "duration" in c:
+            c["duration_short"] = abbreviate_duration(c["duration"])
+        c["components_short"] = (
+            ",".join(c.get("components", []))
+            if isinstance(c.get("components"), list)
+            else c.get("components", "")
         )
 
-        # Save debug HTML if requested
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        if debug:
-            debug_path = output_path.with_suffix(".html")
-            debug_path.write_text(html_string, encoding="utf-8")
-            success(f"📝 Debug HTML saved to {debug_path.resolve()}")
+    # Load template
+    template = env.get_template("spell_card.jinja")
+    html_string = template.render(
+        cards=cards,
+        css_path=get_css_path(theme),
+        default_image=PLACEHOLDER_DATA_URI,
+    )
 
-            # Also save a paths debug file
-            paths_debug = "\n".join(
-                [
-                    f"{card.get('title', 'Untitled')}: {card.get('art_url', 'No image')}"
-                    for card in cards
-                ]
-            )
-            path_debug_file = output_path.with_name(
-                f"{output_path.stem}_paths_debug.txt"
-            )
-            path_debug_file.write_text(paths_debug, encoding="utf-8")
-            success(f"📝 Paths debug saved to {path_debug_file.resolve()}")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    if debug:
+        dbg = output_path.with_suffix(".html")
+        dbg.write_text(html_string, encoding="utf-8")
+        success(f"📝 Debug HTML: {dbg.resolve()}")
 
-        # Render PDF
-        HTML(string=html_string, base_url=str(ASSETS_DIR)).write_pdf(
-            str(output_path), stylesheets=[CSS(css_path)]
-        )
-        success(f"✅ PDF saved to {output_path.resolve()}")
-
-    except Exception as e:
-        error(f"❌ Failed to render PDF: {e}")
-        if debug:
-            import traceback
-
-            error(traceback.format_exc())
+    # Render PDF with correct base_url for assets
+    base = str(output_path.parent.resolve())
+    HTML(string=html_string, base_url=base).write_pdf(
+        str(output_path), stylesheets=[CSS(get_css_path(theme))]
+    )
+    success(f"✅ PDF saved: {output_path.resolve()}")
 
 
 def render_card_sheet_pdf(
-    deck_path: Path, output_path: Path, theme: str = "default", debug: bool = False
+    deck_path: Path,
+    output_path: Path,
+    theme: str = "default",
+    debug: bool = False,
 ):
-    """Render cards as a sheet/grid in PDF format."""
-    banner("📄 Rendering Sheet PDF")
-
-    # Load deck
+    banner("📄 Rendering Sheet PDF (6 per page)")
     cards = load_deck(deck_path)
     if not cards:
         return
 
-    try:
-        # Process cards to resolve image paths
-        process_cards(cards, base_dir=deck_path.parent)
+    from src.deck_forge.render_html import (
+        _fix_image_paths,
+        PROJECT_ROOT,
+        PLACEHOLDER_DATA_URI,
+    )
 
-        for c in cards:
-            # ---- Title fallback ----
-            c["title"] = c.get("title") or c.get("name", "Untitled")
+    # After loading `cards` from JSON:
+    _fix_image_paths(cards, PROJECT_ROOT, output_path.parent)
 
-            # ---- Level / school one-liner (optional) ----
-            lvl = "Cantrip" if c.get("level", 0) == 0 else f"L{c['level']}"
-            sch = c.get("school", "")[:3].upper()  # EVO, ABJ, etc.
-            c["level_school"] = f"{lvl}·{sch}"
-
-            # ---- Duration abbreviation ----
-            if "duration" in c:
-                c["duration_short"] = abbreviate_duration(c["duration"])
-
-            # --- Clean components ---
-            if isinstance(c.get("components"), list):
-                # ['V', 'S', 'M']  ->  "V,S,M"
-                c["components_short"] = ",".join(c["components"])
-            else:
-                c["components_short"] = c.get("components", "")
-
-        # Get CSS path
-        css_path = get_css_path(theme)
-
-        # Generate HTML
-        template = env.get_template("spell_sheet.jinja")
-        html_string = template.render(
-            cards=cards,
-            css_path=css_path,
-            default_image="assets/images/placeholder.png",
+    process_cards(cards, base_dir=deck_path.parent)
+    for c in cards:
+        c["title"] = c.get("title") or c.get("name", "Untitled")
+        lvl = "Cantrip" if c.get("level", 0) == 0 else f"L{c['level']}"
+        sch = c.get("school", "").upper()[:3]
+        c["level_school"] = f"{lvl}·{sch}"
+        if "duration" in c:
+            c["duration_short"] = abbreviate_duration(c["duration"])
+        c["components_short"] = (
+            ",".join(c.get("components", []))
+            if isinstance(c.get("components"), list)
+            else c.get("components", "")
         )
 
-        # Save debug HTML if requested
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        if debug:
-            debug_path = output_path.with_suffix(".html")
-            debug_path.write_text(html_string, encoding="utf-8")
-            success(f"📝 Debug HTML saved to {debug_path.resolve()}")
+    template = env.get_template("spell_sheet.jinja")
+    html_string = template.render(
+        cards=cards,
+        css_path=get_css_path(theme),
+        default_image=PLACEHOLDER_DATA_URI,
+    )
 
-            # Also save a paths debug file
-            paths_debug = "\n".join(
-                [
-                    f"{card.get('title', 'Untitled')}: {card.get('art_url', 'No image')}"
-                    for card in cards
-                ]
-            )
-            path_debug_file = output_path.with_name(
-                f"{output_path.stem}_paths_debug.txt"
-            )
-            path_debug_file.write_text(paths_debug, encoding="utf-8")
-            success(f"📝 Paths debug saved to {path_debug_file.resolve()}")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    if debug:
+        dbg = output_path.with_suffix(".html")
+        dbg.write_text(html_string, encoding="utf-8")
+        success(f"📝 Debug HTML: {dbg.resolve()}")
 
-        # Render PDF
-        HTML(string=html_string).write_pdf(
-            str(output_path), stylesheets=[CSS(css_path)]
-        )
-        success(f"✅ Sheet PDF saved to {output_path.resolve()}")
-
-    except Exception as e:
-        error(f"❌ Failed to render sheet PDF: {e}")
-        if debug:
-            import traceback
-
-            error(traceback.format_exc())
-
-
-def render_all(
-    deck_path: Path, output_dir: Path, theme: str = "default", debug: bool = False
-):
-    """Render both card PDF and sheet PDF from a single deck."""
-    banner("🎴 Rendering All PDF Formats")
-
-    output_dir.mkdir(parents=True, exist_ok=True)
-    deck_name = deck_path.stem
-
-    card_pdf = output_dir / f"{deck_name}_cards.pdf"
-    sheet_pdf = output_dir / f"{deck_name}_sheet.pdf"
-
-    render_card_pdf(deck_path, card_pdf, theme, debug)
-    render_card_sheet_pdf(deck_path, sheet_pdf, theme, debug)
-
-    success(f"✅ All PDFs rendered to {output_dir.resolve()}")
-
-
-def diagnose_image_paths(deck_path):
-    """Just check all image paths in a deck without rendering."""
-    banner("🔍 Diagnosing Image Paths")
-
-    cards = load_deck(deck_path)
-    if not cards:
-        return
-
-    print(f"Found {len(cards)} cards in {deck_path}")
-    base_dir = deck_path.parent
-
-    for card in cards:
-        title = card.get("title", "Untitled")
-        print(f"\n--- Card: {title} ---")
-
-        if "art_url" in card:
-            path_str = card["art_url"]
-            print(f"Original path: {path_str}")
-
-            # Try resolving with different base directories
-            test_bases = [
-                ("Deck directory", base_dir),
-                ("Current directory", Path.cwd()),
-                ("Parent of current", Path.cwd().parent),
-                ("Root of project", Path.cwd().resolve().parents[1]),
-            ]
-
-            for name, test_base in test_bases:
-                if not path_str.startswith(("http://", "https://", "file://")):
-                    path = Path(path_str)
-                    if not path.is_absolute():
-                        test_path = (test_base / path).resolve()
-                        exists = test_path.exists()
-                        print(f"  {name}: {test_path} {'✓' if exists else '✗'}")
-
-
-if __name__ == "__main__":
-    # Command-line parsing would go here if this is used as a standalone script
-    pass
+    base = str(output_path.parent.resolve())
+    HTML(string=html_string, base_url=base).write_pdf(
+        str(output_path), stylesheets=[CSS(get_css_path(theme))]
+    )
+    success(f"✅ Sheet PDF saved: {output_path.resolve()}")

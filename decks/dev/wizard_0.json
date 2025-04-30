@@ -1,0 +1,27 @@
+{
+  "cards": [
+    {
+      "title": "Light",
+      "level": 0,
+      "school": "Evocation",
+      "description": "\"Light\" spell: Touch object <10ft, sheds bright light 20ft, dim light 20ft, customizable color. Blocked by opaque cover. Ends on recast/dismissal. Hostile target: Dex save or light.",
+      "summary": true,
+      "casting_time": "1 action",
+      "duration": "1 hour",
+      "range": "Touch",
+      "components": [
+        "V",
+        "M"
+      ],
+      "source": "SRD",
+      "art_url": "assets/art/Light.png",
+      "art_versions": [
+        {
+          "tag": "v1",
+          "path": "assets/art/Light_v1.png",
+          "prompt": "High-fantasy illustration of the spell **Light**. Painterly, ArtStation / Wizards-of-the-Coast style. Dramatic, cinematic lighting; rich, detailed environment. Depict a **gnome warlock** in mid-cast. Visualise the core effect: \"Light\" spell: Touch object <10ft, sheds bright light 20ft, dim light 20ft, customizable color.. Sharp focus, dynamic composition, aspect 3:4."
+        }
+      ]
+    }
+  ]
+}
