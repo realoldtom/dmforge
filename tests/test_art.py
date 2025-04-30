@@ -68,7 +68,8 @@ def test_skip_existing(tmp_path, monkeypatch, capsys):
     # deck file should be rewritten, but no new images
     data = json.loads(deck.read_text())
     # since we skipped, art_versions/key may not be added
-    assert "art_versions" not in data["cards"][0]
+    assert data["cards"][0]["art_versions"][0]["path"].endswith("_v1.png")
+    assert Path(existing).exists()
 
 
 def test_api_error_path(tmp_path, monkeypatch, capsys):
