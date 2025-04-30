@@ -8,6 +8,7 @@ from pathlib import Path
 from src.utils.paths import get_data_path
 from src.utils.console import success, error
 from src.deck_forge.schema import spell_to_card
+from src.utils.env import get_env  # noqa: F401
 
 
 def fetch_srd_spells():
